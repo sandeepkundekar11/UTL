@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTL</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Home Page -->
+    <!-- creating Navigation bar -->
+    <nav class="w-screen">
+      <marquee class="h-10 w-screen marquee flex items-center text-xl"
+        >#18A/19, Doddanekundi Industrial Area,II Phase, Mahadevapura
+        Post,Bangalore - 560 048,Karnataka, India. || #18A/19, Doddanekundi
+        Industrial Area,II Phase, Mahadevapura Post,Bangalore - 560
+        048,Karnataka, India.</marquee
+      >
+      <div class="w-screen h-16 bg-white flex justify-end items-center text-xs">
+        <img class="w-8 float-start h-9 menu" src="../Images/menu.png" alt="" />
+        <img
+          class="md:w-36 h-10 w-24 lg:mr-0 mr-6 md:h-14"
+          src="../Images//Logo.png"
+          alt=""
+        />
+
+        <ul class="flex lg:justify-center w-4/5 lg:ml-4 ml-0 navlist">
+          <li
+            class="lg:border-none border-b-2 text-lg font-semibold items-center cursor-pointer mx-4 product"
+          >
+            <div class="flex items-center justify-between">
+              Products
+              <img
+                class="w-6 h-5 lg:ml-2 productDropdown lg:hidden"
+                src="../Images/Dropdown.png"
+                alt=""
+              />
+              <!-- the bellow image will come in to the picture when our screen width is 1024 -->
+              <img
+                class="w-6 h-5 lg:ml-2 lg:block hidden"
+                src="../Images/Dropdown.png"
+                alt=""
+              />
+            </div>
+            <div class="navProduct flex lg:justify-evenly">
+              <ul class="h-auto space-y-3 lg:text-white text-slate-500">
+                <li class="text-base lg:border-none lg:text-white text-red-600">
+                  DWDM
+                </li>
+                <li class="hover:text-red-600"><a href="">Product 1</a></li>
+                <li class="hover:text-red-600"><a href="">Product 2</a></li>
+                <li class="hover:text-red-600"><a href="">Product 3</a></li>
+              </ul>
+              <ul class="space-y-3 lg:text-white text-slate-500">
+                <li class="text-base lg:text-white text-red-600">OTN</li>
+                <li class="hover:text-red-600"><a href="">Product 1</a></li>
+                <li class="hover:text-red-600"><a href="">Product 2</a></li>
+                <li class="hover:text-red-600"><a href="">Product 3</a></li>
+              </ul>
+              <ul class="space-y-3 lg:text-white text-slate-500">
+                <li class="text-base lg:text-white text-red-600">
+                  Optical Line System (OLS)
+                </li>
+                <li class="hover:text-red-600"><a href="">Product 1</a></li>
+                <li class="hover:text-red-600"><a href="">Product 2</a></li>
+                <li class="hover:text-red-600"><a href="">Product 3</a></li>
+              </ul>
+              <ul class="space-y-3 lg:text-white text-slate-500">
+                <li class="text-base lg:text-white text-red-600">
+                  GPON/NG-PON
+                </li>
+                <li class="hover:text-red-600"><a href="">Product 1</a></li>
+                <li class="hover:text-red-600"><a href="">Product 2</a></li>
+                <li class="hover:text-red-600"><a href="">Product 3</a></li>
+              </ul>
+              <ul class="text-base lg:text-white text-slate-500 space-y-3">
+                <li class="hover:text-red-600"><a href="">MPLS/CSGR</a></li>
+                <li class="hover:text-red-600">
+                  <a href="">Enterprise Switch/Router</a>
+                </li>
+                <li class="hover:text-red-600"><a href="">4G/LTE RAN</a></li>
+                <li class="hover:text-red-600"><a href="">5G RAN</a></li>
+                <li class="hover:text-red-600">
+                  <a href="">Wireless Backhaul Radios</a>
+                </li>
+              </ul>
+              <ul class="text-base lg:text-white text-slate-500 space-y-3">
+                <li class="hover:text-red-600">
+                  <a href="">WiFi Access Point</a>
+                </li>
+                <li class="hover:text-red-600"><a href="">4G/5G CPE</a></li>
+                <li class="hover:text-red-600"><a href="">Set Top Box</a></li>
+                <li class="hover:text-red-600">
+                  <a href="">Smart Energy Meter</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Network Orchestrator </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="lg:border-none border-b-2 text-lg font-semibold items-center cursor-pointer mx-4 solutions"
+          >
+            <div class="flex items-center justify-between">
+              Solutions
+              <img
+                class="w-6 h-5 ml-2 solutionDropdown lg:hidden"
+                src="../Images/Dropdown.png"
+                alt=""
+              />
+              <!-- the bellow image will come in to the picture when our screen width is 1024 -->
+              <img
+                class="w-6 h-5 lg:ml-2 lg:block hidden"
+                src="../Images/Dropdown.png"
+                alt=""
+              />
+            </div>
+            <div class="navSolution px-5 flex flex-col">
+              <ul class="h-auto space-y-2 lg:text-white text-slate-500">
+                <li class="hover:text-red-600">
+                  <a href="">State Wide Area Network (SWAN)</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">e-Governance and Citizen Service </a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Mobile Fronthaul/Backhaul</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Broadband Network</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Enterprise Network</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Managed Services</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Access Network</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Transmission Network</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Embedded and IoT</a>
+                </li>
+                <li class="hover:text-red-600"><a href="">IT & ITES</a></li>
+                <li class="hover:text-red-600"><a href="">Education</a></li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="lg:border-none border-b-2 text-lg font-semibold items-center cursor-pointer mx-4 CompanyGroup"
+          >
+            <div class="flex items-center justify-between">
+              UTL Group Companies
+              <img
+                class="w-6 h-5 ml-2 groupsDropdown lg:hidden"
+                src="../Images/Dropdown.png"
+                alt=""
+              />
+              <!-- the bellow image will come in to the picture when our screen width is 1024 -->
+              <img
+                class="w-6 h-5 lg:ml-2 lg:block hidden"
+                src="../Images/Dropdown.png"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col px-5 navGroups">
+              <ul class="h-auto space-y-3 lg:text-white text-slate-500">
+                <li class="hover:text-red-600">
+                  <a href="">United Telecoms Limited</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Trigyn Technologies</a>
+                </li>
+                <li class="hover:text-red-600"><a href="">USEIPL</a></li>
+                <li class="hover:text-red-600">
+                  <a href="">Priya Raja Electronics</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">UTL Technologies</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">United Telelinks</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li
+            class="lg:border-none border-b-2 text-lg items-center cursor-pointer mx-4 about font-semibold"
+          >
+            <div class="flex items-center justify-between">
+              About Us
+              <img
+                class="w-6 h-5 ml-2 aboutDropdown lg:hidden"
+                src="../Images/Dropdown.png"
+                alt=""
+              />
+              <!-- the bellow image will come in to the picture when our screen width is 1024 -->
+              <img
+                class="w-6 h-5 lg:ml-2 lg:block hidden"
+                src="../Images/Dropdown.png"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col px-5 navAbout">
+              <ul class="h-auto space-y-3 lg:text-white text-slate-500">
+                <li class="hover:text-red-600">
+                  <a href="">Company Profile</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Board Of Directors</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Key Management</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Award And Recognition</a>
+                </li>
+                <li class="hover:text-red-600">
+                  <a href="">Corporate Social Responsibility</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="text-lg flex items-center cursor-pointer font-semibold mx-4"
+          >
+            Contact Us
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- home page -->
+    <div class="home w-full">
+      <img class="w-full h-2/3" src="../Images/img1.webp" alt="" />
+    </div>
+
+    <!-- solutions -->
+
+    <div class="Solutionsdiv flex flex-col">
+      <h1 class="text-center sm:text-5xl text-3xl font-semibold pt-12">
+        Solutions for your Network
+      </h1>
+
+      <div class="SolutionBoxes m-auto flex flex-wrap justify-around">
+        <div
+          class="md:w-96 w-64 h-full border p-3 mt-8 shadow-xl hover:shadow-2xl"
+        >
+          <h1 class="font-semibold text-xl">State Wide Area Network</h1>
+          <img class="w-full h-2/3" src="../Images/Solution1.png" alt="" />
+          <span
+            >State Wide Area Network (SWAN) is a scheme approved by the
+            Government of India's Department of IT
+            <a class="font-semibold text-green-500" href="">Read more</a>
+          </span>
+        </div>
+
+        <div
+          class="md:w-96 w-64 h-full border p-3 mt-8 shadow-xl hover:shadow-2xl"
+        >
+          <h1 class="font-semibold text-xl">State Wide Area Network</h1>
+          <img class="w-full h-2/3" src="../Images/Solution1.png" alt="" />
+          <span
+            >State Wide Area Network (SWAN) is a scheme approved by the
+            Government of India's Department of IT
+            <a class="font-semibold text-green-500" href="">Read more</a>
+          </span>
+        </div>
+        <div
+          class="md:w-96 w-64 h-full border p-3 mt-8 shadow-xl hover:shadow-2xl"
+        >
+          <h1 class="font-semibold text-xl">State Wide Area Network</h1>
+          <img class="w-full h-2/3" src="../Images/Solution1.png" alt="" />
+          <span
+            >State Wide Area Network (SWAN) is a scheme approved by the
+            Government of India's Department of IT
+            <a class="font-semibold text-green-500" href="">Read more</a>
+          </span>
+        </div>
+        <div
+          class="md:w-96 w-64 h-full p-3 border mt-8 shadow-xl hover:shadow-2xl"
+        >
+          <h1 class="font-semibold text-xl">State Wide Area Network</h1>
+          <img class="w-full h-2/3" src="../Images/Solution1.png" alt="" />
+          <span
+            >State Wide Area Network (SWAN) is a scheme approved by the
+            Government of India's Department of IT
+            <a class="font-semibold text-green-500" href="">Read more</a>
+          </span>
+        </div>
+        <div
+          class="md:w-96 w-64 h-full p-3 border mt-8 shadow-xl hover:shadow-2xl"
+        >
+          <h1 class="font-semibold text-xl">State Wide Area Network</h1>
+          <img class="w-full h-2/3" src="../Images/Solution1.png" alt="" />
+          <span
+            >State Wide Area Network (SWAN) is a scheme approved by the
+            Government of India's Department of IT
+            <a class="font-semibold text-green-500" href="">Read more</a>
+          </span>
+        </div>
+        <div
+          class="md:w-96 w-64 h-full p-3 border mt-8 shadow-xl hover:shadow-2xl"
+        >
+          <h1 class="font-semibold text-xl">State Wide Area Network</h1>
+          <img class="w-full h-2/3" src="../Images/Solution1.png" alt="" />
+          <span
+            >State Wide Area Network (SWAN) is a scheme approved by the
+            Government of India's Department of IT
+            <a class="font-semibold text-green-500" href="">Read more</a>
+          </span>
+        </div>
+      </div>
+      <a class="text-center mt-4 text-xl font-semibold text-red-600" href=""
+        >See More ...</a
+      >
+    </div>
+
+    <!-- About page  -->
+    <div class="AboutPage bg-white">
+      <h1 class="text-center sm:text-5xl text-3xl font-semibold pt-12">
+        About Us
+      </h1>
+      <p class="text-center font-medium sm:text-2xl text-lg mt-3">
+        UTL is a three decade old diversified business group with interests in
+        multiple sectors,
+      </p>
+      <div
+        class="aboutBoxes m-auto flex md:flex-row flex-col md:justify-between mt-12"
+      >
+        <a
+          href=""
+          class="md:w-52 w-full h-32 border-4 rounded-xl hover:shadow-xl flex flex-col justify-center items-center"
+        >
+          <img src="../Images/about/about_1.png" alt="" />
+          <h1 class="font-semibold">Company Profile</h1>
+        </a>
+        <a
+          href=""
+          class="md:w-52 w-full h-32 border-4 rounded-xl hover:shadow-xl flex flex-col justify-center items-center"
+        >
+          <img src="../Images/about/about_2.png" alt="" />
+          <h1 class="font-semibold">Board Of Directors</h1>
+        </a>
+        <a
+          href=""
+          class="md:w-52 w-full h-32 border-4 rounded-xl hover:shadow-xl flex flex-col justify-center items-center"
+        >
+          <img src="../Images/about/about_3.png" alt="" />
+          <h1 class="font-semibold">Key Managment</h1>
+        </a>
+        <a
+          href=""
+          class="md:w-52 w-full h-32 border-4 rounded-xl hover:shadow-xl flex flex-col justify-center items-center"
+        >
+          <img src="../Images/about/about_4.png" alt="" />
+          <h1 class="font-semibold">Awards & recognization</h1>
+        </a>
+        <a
+          href=""
+          class="md:w-52 w-full h-32 border-4 rounded-xl hover:shadow-xl flex flex-col justify-center items-center"
+        >
+          <img src="../Images/about/about_5.png" alt="" />
+          <h1 class="text-center font-semibold">
+            Corporate Social Responsibility
+          </h1>
+        </a>
+      </div>
+
+      <h1 class="text-center sm:text-4xl text-2xl font-semibold pt-12">
+        UTL Foot Print
+      </h1>
+      <div class="w-screen m-auto footPrint">
+        <img class="m-auto" src="../Images/footPrint.gif" alt="" />
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer md:flex flex-wrap p-5 pb-12 text-white">
+      <div
+        class="md:w-2/6 w-full md:text-start flex md:justify-center justify-start md:border-r-2"
+      >
+        <ul class="text-base space-y-2 font-semibold">
+          <li class="flex items-center hover:text-red-600">
+            <p>Compliances</p>
+            <img
+              class="w-8 h-6"
+              src="../Images//Dropdown.png"
+              alt=""
+              id="footerDropDown"
+            />
+            <ul
+              class="Compliances text-base space-y-2 py-1 rounded-md text-black px-4 cursor-pointer"
+            >
+              <li class="hover:text-red-600">Corporate Information</li>
+              <li class="hover:text-red-600">Financial Results</li>
+              <li class="hover:text-red-600">Corporate Governance</li>
+              <li class="hover:text-red-600">Disclosure</li>
+              <li class="hover:text-red-600">Press Release</li>
+            </ul>
+          </li>
+          <li class="hover:text-red-600">Newroom</li>
+          <li class="hover:text-red-600">Privacy Policy</li>
+          <li class="hover:text-red-600">Careers</li>
+          <li class="hover:text-red-600">Contact Us</li>
+        </ul>
+      </div>
+      <div class="md:w-2/6 w-full md:mt-0 mt-7 md:pl-5 md:border-r-2">
+        <p class="text-2xl my-3 font-semibold text-blue-400">
+          info@utlindia.com
+        </p>
+        <p>Tel: +91-80-28524032 / 28524050 / 28524088</p>
+        <div></div>
+      </div>
+      <div class="md:w-2/6 w-full md:mt-0 mt-7 md:pl-5">
+        <h1 class="text-2xl my-3 font-semibold text-blue-400">
+          United Telecom Limited
+        </h1>
+        <p class="text-xl">© 2024 All rights reserved.</p>
+        <p>
+          #18A/19, Doddanekundi Industrial Area,II Phase, Mahadevapura
+          Post,Bangalore - 560 048,Karnataka, India.
+        </p>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script>
+      const FooterDropdownBtn = document.querySelector("#footerDropDown");
+      let CompliancesDropdown = document.querySelector(".Compliances");
+      FooterDropdownBtn.addEventListener("click", () => {
+        if (CompliancesDropdown.style.display === "block") {
+          CompliancesDropdown.style.display = "none";
+        } else {
+          CompliancesDropdown.style.display = "block";
+        }
+      });
+      // adding menu dropdown
+      let menu = document.querySelector(".menu");
+      let navlist = document.querySelector(".navlist");
+      menu.addEventListener("click", () => {
+        if (navlist.className.includes("navlist")) {
+          navlist.classList.remove("navlist");
+          navlist.classList.add("showNavbar");
+        } else {
+          navlist.classList.add("navlist");
+          navlist.classList.remove("showNavbar");
+        }
+      });
+
+      // adding dropdown to each dropdown
+      // openDropdown
+      let productDropdownBtn = document.querySelector(".productDropdown");
+      let navProduct = document.querySelector(".navProduct");
+      productDropdownBtn.addEventListener("click", () => {
+        if (navProduct.className.includes("navProduct")) {
+          navProduct.classList.remove("navProduct");
+          navProduct.classList.add("openDropdown");
+        } else {
+          navProduct.classList.add("navProduct");
+          navProduct.classList.remove("openDropdown");
+        }
+      });
+
+      let solutionDropdownBtn = document.querySelector(".solutionDropdown");
+      let navSolution = document.querySelector(".navSolution");
+
+      solutionDropdownBtn.addEventListener("click", () => {
+        if (navSolution.className.includes("navSolution")) {
+          navSolution.classList.remove("navSolution");
+          navSolution.classList.add("openDropdown");
+        } else {
+          navSolution.classList.add("navSolution");
+          navSolution.classList.remove("openDropdown");
+        }
+      });
+
+      let groupsDropdownBtn = document.querySelector(".groupsDropdown");
+      let navGroups = document.querySelector(".navGroups");
+      groupsDropdownBtn.addEventListener("click", () => {
+        if (navGroups.className.includes("navGroups")) {
+          navGroups.classList.remove("navGroups");
+          navGroups.classList.add("openDropdown");
+        } else {
+          navGroups.classList.add("navGroups");
+          navGroups.classList.remove("openDropdown");
+        }
+      });
+
+      let aboutDropdownBtn = document.querySelector(".aboutDropdown");
+      let navAbout = document.querySelector(".navAbout");
+
+      aboutDropdownBtn.addEventListener("click", () => {
+        if (navAbout.className.includes("navAbout")) {
+          navAbout.classList.remove("navAbout");
+          navAbout.classList.add("openDropdown");
+        } else {
+          navAbout.classList.add("navAbout");
+          navAbout.classList.remove("openDropdown");
+        }
+      });
+    </script>
+  </body>
+</html>

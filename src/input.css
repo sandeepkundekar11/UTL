@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: whitesmoke;
+}
+.marquee {
+  background-color: rgba(199, 196, 226, 1);
+}
+/* styling navbar */
+.navProduct {
+  width: 850px;
+  background-color: #393939c8;
+  position: absolute;
+  top: 7rem;
+  left: 6%;
+  height: 0px;
+  overflow: hidden;
+  font-size: 14px;
+  transition: height 0.4s;
+}
+
+.product:hover .navProduct {
+  height: 250px;
+  border-top-width: 5px;
+  border-top-color: blue;
+  /* overflow: visible; */
+  transition: height 0.4s;
+}
+.navSolution,
+.navGroups,
+.navAbout {
+  position: absolute;
+  background-color: #393939c8;
+  /* margin-left: -20px; */
+  height: 0px;
+  overflow: hidden;
+  top: 7rem;
+  font-size: 14px;
+  transition: height 0.4s;
+}
+.solutions:hover .navSolution {
+  height: 400px;
+  border-top-width: 5px;
+  border-top-color: blue;
+  /* overflow: visible; */
+  transition: height 0.4s;
+}
+.navAbout {
+  width: 230px;
+}
+.CompanyGroup:hover .navGroups,
+.about:hover .navAbout {
+  height: 270px;
+  border-top-width: 5px;
+  border-top-color: blue;
+  /* overflow: visible; */
+  transition: height 0.4s;
+}
+.menu {
+  display: none;
+  position: absolute;
+  left: 12px;
+}
+
+/* adding the Responsiveness to Navigation bar */
+@media (max-width: 990px) {
+  .showNavbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6.5rem;
+    justify-content: baseline;
+    background-color: white;
+    width: 100vw;
+    height: 16rem;
+    overflow: scroll;
+    text-align: center;
+    transition: 0.2s height;
+  }
+  .navlist {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6.5rem;
+    justify-content: center;
+    background-color: white;
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    /* padding-bottom: 12px; */
+    /* height: 0; */
+    transition: 0.2s height;
+  }
+  /* .product */
+  .menu {
+    display: flex;
+  }
+  .navSolution,
+  .navGroups,
+  .navAbout,
+  .navProduct {
+    /* border-top: solid black 1px; */
+    background-color: white;
+    color: black;
+    width: 90vw;
+    height: 0px;
+    overflow: hidden;
+    margin: auto;
+    position: static; /* Change to your desired positioning for smaller screens */
+    top: auto;
+    left: auto;
+    margin: 8px 0 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* text-align: start; */
+    transition: height 0.8;
+  }
+
+  .product:hover .navProduct,
+  .solutions:hover .navSolution,
+  .CompanyGroup:hover .navGroups,
+  .about:hover .navAbout {
+    height: 0px;
+    width: auto;
+    border-top-width: 0px;
+    border-top-color: initial;
+    transition: none;
+  }
+  /* following class we are using toggle the dropdowns of each navlinks like products,about,utl groups,ect */
+  .openDropdown {
+    background-color: white;
+    color: black;
+    width: 90vw;
+    height: fit-content;
+    margin: 8px 0 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    overflow: scroll;
+    transition: height 0.8;
+  }
+  .navProduct > ul > li {
+    border-top: solid black 1px;
+  }
+}
+
+/* styling home page */
+.home > img {
+  width: 100vw;
+  height: 60vh;
+}
+@media (max-width: 800px) {
+  .home > img {
+    height: 45vh;
+  }
+}
+.SolutionBoxes {
+  width: 65vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Solutionsdiv {
+  background-color: #f3f2ff;
+  padding-bottom: 3rem;
+}
+@media (max-width: 1024px) {
+  .SolutionBoxes {
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* styling About page */
+.aboutBoxes {
+  width: 65vw;
+}
+@media (max-width: 900px) {
+  .aboutBoxes {
+    width: 100vw;
+  }
+}
+/* footPrint */
+.footPrint > img {
+  width: 60vw;
+}
+@media (max-width: 900px) {
+  .footPrint > img {
+    width: 100vw;
+  }
+}
+.footer {
+  width: 100vw;
+  height: auto;
+  background-color: #3a3a3a;
+  color: white;
+}
+/* footer dropdown */
+.Compliances {
+  display: none;
+  position: absolute;
+  margin-left: 110px;
+  margin-top: 180px;
+  background-color: white;
+}
