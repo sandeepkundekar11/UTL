@@ -879,6 +879,18 @@ input[type="range"]::-ms-fill-lower {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -909,8 +921,8 @@ input[type="range"]::-ms-fill-lower {
   margin-left: 0.5rem;
 }
 
-.mr-6 {
-  margin-right: 1.5rem;
+.mr-12 {
+  margin-right: 3rem;
 }
 
 .mt-12 {
@@ -949,16 +961,20 @@ input[type="range"]::-ms-fill-lower {
   height: 2.5rem;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-2\/3 {
   height: 66.666667%;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-32 {
   height: 8rem;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .h-5 {
@@ -989,6 +1005,10 @@ input[type="range"]::-ms-fill-lower {
   width: 6rem;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
 .w-4\/5 {
   width: 80%;
 }
@@ -1011,6 +1031,10 @@ input[type="range"]::-ms-fill-lower {
 
 .w-screen {
   width: 100vw;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -1069,6 +1093,16 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1109,13 +1143,18 @@ input[type="range"]::-ms-fill-lower {
   border-width: 4px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
+.border-t {
+  border-top-width: 1px;
 }
 
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1154,6 +1193,14 @@ input[type="range"]::-ms-fill-lower {
   padding-top: 3rem;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1186,6 +1233,10 @@ input[type="range"]::-ms-fill-lower {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-medium {
@@ -1263,9 +1314,9 @@ body {
 
 .navProduct {
   width: 850px;
-  background-color: #393939c8;
+  background-color: #2b2b2c;
   position: absolute;
-  top: 7rem;
+  top: 4rem;
   left: 6%;
   height: 0px;
   overflow: hidden;
@@ -1285,11 +1336,11 @@ body {
 .navGroups,
 .navAbout {
   position: absolute;
-  background-color: #393939c8;
+  background-color: #2b2b2c;
   /* margin-left: -20px; */
   height: 0px;
   overflow: hidden;
-  top: 7rem;
+  top: 4rem;
   font-size: 14px;
   transition: height 0.4s;
 }
@@ -1323,34 +1374,34 @@ body {
 
 /* adding the Responsiveness to Navigation bar */
 
-@media (max-width: 990px) {
+@media (max-width: 1024px) {
   .showNavbar {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 6.5rem;
+    top: 4rem;
     justify-content: baseline;
-    background-color: white;
+    background-color: #1b1b1b;
     width: 100vw;
-    height: 16rem;
+    height: 20rem;
     overflow: scroll;
     text-align: center;
     transition: 0.2s height;
+    padding-top: 1rem;
   }
 
   .navlist {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 6.5rem;
+    top: 4rem;
     justify-content: center;
-    background-color: white;
+    /* background-color: white; */
+    background-color: #1b1b1b;
     width: 100vw;
     height: 0;
     overflow: hidden;
     text-align: center;
-    /* padding-bottom: 12px; */
-    /* height: 0; */
     transition: 0.2s height;
   }
 
@@ -1365,7 +1416,8 @@ body {
   .navAbout,
   .navProduct {
     /* border-top: solid black 1px; */
-    background-color: white;
+    font-size: 18px;
+    background-color: #1b1b1b;
     color: black;
     width: 90vw;
     height: 0px;
@@ -1375,7 +1427,7 @@ body {
     /* Change to your desired positioning for smaller screens */
     top: auto;
     left: auto;
-    margin: 8px 0 8px 0;
+    margin: 10px 0 11px 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1398,7 +1450,7 @@ body {
   /* following class we are using toggle the dropdowns of each navlinks like products,about,utl groups,ect */
 
   .openDropdown {
-    background-color: white;
+    background-color: #1b1b1b;
     color: black;
     width: 90vw;
     height: -moz-fit-content;
@@ -1412,30 +1464,101 @@ body {
     overflow: scroll;
     transition: height 0.8;
   }
-
-  .navProduct > ul > li {
-    border-top: solid black 1px;
-  }
 }
 
 /* styling home page */
 
-.home > img {
+.home {
   width: 100vw;
-  height: 60vh;
+  height: auto;
 }
 
-@media (max-width: 800px) {
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+  overflow-x: visible;
+}
+
+.slide,
+.slide1 {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  background-color: #3498db;
+  color: #fff;
+  width: 100vw;
+  height: 75vh;
+  z-index: 1;
+  overflow-y: hidden;
+}
+
+.slideover {
+  position: absolute;
+  bottom: -30%;
+  height: 30vh;
+  width: 100vw;
+  -webkit-backdrop-filter: 12px;
+          backdrop-filter: 12px;
+  transition: bottom 0.5s;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.235);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+/* .slide1:hover .slideover {
+  position: absolute;
+  bottom: 0%;
+  transition: bottom 0.5s;
+} */
+
+@media (max-width: 900px) {
   .home > img {
     height: 45vh;
   }
+
+  .slide {
+    width: 100vw;
+    height: 45vh;
+    overflow-y: hidden;
+  }
+
+  .slide1 {
+    width: 100vw;
+    height: 45vh;
+    overflow-y: hidden;
+  }
+
+  .slideover {
+    position: absolute;
+    bottom: -15%;
+    height: 15vh;
+    width: 100vw;
+    -webkit-backdrop-filter: 12px;
+            backdrop-filter: 12px;
+    transition: bottom 0.5s;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.138);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+
+  /* .slide1:hover .slideover {
+    position: absolute;
+
+    bottom: 0%;
+    transition: bottom 0.5s;
+  } */
 }
 
 .SolutionBoxes {
   width: 65vw;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .Solutionsdiv {
@@ -1491,6 +1614,11 @@ body {
   margin-left: 110px;
   margin-top: 180px;
   background-color: white;
+}
+
+.solutionCard {
+  width: 600px;
+  height: 400px;
 }
 
 .hover\:text-red-600:hover {
@@ -1579,6 +1707,11 @@ body {
   .md\:text-start {
     text-align: start;
   }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1610,8 +1743,16 @@ body {
     justify-content: space-evenly;
   }
 
+  .lg\:border-t-0 {
+    border-top-width: 0px;
+  }
+
   .lg\:border-none {
     border-style: none;
+  }
+
+  .lg\:pt-2 {
+    padding-top: 0.5rem;
   }
 
   .lg\:text-white {

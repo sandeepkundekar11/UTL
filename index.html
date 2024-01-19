@@ -5,45 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UTL</title>
     <link rel="stylesheet" href="./src/output.css" />
+    <script type="module" src="index.js"></script>
   </head>
   <body class="overflow-x-hidden">
     <!-- Home Page -->
     <!-- creating Navigation bar -->
-    <nav class="w-screen">
+    <nav class="w-screen z-20">
       <marquee class="h-10 w-screen marquee flex items-center text-xl"
         >#18A/19, Doddanekundi Industrial Area,II Phase, Mahadevapura
         Post,Bangalore - 560 048,Karnataka, India. || #18A/19, Doddanekundi
         Industrial Area,II Phase, Mahadevapura Post,Bangalore - 560
         048,Karnataka, India.</marquee
       >
-      <div class="w-screen h-16 bg-white flex justify-end items-center text-xs">
+      <div
+        class="w-screen h-20 bg-gray-900 flex justify-end items-center text-xs z-30 absolute"
+      >
         <img class="w-8 float-start h-9 menu" src="./Images/menu.png" alt="" />
         <img
-          class="md:w-36 h-10 w-24 lg:mr-0 mr-6 md:h-14"
-          src="./Images//Logo.png"
+          class="md:w-36 h-10 w-24 lg:mr-0 mr-12 md:h-14"
+          src="./Images/Logo.png"
           alt=""
         />
 
         <ul class="flex lg:justify-center w-4/5 lg:ml-4 ml-0 navlist">
           <li
-            class="lg:border-none border-b-2 text-lg font-semibold items-center cursor-pointer mx-4 product"
+            class="text-lg font-semibold items-center cursor-pointer mx-4 product lg:pt-2 pt-4"
           >
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between text-white text-base">
               Products
               <img
-                class="w-6 h-5 lg:ml-2 productDropdown lg:hidden"
+                class="w-6 h-5 ml-2 productDropdown lg:hidden block"
                 src="./Images/Dropdown.png"
                 alt=""
               />
               <!-- the bellow image will come in to the picture when our screen width is 1024 -->
               <img
-                class="w-6 h-5 lg:ml-2 lg:block hidden"
+                class="w-4 h-4 lg:ml-2 lg:block hidden"
                 src="./Images/Dropdown.png"
                 alt=""
               />
             </div>
             <div class="navProduct flex lg:justify-evenly">
-              <ul class="h-auto space-y-3 lg:text-white text-slate-500">
+              <ul class="h-auto space-y-4 lg:text-white text-slate-500">
                 <li class="text-base lg:border-none lg:text-white text-red-600">
                   DWDM
                 </li>
@@ -51,13 +54,13 @@
                 <li class="hover:text-red-600"><a href="">Product 2</a></li>
                 <li class="hover:text-red-600"><a href="">Product 3</a></li>
               </ul>
-              <ul class="space-y-3 lg:text-white text-slate-500">
+              <ul class="space-y-4 lg:text-white text-slate-500">
                 <li class="text-base lg:text-white text-red-600">OTN</li>
                 <li class="hover:text-red-600"><a href="">Product 1</a></li>
                 <li class="hover:text-red-600"><a href="">Product 2</a></li>
                 <li class="hover:text-red-600"><a href="">Product 3</a></li>
               </ul>
-              <ul class="space-y-3 lg:text-white text-slate-500">
+              <ul class="space-y-4 lg:text-white text-slate-500">
                 <li class="text-base lg:text-white text-red-600">
                   Optical Line System (OLS)
                 </li>
@@ -65,7 +68,7 @@
                 <li class="hover:text-red-600"><a href="">Product 2</a></li>
                 <li class="hover:text-red-600"><a href="">Product 3</a></li>
               </ul>
-              <ul class="space-y-3 lg:text-white text-slate-500">
+              <ul class="space-y-4 lg:text-white text-slate-500">
                 <li class="text-base lg:text-white text-red-600">
                   GPON/NG-PON
                 </li>
@@ -100,9 +103,9 @@
             </div>
           </li>
           <li
-            class="lg:border-none border-b-2 text-lg font-semibold items-center cursor-pointer mx-4 solutions"
+            class="text-lg font-semibold items-center cursor-pointer mx-4 solutions lg:border-t-0 border-t lg:pt-2 pt-4"
           >
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between text-white text-base">
               Solutions
               <img
                 class="w-6 h-5 ml-2 solutionDropdown lg:hidden"
@@ -111,7 +114,7 @@
               />
               <!-- the bellow image will come in to the picture when our screen width is 1024 -->
               <img
-                class="w-6 h-5 lg:ml-2 lg:block hidden"
+                class="w-4 h-4 lg:ml-2 lg:block hidden"
                 src="./Images/Dropdown.png"
                 alt=""
               />
@@ -151,9 +154,9 @@
             </div>
           </li>
           <li
-            class="lg:border-none border-b-2 text-lg font-semibold items-center cursor-pointer mx-4 CompanyGroup"
+            class="text-lg font-semibold items-center cursor-pointer mx-4 CompanyGroup lg:border-t-0 border-t lg:pt-2 pt-4"
           >
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between text-white text-base">
               UTL Group Companies
               <img
                 class="w-6 h-5 ml-2 groupsDropdown lg:hidden"
@@ -162,7 +165,7 @@
               />
               <!-- the bellow image will come in to the picture when our screen width is 1024 -->
               <img
-                class="w-6 h-5 lg:ml-2 lg:block hidden"
+                class="w-4 h-4 lg:ml-2 lg:block hidden"
                 src="./Images/Dropdown.png"
                 alt=""
               />
@@ -190,18 +193,18 @@
           </li>
 
           <li
-            class="lg:border-none border-b-2 text-lg items-center cursor-pointer mx-4 about font-semibold"
+            class="text-lg items-center cursor-pointer mx-4 about font-semibold lg:border-t-0 border-t lg:pt-2 pt-4"
           >
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between text-white text-base">
               About Us
               <img
-                class="w-6 h-5 ml-2 aboutDropdown lg:hidden"
+                class="w-6 h-5 aboutDropdown lg:hidden"
                 src="./Images/Dropdown.png"
                 alt=""
               />
               <!-- the bellow image will come in to the picture when our screen width is 1024 -->
               <img
-                class="w-6 h-5 lg:ml-2 lg:block hidden"
+                class="w-4 h-4 ml-2 lg:block hidden"
                 src="./Images/Dropdown.png"
                 alt=""
               />
@@ -227,7 +230,7 @@
             </div>
           </li>
           <li
-            class="text-lg flex items-center cursor-pointer font-semibold mx-4"
+            class="text-base flex items-center cursor-pointer font-semibold mx-4 text-white lg:border-t-0 border-t lg:pt-2 pt-4"
           >
             Contact Us
           </li>
@@ -235,12 +238,38 @@
       </div>
     </nav>
 
-    <!-- home page -->
-    <div class="home w-full">
-      <img class="w-full h-2/3" src="./Images/img1.webp" alt="" />
+    <!----------------------------------------------------------------------- home page ------------------------------------------------------------->
+    <div class="home w-full overflow-x-hidden pt-16">
+      <!-- <img class="w-full h-2/3" src="./Images/img1.webp" alt="" /> -->
+      <div class="slider-track">
+        <div class="slide1">
+          <img class="slide w-full" src="./Images/home/dwdm.jpg" />
+          <div class="slideover z-30 w-screen md:text-3xl text-xl font-bold">
+            DWDM (Dense wavelength-division multiplexing)
+          </div>
+        </div>
+        <div class="slide1">
+          <img class="slide w-full" src="./Images/home/OLS.jpg" />
+          <div class="slideover z-30 w-screen md:text-3xl text-xl font-bold">
+            OLS (Optical Label Switching)
+          </div>
+        </div>
+        <div class="slide1">
+          <img class="slide w-full" src="./Images/home/OTN.jpeg" />
+          <div class="slideover z-30 w-screen md:text-3xl text-xl font-bold">
+            ABC
+          </div>
+        </div>
+      </div>
+      <!-- <div class="slider-track1 md:flex hidden w-full overflow-hidden">
+        <img class="slide1" src="./Images/home/dwdm.jpg" />
+        <img class="slide1" src="./Images/home/OLS.jpg" />
+        <img class="slide1" src="./Images/home/OTN.jpeg" />
+        <img class="slide1" src="./Images/home/OTN.jpeg" />
+      </div> -->
     </div>
 
-    <!-- solutions -->
+    <!----------------------------------------------------------------- solutions ---------------------------------------------------------->
 
     <div class="Solutionsdiv flex flex-col">
       <h1 class="text-center sm:text-5xl text-3xl font-semibold pt-12">
@@ -249,6 +278,17 @@
 
       <div class="SolutionBoxes m-auto flex flex-wrap justify-around">
         <div
+          class="solutionCard h-full border p-3 mt-8 shadow-xl hover:shadow-2xl"
+        >
+          <h1 class="font-semibold text-xl">State Wide Area Network</h1>
+          <img class="w-full h-2/3" src="./Images/Solution1.png" alt="" />
+          <span
+            >State Wide Area Network (SWAN) is a scheme approved by the
+            Government of India's Department of IT
+            <a class="font-semibold text-green-500" href="">Read more</a>
+          </span>
+        </div>
+        <!-- <div
           class="md:w-96 w-64 h-full border p-3 mt-8 shadow-xl hover:shadow-2xl"
         >
           <h1 class="font-semibold text-xl">State Wide Area Network</h1>
@@ -314,14 +354,14 @@
             Government of India's Department of IT
             <a class="font-semibold text-green-500" href="">Read more</a>
           </span>
-        </div>
+        </div> -->
       </div>
       <a class="text-center mt-4 text-xl font-semibold text-red-600" href=""
         >See More ...</a
       >
     </div>
 
-    <!-- About page  -->
+    <!--------------------------------------------------------------------- About page  ------------------------------------------------------>
     <div class="AboutPage bg-white">
       <h1 class="text-center sm:text-5xl text-3xl font-semibold pt-12">
         About Us
@@ -331,7 +371,7 @@
         multiple sectors,
       </p>
       <div
-        class="aboutBoxes m-auto flex md:flex-row flex-col md:justify-between mt-12"
+        class="aboutBoxes m-auto flex md:flex-row flex-col md:justify-between text-white text-xl mt-12"
       >
         <a
           href=""
@@ -430,80 +470,6 @@
     </div>
 
     <!-- javascript -->
-    <script>
-      const FooterDropdownBtn = document.querySelector("#footerDropDown");
-      let CompliancesDropdown = document.querySelector(".Compliances");
-      FooterDropdownBtn.addEventListener("click", () => {
-        if (CompliancesDropdown.style.display === "block") {
-          CompliancesDropdown.style.display = "none";
-        } else {
-          CompliancesDropdown.style.display = "block";
-        }
-      });
-      // adding menu dropdown
-      let menu = document.querySelector(".menu");
-      let navlist = document.querySelector(".navlist");
-      menu.addEventListener("click", () => {
-        if (navlist.className.includes("navlist")) {
-          navlist.classList.remove("navlist");
-          navlist.classList.add("showNavbar");
-        } else {
-          navlist.classList.add("navlist");
-          navlist.classList.remove("showNavbar");
-        }
-      });
-
-      // adding dropdown to each dropdown
-      // openDropdown
-      let productDropdownBtn = document.querySelector(".productDropdown");
-      let navProduct = document.querySelector(".navProduct");
-      productDropdownBtn.addEventListener("click", () => {
-        if (navProduct.className.includes("navProduct")) {
-          navProduct.classList.remove("navProduct");
-          navProduct.classList.add("openDropdown");
-        } else {
-          navProduct.classList.add("navProduct");
-          navProduct.classList.remove("openDropdown");
-        }
-      });
-
-      let solutionDropdownBtn = document.querySelector(".solutionDropdown");
-      let navSolution = document.querySelector(".navSolution");
-
-      solutionDropdownBtn.addEventListener("click", () => {
-        if (navSolution.className.includes("navSolution")) {
-          navSolution.classList.remove("navSolution");
-          navSolution.classList.add("openDropdown");
-        } else {
-          navSolution.classList.add("navSolution");
-          navSolution.classList.remove("openDropdown");
-        }
-      });
-
-      let groupsDropdownBtn = document.querySelector(".groupsDropdown");
-      let navGroups = document.querySelector(".navGroups");
-      groupsDropdownBtn.addEventListener("click", () => {
-        if (navGroups.className.includes("navGroups")) {
-          navGroups.classList.remove("navGroups");
-          navGroups.classList.add("openDropdown");
-        } else {
-          navGroups.classList.add("navGroups");
-          navGroups.classList.remove("openDropdown");
-        }
-      });
-
-      let aboutDropdownBtn = document.querySelector(".aboutDropdown");
-      let navAbout = document.querySelector(".navAbout");
-
-      aboutDropdownBtn.addEventListener("click", () => {
-        if (navAbout.className.includes("navAbout")) {
-          navAbout.classList.remove("navAbout");
-          navAbout.classList.add("openDropdown");
-        } else {
-          navAbout.classList.add("navAbout");
-          navAbout.classList.remove("openDropdown");
-        }
-      });
-    </script>
+    <!-- <script></script> -->
   </body>
 </html>
