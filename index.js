@@ -107,3 +107,76 @@ document.addEventListener("DOMContentLoaded", function () {
       interval = setInterval(nextSlide, 3000);
     });
 });
+
+// setting home page background text
+let home = document.querySelector(".home");
+let doc = [
+  {
+    id: 1,
+    comp: `<div
+    class="md:w-4/5 w-11/12 h-4/5 md:pt-20 md:pl-5 flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom"
+    style="animation: fadeInUp 1s ease-out"
+  >
+    <h1
+      class="homeHaeding text-start lg:text-7xl sm:text-4xl md:ml-0 ml-10 text-4xl md:w-5/6 w-full text-white text-wrap   font-bold"
+    >
+      Transforming Data Networks with DWDM Excellence
+    </h1>
+    <p
+      class="homeHaeding md:text-3xl text-xl wmd:w-5/6 w-fulltext-start mt-7 md:ml-0 ml-6 text-blue-100 font-semibold transition-opacity duration-500 transform origin-bottom"
+      style="animation: fadeInUp 1s ease-out"
+    >
+      Unleash unparalleled speed, reliability, and scalability in your
+      communication infrastructure.
+    </p>
+  </div>`,
+  },
+  {
+    id: 2,
+    comp: `  <div
+    class="md:w-4/5 w-11/12 h-4/5 md:pt-20 md:pl-5 md:ml-0 ml-6 flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom "
+    style="animation: fadeInUp 1s ease-out"
+  >
+    <h1
+      class="homeHaeding text-start lg:text-7xl sm:text-4xl text-4xl md:ml-0 ml-1 md:w-5/6 w-full text-white text-wrap  font-bold"
+    >
+    Seamless Connectivity, Enhanced Performance
+    </h1>
+    <p
+      class="homeHaeding md:text-3xl text-xl md:w-5/6  w-full text-start mt-7 text-blue-100 font-semibold transition-opacity duration-500 transform origin-bottom"
+      style="animation: fadeInUp 1s ease-out"
+    >
+    Experience the future of data transmission with our advanced DWDM system solutions.
+    </p>
+  </div>`,
+  },
+  {
+    id: 3,
+    comp: `<div
+    class="md:w-4/5 w-11/12 h-4/5 md:pt-20 md:pl-5  flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom"
+    style="animation: fadeInUp 1s ease-out"
+  >
+    <h1
+      class="homeHaeding lg:text-7xl sm:text-4xl text-4xl md:ml-0 ml-10 md:w-5/6 w-full text-white  font-bold "
+    >
+    DWDM Solutions for a Connected Tomorrow
+    </h1>
+    <p
+      class="homeHaeding md:text-3xl text-xl md:ml-0 ml-8 md:w-5/6 w-full text-start mt-7 text-blue-100 font-semibold transition-opacity duration-500 transform origin-bottom"
+      style="animation: fadeInUp 1s ease-out"
+    >
+    Building networks that bridge gaps, ensuring a fast and reliable flow of information    </p>
+  </div>`,
+  },
+];
+home.innerHTML = doc[0].comp;
+const getText = () => {
+  let count = 0;
+  // home.innerHTML = doc[count].comp;
+  setInterval(() => {
+    count = (count + 1) % doc.length; // Reset count when it reaches the maximum index
+    home.innerHTML = doc[count].comp;
+  }, 5000);
+};
+getText();
+setInterval(getText, 15000);

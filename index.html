@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UTL</title>
     <link rel="stylesheet" href="./src/output.css" />
-    <script type="module" src="index.js"></script>
+    <script type="module" src="./index.js"></script>
   </head>
   <body class="overflow-x-hidden">
     <!-- Home Page -->
     <!-- creating Navigation bar -->
-    <nav class="w-screen z-20">
+    <nav class="w-screen z-20 sticky top-0">
       <marquee class="h-10 w-screen marquee flex items-center text-xl"
         >#18A/19, Doddanekundi Industrial Area,II Phase, Mahadevapura
         Post,Bangalore - 560 048,Karnataka, India. || #18A/19, Doddanekundi
@@ -18,7 +18,7 @@
         048,Karnataka, India.</marquee
       >
       <div
-        class="w-screen h-20 bg-gray-900 flex justify-end items-center text-xs z-30 absolute"
+        class="w-screen h-20 navbar transition ease-in duration-300 hover:opacity-100 hover:bg-gray-800 flex justify-end items-center text-xs z-30 absolute"
       >
         <img class="w-8 float-start h-9 menu" src="./Images/menu.png" alt="" />
         <img
@@ -31,7 +31,7 @@
           <li
             class="text-lg font-semibold items-center cursor-pointer mx-4 product lg:pt-2 pt-4"
           >
-            <div class="flex items-center justify-between text-white text-base">
+            <div class="flex items-center justify-between text-white text-lg">
               Products
               <img
                 class="w-6 h-5 ml-2 productDropdown lg:hidden block"
@@ -105,7 +105,7 @@
           <li
             class="text-lg font-semibold items-center cursor-pointer mx-4 solutions lg:border-t-0 border-t lg:pt-2 pt-4"
           >
-            <div class="flex items-center justify-between text-white text-base">
+            <div class="flex items-center justify-between text-white text-lg">
               Solutions
               <img
                 class="w-6 h-5 ml-2 solutionDropdown lg:hidden"
@@ -156,7 +156,7 @@
           <li
             class="text-lg font-semibold items-center cursor-pointer mx-4 CompanyGroup lg:border-t-0 border-t lg:pt-2 pt-4"
           >
-            <div class="flex items-center justify-between text-white text-base">
+            <div class="flex items-center justify-between text-white text-lg">
               UTL Group Companies
               <img
                 class="w-6 h-5 ml-2 groupsDropdown lg:hidden"
@@ -195,7 +195,7 @@
           <li
             class="text-lg items-center cursor-pointer mx-4 about font-semibold lg:border-t-0 border-t lg:pt-2 pt-4"
           >
-            <div class="flex items-center justify-between text-white text-base">
+            <div class="flex items-center justify-between text-white text-lg">
               About Us
               <img
                 class="w-6 h-5 aboutDropdown lg:hidden"
@@ -230,7 +230,7 @@
             </div>
           </li>
           <li
-            class="text-base flex items-center cursor-pointer font-semibold mx-4 text-white lg:border-t-0 border-t lg:pt-2 pt-4"
+            class="text-lg flex items-center cursor-pointer font-semibold mx-4 text-white lg:border-t-0 border-t lg:pt-2 pt-4"
           >
             Contact Us
           </li>
@@ -239,34 +239,16 @@
     </nav>
 
     <!----------------------------------------------------------------------- home page ------------------------------------------------------------->
-    <div class="home w-full overflow-x-hidden pt-16">
-      <!-- <img class="w-full h-2/3" src="./Images/img1.webp" alt="" /> -->
-      <div class="slider-track">
-        <div class="slide1">
-          <img class="slide w-full" src="./Images/home/dwdm.jpg" />
-          <div class="slideover z-30 w-screen md:text-3xl text-xl font-bold">
-            DWDM (Dense wavelength-division multiplexing)
-          </div>
-        </div>
-        <div class="slide1">
-          <img class="slide w-full" src="./Images/home/OLS.jpg" />
-          <div class="slideover z-30 w-screen md:text-3xl text-xl font-bold">
-            OLS (Optical Label Switching)
-          </div>
-        </div>
-        <div class="slide1">
-          <img class="slide w-full" src="./Images/home/OTN.jpeg" />
-          <div class="slideover z-30 w-screen md:text-3xl text-xl font-bold">
-            ABC
-          </div>
-        </div>
-      </div>
-      <!-- <div class="slider-track1 md:flex hidden w-full overflow-hidden">
-        <img class="slide1" src="./Images/home/dwdm.jpg" />
-        <img class="slide1" src="./Images/home/OLS.jpg" />
-        <img class="slide1" src="./Images/home/OTN.jpeg" />
-        <img class="slide1" src="./Images/home/OTN.jpeg" />
-      </div> -->
+    <div class="home w-full overflow-x-hidden pt-16"></div>
+    <div
+      class="w-full md:h-40 h-28 bg-slate-950 flex justify-center items-center"
+    >
+      <h1
+        class="md:text-2xl text-xl text-white text-center font-medium leading-9"
+      >
+        Connecting Beyond Limits: DWDM <br />
+        Services that Inspire Growth
+      </h1>
     </div>
 
     <!----------------------------------------------------------------- solutions ---------------------------------------------------------->
@@ -278,16 +260,20 @@
 
       <div class="SolutionBoxes m-auto flex flex-wrap justify-around">
         <div
-          class="solutionCard h-full border p-3 mt-8 shadow-xl hover:shadow-2xl"
+          class="solutionCard h-full border p-3 mt-8 flex shadow-xl hover:shadow-2xl"
         >
-          <h1 class="font-semibold text-xl">State Wide Area Network</h1>
-          <img class="w-full h-2/3" src="./Images/Solution1.png" alt="" />
-          <span
-            >State Wide Area Network (SWAN) is a scheme approved by the
-            Government of India's Department of IT
+          <img class="lg:w-2/4" src="./Images/Solution1.png" alt="" />
+          <span class="pl-3">
+            <h1 class="font-semibold text-3xl">State Wide Area Network</h1>
+
+            <p class="text-xl mt-7">
+              State Wide Area Network (SWAN) is a scheme approved by the
+              Government of India's Department of IT
+            </p>
             <a class="font-semibold text-green-500" href="">Read more</a>
           </span>
         </div>
+
         <!-- <div
           class="md:w-96 w-64 h-full border p-3 mt-8 shadow-xl hover:shadow-2xl"
         >
@@ -356,9 +342,6 @@
           </span>
         </div> -->
       </div>
-      <a class="text-center mt-4 text-xl font-semibold text-red-600" href=""
-        >See More ...</a
-      >
     </div>
 
     <!--------------------------------------------------------------------- About page  ------------------------------------------------------>
@@ -470,6 +453,6 @@
     </div>
 
     <!-- javascript -->
-    <!-- <script></script> -->
+    <script></script>
   </body>
 </html>
