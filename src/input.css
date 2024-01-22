@@ -12,11 +12,14 @@ body {
   background-color: rgba(199, 196, 226, 1);
 }
 /* styling navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.484);
+}
 .navProduct {
-  width: 850px;
-  background-color: #393939c8;
+  width: 980px;
+  background-color: #2b2b2ce1;
   position: absolute;
-  top: 7rem;
+  top: 4.8rem;
   left: 6%;
   height: 0px;
   overflow: hidden;
@@ -35,11 +38,11 @@ body {
 .navGroups,
 .navAbout {
   position: absolute;
-  background-color: #393939c8;
+  background-color: #2b2b2ce1;
   /* margin-left: -20px; */
   height: 0px;
   overflow: hidden;
-  top: 7rem;
+  top: 4.8rem;
   font-size: 14px;
   transition: height 0.4s;
 }
@@ -68,33 +71,33 @@ body {
 }
 
 /* adding the Responsiveness to Navigation bar */
-@media (max-width: 990px) {
+@media (max-width: 1024px) {
   .showNavbar {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 6.5rem;
+    top: 4rem;
     justify-content: baseline;
-    background-color: white;
+    background-color: #1b1b1b;
     width: 100vw;
-    height: 16rem;
+    height: 21rem;
     overflow: scroll;
     text-align: center;
     transition: 0.2s height;
+    padding-top: 1rem;
   }
   .navlist {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 6.5rem;
+    top: 4rem;
     justify-content: center;
-    background-color: white;
+    /* background-color: white; */
+    background-color: #1b1b1b;
     width: 100vw;
     height: 0;
     overflow: hidden;
     text-align: center;
-    /* padding-bottom: 12px; */
-    /* height: 0; */
     transition: 0.2s height;
   }
   /* .product */
@@ -106,7 +109,8 @@ body {
   .navAbout,
   .navProduct {
     /* border-top: solid black 1px; */
-    background-color: white;
+    font-size: 18px;
+    background-color: #1b1b1b;
     color: black;
     width: 90vw;
     height: 0px;
@@ -115,7 +119,7 @@ body {
     position: static; /* Change to your desired positioning for smaller screens */
     top: auto;
     left: auto;
-    margin: 8px 0 8px 0;
+    margin: 10px 0 11px 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -136,7 +140,7 @@ body {
   }
   /* following class we are using toggle the dropdowns of each navlinks like products,about,utl groups,ect */
   .openDropdown {
-    background-color: white;
+    background-color: #1b1b1b;
     color: black;
     width: 90vw;
     height: fit-content;
@@ -149,26 +153,130 @@ body {
     overflow: scroll;
     transition: height 0.8;
   }
-  .navProduct > ul > li {
-    border-top: solid black 1px;
-  }
 }
 
 /* styling home page */
-.home > img {
+.home {
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
+  animation-name: HomePage;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-@media (max-width: 800px) {
+
+@media (max-width: 640px) {
+  .home {
+    width: 100vw;
+    height: 60vh;
+    animation-name: HomePage;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.homeHaeding {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 18px 12px 13px #000000;
+  font-style: oblique;
+}
+@keyframes HomePage {
+  0%,
+  100% {
+    background-image: url("../Images/home/home1.jpg");
+  }
+  33% {
+    background-image: url("../Images/home/home2.jpg");
+  }
+  66% {
+    background-image: url("../Images/home/home3.jpg");
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+  overflow-x: visible;
+}
+.slide,
+.slide1 {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  background-color: #3498db;
+  color: #fff;
+  width: 100vw;
+  height: 75vh;
+  z-index: 1;
+  overflow-y: hidden;
+}
+.slideover {
+  position: absolute;
+  bottom: -30%;
+  height: 30vh;
+  width: 100vw;
+  backdrop-filter: 12px;
+  transition: bottom 0.5s;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.235);
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 900px) {
   .home > img {
     height: 45vh;
   }
+  .slide {
+    width: 100vw;
+    height: 45vh;
+    overflow-y: hidden;
+  }
+  .slide1 {
+    width: 100vw;
+    height: 45vh;
+    overflow-y: hidden;
+  }
+  .slideover {
+    position: absolute;
+    bottom: -15%;
+    height: 15vh;
+    width: 100vw;
+    backdrop-filter: 12px;
+    transition: bottom 0.5s;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.138);
+    backdrop-filter: blur(10px);
+  }
+  /* .slide1:hover .slideover {
+    position: absolute;
+
+    bottom: 0%;
+    transition: bottom 0.5s;
+  } */
 }
 .SolutionBoxes {
   width: 65vw;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .Solutionsdiv {
   background-color: #f3f2ff;
@@ -213,4 +321,9 @@ body {
   margin-left: 110px;
   margin-top: 180px;
   background-color: white;
+}
+
+.solutionCard {
+  width: 80vw;
+  height: 400px;
 }
