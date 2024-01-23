@@ -73,40 +73,6 @@ aboutDropdownBtn.addEventListener("click", () => {
 });
 
 // slider js
-document.addEventListener("DOMContentLoaded", function () {
-  const sliderTrack = document.querySelector(".slider-track");
-  const slides = document.querySelectorAll(".slide");
-  const slideWidth = slides[0].clientWidth;
-  let currentIndex = 0;
-
-  function updateSlider() {
-    sliderTrack.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
-  }
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateSlider();
-  }
-
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateSlider();
-  }
-
-  setInterval(nextSlide, 3000); // Auto slide every 3 seconds
-
-  document
-    .querySelector(".slider-container")
-    .addEventListener("mouseenter", () => {
-      clearInterval(interval);
-    });
-
-  document
-    .querySelector(".slider-container")
-    .addEventListener("mouseleave", () => {
-      interval = setInterval(nextSlide, 3000);
-    });
-});
 
 // setting home page background text
 let home = document.querySelector(".home");
@@ -114,11 +80,11 @@ let doc = [
   {
     id: 1,
     comp: `<div
-    class="md:w-4/5 w-11/12 h-4/5 md:pt-20 md:pl-5 flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom"
+    class="md:w-4/5 w-11/12 md:h-4/5 h-full md:pt-20 md:pl-5 flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom"
     style="animation: fadeInUp 1s ease-out"
   >
     <h1
-      class="homeHaeding text-start lg:text-7xl sm:text-4xl md:ml-0 ml-10 text-4xl md:w-5/6 w-full text-white text-wrap   font-bold"
+      class="homeHaeding text-start lg:text-7xl sm:text-4xl md:ml-0 ml-10 text-4xl md:w-5/6 w-full text-blue-200 text-wrap   font-bold"
     >
       Transforming Data Networks with DWDM Excellence
     </h1>
@@ -134,11 +100,11 @@ let doc = [
   {
     id: 2,
     comp: `  <div
-    class="md:w-4/5 w-11/12 h-4/5 md:pt-20 md:pl-5 md:ml-0 ml-6 flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom "
+    class="md:w-4/5 w-11/12 md:h-4/5 h-full md:pt-20 md:pl-5 md:ml-0 ml-6 flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom "
     style="animation: fadeInUp 1s ease-out"
   >
     <h1
-      class="homeHaeding text-start lg:text-7xl sm:text-4xl text-4xl md:ml-0 ml-1 md:w-5/6 w-full text-white text-wrap  font-bold"
+      class="homeHaeding text-start lg:text-7xl sm:text-4xl text-4xl md:ml-0 ml-1 md:w-5/6 w-full text-red-500 text-wrap  font-bold"
     >
     Seamless Connectivity, Enhanced Performance
     </h1>
@@ -153,7 +119,7 @@ let doc = [
   {
     id: 3,
     comp: `<div
-    class="md:w-4/5 w-11/12 h-4/5 md:pt-20 md:pl-5  flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom"
+    class="md:w-4/5 w-11/12 md:h-4/5 h-full md:pt-20 md:pl-5  flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom"
     style="animation: fadeInUp 1s ease-out"
   >
     <h1
@@ -180,3 +146,17 @@ const getText = () => {
 };
 getText();
 setInterval(getText, 15000);
+
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector(".navbar");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      navbar.classList.add("bg-black-on-scroll");
+      navbar.classList.remove("bg-transparent");
+    } else {
+      navbar.classList.remove("bg-black-on-scroll");
+      navbar.classList.add("bg-transparent");
+    }
+  });
+});
