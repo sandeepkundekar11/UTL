@@ -879,18 +879,6 @@ input[type="range"]::-ms-fill-lower {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.sticky {
-  position: sticky;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .z-20 {
   z-index: 20;
 }
@@ -989,20 +977,12 @@ input[type="range"]::-ms-fill-lower {
   height: 5rem;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .h-32 {
   height: 8rem;
 }
 
 .h-4 {
   height: 1rem;
-}
-
-.h-4\/5 {
-  height: 80%;
 }
 
 .h-5 {
@@ -1025,12 +1005,32 @@ input[type="range"]::-ms-fill-lower {
   height: 100%;
 }
 
+.h-2\/5 {
+  height: 40%;
+}
+
+.h-1\/5 {
+  height: 20%;
+}
+
+.h-2\/6 {
+  height: 33.333333%;
+}
+
 .w-1\/2 {
   width: 50%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-11\/12 {
   width: 91.666667%;
+}
+
+.w-2\/4 {
+  width: 50%;
 }
 
 .w-24 {
@@ -1057,12 +1057,20 @@ input[type="range"]::-ms-fill-lower {
   width: 2rem;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-screen {
   width: 100vw;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .origin-bottom {
@@ -1135,6 +1143,10 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1188,14 +1200,23 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-slate-950 {
+.bg-slate-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
 .p-3 {
@@ -1314,6 +1335,11 @@ input[type="range"]::-ms-fill-lower {
   color: rgb(225 239 254 / var(--tw-text-opacity));
 }
 
+.text-blue-200 {
+  --tw-text-opacity: 1;
+  color: rgb(195 221 253 / var(--tw-text-opacity));
+}
+
 .text-blue-400 {
   --tw-text-opacity: 1;
   color: rgb(118 169 250 / var(--tw-text-opacity));
@@ -1322,6 +1348,11 @@ input[type="range"]::-ms-fill-lower {
 .text-green-500 {
   --tw-text-opacity: 1;
   color: rgb(14 159 110 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(240 82 82 / var(--tw-text-opacity));
 }
 
 .text-red-600 {
@@ -1397,7 +1428,23 @@ body {
 /* styling navbar */
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.484);
+  position: fixed;
+  background-color: rgba(16, 16, 16, 0.377);
+}
+
+.allNavbar {
+  position: fixed;
+  top: 0%;
+}
+
+.bg-transparent {
+  background-color: rgba(16, 16, 16, 0.377);
+}
+
+.bg-black-on-scroll {
+  background-color: rgb(15, 10, 20);
+  position: fixed;
+  top: 2.5rem;
 }
 
 .navProduct {
@@ -1469,13 +1516,12 @@ body {
     position: absolute;
     top: 4rem;
     justify-content: baseline;
-    background-color: #1b1b1b;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
     width: 100vw;
     height: 21rem;
     overflow: scroll;
     text-align: center;
     transition: 0.2s height;
-    padding-top: 1rem;
   }
 
   .navlist {
@@ -1484,8 +1530,7 @@ body {
     position: absolute;
     top: 4rem;
     justify-content: center;
-    /* background-color: white; */
-    background-color: #1b1b1b;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
     width: 100vw;
     height: 0;
     overflow: hidden;
@@ -1558,7 +1603,7 @@ body {
 
 .home {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   animation-name: HomePage;
   animation-duration: 15s;
   animation-iteration-count: infinite;
@@ -1571,7 +1616,7 @@ body {
 @media (max-width: 640px) {
   .home {
     width: 100vw;
-    height: 60vh;
+    height: 75vh;
     animation-name: HomePage;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -1615,79 +1660,63 @@ body {
   }
 }
 
-.slider-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  position: relative;
-  z-index: 1;
-  overflow-x: visible;
-}
-
-.slide,
-.slide1 {
-  min-width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  text-align: center;
-  background-color: #3498db;
-  color: #fff;
-  width: 100vw;
-  height: 75vh;
-  z-index: 1;
-  overflow-y: hidden;
-}
-
-.slideover {
+.leftbtn {
   position: absolute;
-  bottom: -30%;
-  height: 30vh;
-  width: 100vw;
-  -webkit-backdrop-filter: 12px;
-          backdrop-filter: 12px;
-  transition: bottom 0.5s;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.235);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  left: 2%;
+  margin-top: -25vh;
+  width: 3rem;
+  height: 3rem;
 }
 
-@media (max-width: 900px) {
-  .home > img {
-    height: 45vh;
+.rightbtn {
+  position: absolute;
+  right: 2%;
+  margin-top: -25vh;
+  width: 3rem;
+  height: 3rem;
+}
+
+.leftbtn:hover,
+.rightbtn:hover {
+  background-color: rgb(34, 34, 34);
+}
+
+.utlProductsSlider {
+  width: calc(100vw * 14);
+  height: 50vh;
+  margin-top: 0;
+  display: flex;
+  transition: transform 1s linear;
+}
+
+.utlProductsSliderRepeat {
+  width: calc(100vw * 14);
+  height: 50vh;
+  display: flex;
+  transform: translateX(100vw);
+}
+
+.utlProductsSliderContainer {
+  width: 100vw;
+  margin: auto;
+  overflow: hidden;
+}
+
+@keyframes productSlider {
+  from {
+    transform: translateX(0);
   }
 
-  .slide {
-    width: 100vw;
-    height: 45vh;
-    overflow-y: hidden;
+  to {
+    transform: translateX(-100%);
   }
+}
 
-  .slide1 {
-    width: 100vw;
-    height: 45vh;
-    overflow-y: hidden;
-  }
-
-  .slideover {
-    position: absolute;
-    bottom: -15%;
-    height: 15vh;
-    width: 100vw;
-    -webkit-backdrop-filter: 12px;
-            backdrop-filter: 12px;
-    transition: bottom 0.5s;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.138);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-  }
-
-  /* .slide1:hover .slideover {
-    position: absolute;
-
-    bottom: 0%;
-    transition: bottom 0.5s;
-  } */
+.box {
+  flex: 1;
+  height: 40vh;
+  text-align: center;
+  color: white;
 }
 
 .SolutionBoxes {
@@ -1817,8 +1846,16 @@ body {
     height: 3.5rem;
   }
 
-  .md\:h-40 {
-    height: 10rem;
+  .md\:h-4\/5 {
+    height: 80%;
+  }
+
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:w-2\/4 {
+    width: 50%;
   }
 
   .md\:w-2\/6 {
@@ -1871,11 +1908,6 @@ body {
 
   .md\:text-start {
     text-align: start;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-3xl {

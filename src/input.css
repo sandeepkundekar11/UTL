@@ -13,7 +13,21 @@ body {
 }
 /* styling navbar */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.484);
+  position: fixed;
+  background-color: rgba(16, 16, 16, 0.377);
+}
+.allNavbar {
+  position: fixed;
+  top: 0%;
+}
+.bg-transparent {
+  background-color: rgba(16, 16, 16, 0.377);
+}
+
+.bg-black-on-scroll {
+  background-color: rgb(15, 10, 20);
+  position: fixed;
+  top: 2.5rem;
 }
 .navProduct {
   width: 980px;
@@ -78,13 +92,12 @@ body {
     position: absolute;
     top: 4rem;
     justify-content: baseline;
-    background-color: #1b1b1b;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
     width: 100vw;
     height: 21rem;
     overflow: scroll;
     text-align: center;
     transition: 0.2s height;
-    padding-top: 1rem;
   }
   .navlist {
     display: flex;
@@ -92,8 +105,7 @@ body {
     position: absolute;
     top: 4rem;
     justify-content: center;
-    /* background-color: white; */
-    background-color: #1b1b1b;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
     width: 100vw;
     height: 0;
     overflow: hidden;
@@ -158,7 +170,7 @@ body {
 /* styling home page */
 .home {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   animation-name: HomePage;
   animation-duration: 15s;
   animation-iteration-count: infinite;
@@ -171,7 +183,7 @@ body {
 @media (max-width: 640px) {
   .home {
     width: 100vw;
-    height: 60vh;
+    height: 75vh;
     animation-name: HomePage;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -208,69 +220,56 @@ body {
     transform: translateY(0);
   }
 }
-.slider-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  position: relative;
-  z-index: 1;
-  overflow-x: visible;
-}
-.slide,
-.slide1 {
-  min-width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  text-align: center;
-  background-color: #3498db;
-  color: #fff;
-  width: 100vw;
-  height: 75vh;
-  z-index: 1;
-  overflow-y: hidden;
-}
-.slideover {
+.leftbtn {
   position: absolute;
-  bottom: -30%;
-  height: 30vh;
+  left: 2%;
+  margin-top: -25vh;
+  width: 3rem;
+  height: 3rem;
+}
+.rightbtn {
+  position: absolute;
+  right: 2%;
+  margin-top: -25vh;
+  width: 3rem;
+  height: 3rem;
+}
+.leftbtn:hover,
+.rightbtn:hover {
+  background-color: rgb(34, 34, 34);
+}
+.utlProductsSlider {
+  width: calc(100vw * 14);
+  height: 50vh;
+  margin-top: 0;
+  display: flex;
+  transition: transform 1s linear;
+}
+.utlProductsSliderRepeat {
+  width: calc(100vw * 14);
+  height: 50vh;
+  display: flex;
+  transform: translateX(100vw);
+}
+.utlProductsSliderContainer {
   width: 100vw;
-  backdrop-filter: 12px;
-  transition: bottom 0.5s;
+  margin: auto;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.235);
-  backdrop-filter: blur(10px);
+}
+@keyframes productSlider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-@media (max-width: 900px) {
-  .home > img {
-    height: 45vh;
-  }
-  .slide {
-    width: 100vw;
-    height: 45vh;
-    overflow-y: hidden;
-  }
-  .slide1 {
-    width: 100vw;
-    height: 45vh;
-    overflow-y: hidden;
-  }
-  .slideover {
-    position: absolute;
-    bottom: -15%;
-    height: 15vh;
-    width: 100vw;
-    backdrop-filter: 12px;
-    transition: bottom 0.5s;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.138);
-    backdrop-filter: blur(10px);
-  }
-  /* .slide1:hover .slideover {
-    position: absolute;
-
-    bottom: 0%;
-    transition: bottom 0.5s;
-  } */
+.box {
+  flex: 1;
+  height: 40vh;
+  text-align: center;
+  color: white;
 }
 .SolutionBoxes {
   width: 65vw;
