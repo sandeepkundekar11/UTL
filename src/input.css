@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
   padding: 0;
   margin: 0;
@@ -170,7 +171,7 @@ body {
 /* styling home page */
 .home {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   animation-name: HomePage;
   animation-duration: 15s;
   animation-iteration-count: infinite;
@@ -220,75 +221,25 @@ body {
     transform: translateY(0);
   }
 }
-.leftbtn {
-  position: absolute;
-  left: 2%;
-  margin-top: -25vh;
-  width: 3rem;
-  height: 3rem;
-}
-.rightbtn {
-  position: absolute;
-  right: 2%;
-  margin-top: -25vh;
-  width: 3rem;
-  height: 3rem;
-}
-.leftbtn:hover,
-.rightbtn:hover {
-  background-color: rgb(34, 34, 34);
-}
-.utlProductsSlider {
-  width: calc(100vw * 14);
-  height: 50vh;
-  margin-top: 0;
-  display: flex;
-  transition: transform 1s linear;
-}
-.utlProductsSliderRepeat {
-  width: calc(100vw * 14);
-  height: 50vh;
-  display: flex;
-  transform: translateX(100vw);
-}
-.utlProductsSliderContainer {
-  width: 100vw;
+
+/* solution page */
+.SolutionsContainer {
+  width: 80vw;
   margin: auto;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
+  justify-content: center;
 }
-@keyframes productSlider {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+.swiper-slide1 {
+  background-color: #f6f6f6 !important;
+  transition: 0.4s background-color ease-in-out;
+}
+.swiper-slide1:hover {
+  background-color: #e2e2e2 !important;
+  transition: 0.4s background-color ease-in-out;
 }
 
-.box {
-  flex: 1;
-  height: 40vh;
-  text-align: center;
-  color: white;
-}
-.SolutionBoxes {
-  width: 65vw;
-  margin: auto;
-  display: flex;
-  /* flex-wrap: wrap; */
-}
-.Solutionsdiv {
-  background-color: #f3f2ff;
-  padding-bottom: 3rem;
-}
-@media (max-width: 1024px) {
-  .SolutionBoxes {
-    width: 100vw;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 /* styling About page */
 .aboutBoxes {
   width: 65vw;
@@ -298,31 +249,72 @@ body {
     width: 100vw;
   }
 }
-/* footPrint */
-.footPrint > img {
-  width: 60vw;
+/* swaper */
+.utlProductsSliderContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(234, 234, 234);
+  height: 60vh;
 }
-@media (max-width: 900px) {
-  .footPrint > img {
-    width: 100vw;
+.swiper {
+  width: 90vw;
+  height: 45vh;
+  margin: auto;
+}
+.swiper-slide {
+  width: 300px;
+  height: 45vh;
+  /* border: solid rgb(96, 96, 96) 1px; */
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 18px;
+  overflow: hidden;
+  background: rgb(246, 246, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
   }
 }
-.footer {
-  width: 100vw;
-  height: auto;
-  background-color: #3a3a3a;
-  color: white;
-}
-/* footer dropdown */
-.Compliances {
-  display: none;
-  position: absolute;
-  margin-left: 110px;
-  margin-top: 180px;
-  background-color: white;
-}
 
-.solutionCard {
-  width: 80vw;
-  height: 400px;
+/* footPrint */
+.footer {
+  background-color: #24292d;
+}
+.footer-list {
+  width: 90vw;
+  margin: auto;
+  justify-content: space-around;
+}
+.Logo-and-Icon {
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
+}
+.footer-list > div > li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: sans-serif arial "Source Sans Pro";
+  color: #7f7f7f;
+  transition: 0.2s transform linear;
+}
+.footer-list > div {
+  min-width: 320px;
+  flex: 4;
+}
+.footer-list > div > li:hover {
+  transition: 0.2s transform linear;
+  transform: translateX(10px);
+}
+.footerBottom {
+  padding-top: 8px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top: solid gray 1px;
 }

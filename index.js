@@ -1,12 +1,5 @@
-const FooterDropdownBtn = document.querySelector("#footerDropDown");
 let CompliancesDropdown = document.querySelector(".Compliances");
-FooterDropdownBtn.addEventListener("click", () => {
-  if (CompliancesDropdown.style.display === "block") {
-    CompliancesDropdown.style.display = "none";
-  } else {
-    CompliancesDropdown.style.display = "block";
-  }
-});
+
 // adding menu dropdown
 let menu = document.querySelector(".menu");
 let navlist = document.querySelector(".navlist");
@@ -160,3 +153,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// soluttion page Slider
+
+let SliderContainar = document.querySelector(".sliderContainer");
+let SolutionWidthCount = 1;
+let SlideLeftsolutionCard = () => {
+  SliderContainar.style.transform = `translateX(${-SolutionWidthCount * 65}vw)`;
+  console.log(SolutionWidthCount);
+  SolutionWidthCount++;
+};
+setInterval(SlideLeftsolutionCard, 3000);
