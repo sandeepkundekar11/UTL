@@ -7,9 +7,13 @@ menu.addEventListener("click", () => {
   if (navlist.className.includes("navlist")) {
     navlist.classList.remove("navlist");
     navlist.classList.add("showNavbar");
+    menu.setAttribute("src", "./Images/cancel.png");
+    menu.setAttribute("src", "../Images/cancel.png");
   } else {
     navlist.classList.add("navlist");
     navlist.classList.remove("showNavbar");
+    menu.setAttribute("src", "./Images/menu.png");
+    menu.setAttribute("src", "../Images/menu.png");
   }
 });
 
@@ -21,8 +25,10 @@ productDropdownBtn.addEventListener("click", () => {
   if (navProduct.className.includes("navProduct")) {
     navProduct.classList.remove("navProduct");
     navProduct.classList.add("openDropdown");
+    productDropdownBtn.classList.toggle("rotate-180");
   } else {
     navProduct.classList.add("navProduct");
+    productDropdownBtn.classList.toggle("rotate-180");
     navProduct.classList.remove("openDropdown");
   }
 });
@@ -34,9 +40,11 @@ solutionDropdownBtn.addEventListener("click", () => {
   if (navSolution.className.includes("navSolution")) {
     navSolution.classList.remove("navSolution");
     navSolution.classList.add("openDropdown");
+    solutionDropdownBtn.classList.toggle("rotate-180");
   } else {
     navSolution.classList.add("navSolution");
     navSolution.classList.remove("openDropdown");
+    solutionDropdownBtn.classList.toggle("rotate-180");
   }
 });
 
@@ -46,9 +54,11 @@ groupsDropdownBtn.addEventListener("click", () => {
   if (navGroups.className.includes("navGroups")) {
     navGroups.classList.remove("navGroups");
     navGroups.classList.add("openDropdown");
+    groupsDropdownBtn.classList.toggle("rotate-180");
   } else {
     navGroups.classList.add("navGroups");
     navGroups.classList.remove("openDropdown");
+    groupsDropdownBtn.classList.toggle("rotate-180");
   }
 });
 
@@ -59,9 +69,11 @@ aboutDropdownBtn.addEventListener("click", () => {
   if (navAbout.className.includes("navAbout")) {
     navAbout.classList.remove("navAbout");
     navAbout.classList.add("openDropdown");
+    aboutDropdownBtn.classList.toggle("rotate-180");
   } else {
     navAbout.classList.add("navAbout");
     navAbout.classList.remove("openDropdown");
+    aboutDropdownBtn.classList.toggle("rotate-180");
   }
 });
 
@@ -153,14 +165,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-// soluttion page Slider
-
-let SliderContainar = document.querySelector(".sliderContainer");
-let SolutionWidthCount = 1;
-let SlideLeftsolutionCard = () => {
-  SliderContainar.style.transform = `translateX(${-SolutionWidthCount * 65}vw)`;
-  console.log(SolutionWidthCount);
-  SolutionWidthCount++;
-};
-setInterval(SlideLeftsolutionCard, 3000);
