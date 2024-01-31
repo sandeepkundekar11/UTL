@@ -2,18 +2,19 @@ let CompliancesDropdown = document.querySelector(".Compliances");
 
 // adding menu dropdown
 let menu = document.querySelector(".menu");
+let productMenu = document.querySelector(".menu");
 let navlist = document.querySelector(".navlist");
 menu.addEventListener("click", () => {
   if (navlist.className.includes("navlist")) {
     navlist.classList.remove("navlist");
     navlist.classList.add("showNavbar");
     menu.setAttribute("src", "./Images/cancel.png");
-    menu.setAttribute("src", "../Images/cancel.png");
+    productMenu.setAttribute("src", "../Images/cancel.png");
   } else {
     navlist.classList.add("navlist");
     navlist.classList.remove("showNavbar");
     menu.setAttribute("src", "./Images/menu.png");
-    menu.setAttribute("src", "../Images/menu.png");
+    productMenu.setAttribute("src", "../Images/menu.png");
   }
 });
 
