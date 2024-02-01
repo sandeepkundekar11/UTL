@@ -108,6 +108,8 @@ body {
     overflow: scroll;
     text-align: center;
     transition: 0.2s height linear;
+    border-top-width: 1px;
+    border-top: solid rgb(83, 83, 83) 1px;
   }
 
   .navlist {
@@ -388,5 +390,24 @@ body {
     flex-direction: column;
     justify-content: start;
     margin: auto;
+  }
+}
+
+/* styling Investor page */
+
+.collapsBox {
+  width: 60vw;
+}
+.collaps {
+  height: 0;
+  transition: height 0.2s linear;
+}
+.showCollaps {
+  height: 65vh;
+  transition: height 0.2s linear;
+}
+@media (max-width: 768px) {
+  .collapsBox {
+    width: 95vw;
   }
 }
