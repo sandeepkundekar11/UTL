@@ -138,28 +138,135 @@ let doc = [
   </div>`,
   },
 ];
-home.innerHTML = doc[0].comp;
+
 const getText = () => {
-  let count = 0;
-  // home.innerHTML = doc[count].comp;
-  setInterval(() => {
-    count = (count + 1) % doc.length; // Reset count when it reaches the maximum index
-    home.innerHTML = doc[count].comp;
-  }, 5000);
+  try {
+    home.innerHTML = doc[0].comp;
+    let count = 0;
+    // home.innerHTML = doc[count].comp;
+    setInterval(() => {
+      count = (count + 1) % doc.length; // Reset count when it reaches the maximum index
+      home.innerHTML = doc[count].comp;
+    }, 5000);
+  } catch (error) {}
 };
 getText();
 setInterval(getText, 15000);
 
-document.addEventListener("DOMContentLoaded", function () {
-  var navbar = document.querySelector(".navbar");
+// writting the logic to create document Collapes
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 0) {
-      navbar.classList.add("bg-black-on-scroll");
-      navbar.classList.remove("bg-transparent");
-    } else {
-      navbar.classList.remove("bg-black-on-scroll");
-      navbar.classList.add("bg-transparent");
-    }
+let pdf_Heading = [
+  {
+    id: 1,
+    heading: "UTl AGM Notice 2021-22",
+  },
+  {
+    id: 2,
+    heading: "UTL AGM Notice 2022-23",
+  },
+  {
+    id: 3,
+    heading: "UTL Adjourned AGM Notice 2021-22",
+  },
+  {
+    id: 4,
+    heading: "UTL Adjourned AGM Notice 2022-23",
+  },
+  {
+    id: 5,
+    heading: "Declaration of the Voting Result UTL",
+  },
+  {
+    id: 6,
+    heading: "Scutiniser Report 07.01.2023",
+  },
+  {
+    id: 7,
+    heading: "Annual Report 21-22",
+  },
+  {
+    id: 8,
+    heading: "Draft MGT-7 Annual Return",
+  },
+  {
+    id: 9,
+    heading: "UTL AGM Notice 2020-21_signed",
+  },
+  {
+    id: 10,
+    heading: "UTL EGM Notice_2022-23",
+  },
+  {
+    id: 11,
+    heading: "UTL EGM Notice 06.08.2021",
+  },
+  {
+    id: 12,
+    heading: "UTL MGT 7,2020-21 for website",
+  },
+  {
+    id: 13,
+    heading: "UTL_AGM Notice 20219-20",
+  },
+  {
+    id: 14,
+    heading: "CIM Number",
+  },
+  {
+    id: 15,
+    heading: "Quality Policy",
+  },
+  {
+    id: 16,
+    heading: "CSR Projects for FY 21-22",
+  },
+  {
+    id: 17,
+    heading: "CNR Policy",
+  },
+];
+let DocumentContainer = document.querySelector(".DocumentContainer");
+let collapsDiv = "";
+console.log("hi");
+pdf_Heading.forEach((ele) => {
+  collapsDiv += `<div class="collapsBox cursor-pointer mt-5 border border-gray-700">
+                 <div class=" collaps-Box-Heading-container w-full h-14 bg-gray-900 flex items-center justify-between border-b border-gray-800">
+                 <p class=" md:text-xl text-base font-mono text-white transition-all duration-300 hover:text-gray-400 hover:translate-x-4 hover:italic ml-4">
+                ${ele.id}).${ele.heading}
+                 </p>
+                 <img
+                 src="./Images/Dropdown.png"
+                 alt=""
+                 class=" cursor-pointer md:w-10 w-8 md:h-10 h-7 p-2 mr-4 transition-all duration-300 hover:bg-gray-700 rounded-3xl collapsButton  "
+                 />
+                 </div>
+                <div class="collaps w-full"></div>
+                </div>`;
+});
+DocumentContainer.innerHTML = collapsDiv;
+// writing the logic to show hide Collaps
+
+let collapsArea = document.querySelectorAll(".collaps"); // area which we want to expand
+let collapsButtons = document.querySelectorAll(".collapsButton");
+//here collapsButton is Array of button and we appliying click event on each of the Button using forEach Loop bellow we are going the Same
+
+collapsButtons.forEach((btns, index) => {
+  btns.addEventListener("click", () => {
+    collapsArea[index].classList.toggle("showCollaps"); //toggling the showCollaps class
+    btns.classList.toggle("-rotate-180"); // toggling the -rotate-180 class
+
+    //  the above loop we are using to remove the collaps from unclicked CollapsArea
+    collapsArea.forEach((ele, collapsIndex) => {
+      if (collapsIndex !== index) {
+        ele.classList.remove("showCollaps");
+      }
+    });
+
+    // above loop we are using to remove the rotate class for remaining unclicked Buttons
+    collapsButtons.forEach((ele, btnIndex) => {
+      if (btnIndex !== index) {
+        ele.classList.remove("-rotate-180");
+      }
+    });
   });
 });
