@@ -182,7 +182,7 @@ body {
 /* styling home page */
 .home {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   animation-name: HomePage;
   animation-duration: 15s;
   animation-iteration-count: infinite;
