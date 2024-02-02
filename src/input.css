@@ -395,6 +395,9 @@ body {
 
 /* styling Investor page */
 
+.collaps-Box-Heading-container {
+  /* background-color: #323639; */
+}
 .collapsBox {
   width: 60vw;
 }
@@ -403,7 +406,7 @@ body {
   transition: height 0.2s linear;
 }
 .showCollaps {
-  height: 65vh;
+  height: 100vh;
   transition: height 0.2s linear;
 }
 @media (max-width: 768px) {
