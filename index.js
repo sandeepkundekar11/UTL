@@ -158,89 +158,127 @@ setInterval(getText, 15000);
 let pdf_Heading = [
   {
     id: 1,
-    heading: "UTl AGM Notice 2021-22",
+    heading: "UTL AGM Notice 2021-22",
+    pdf: "./Documets/1_UTL_AGM_Notice_2021-22.pdf",
   },
   {
     id: 2,
     heading: "UTL AGM Notice 2022-23",
+    pdf: "./Documets/1_UTL_AGM_Notice_2022-23.pdf",
   },
   {
     id: 3,
     heading: "UTL Adjourned AGM Notice 2021-22",
+    pdf: "Documets/1_UTL_AGM_Notice_2022-23.pdf",
   },
   {
     id: 4,
     heading: "UTL Adjourned AGM Notice 2022-23",
+    pdf: "Documets/1_UTL_Adjourned_AGM_Notice_2022-23.pdf",
   },
   {
     id: 5,
     heading: "Declaration of the Voting Result UTL",
+    pdf: "Documets/Declaration_of_the_Voting_Results_UTL_sd.pdf",
   },
   {
     id: 6,
     heading: "Scutiniser Report 07.01.2023",
+    pdf: "Documets/Scutiniser_Report_07.01.2023.pdf",
   },
   {
     id: 7,
     heading: "Annual Report 21-22",
+    pdf: "Documets/Annual_Report_21-22.pdf",
   },
   {
     id: 8,
     heading: "Draft MGT-7 Annual Return",
+    pdf: "Documets/Draft_MGT-7_Annual_Return.pdf",
   },
   {
     id: 9,
     heading: "UTL AGM Notice 2020-21_signed",
+    pdf: "Documets/UTL_AGM_Notice_2020-21_signed.pdf",
   },
   {
     id: 10,
     heading: "UTL EGM Notice_2022-23",
+    pdf: "Documets/UTL_EGM_Notice_2022-23.pdf",
   },
   {
     id: 11,
     heading: "UTL EGM Notice 06.08.2021",
+    pdf: "Documets/UTL_EGM_Notice_06.08.2021.pdf",
   },
   {
     id: 12,
     heading: "UTL MGT 7,2020-21 for website",
+    pdf: "Documets/UTL_MGT_7_2020-21_for_website.pdf",
   },
   {
     id: 13,
-    heading: "UTL_AGM Notice 20219-20",
+    heading: "UTL_AGM Notice 2019-20",
+    pdf: "Documets/UTL_AGM_Notice_2019-20.pdf",
   },
   {
     id: 14,
-    heading: "CIM Number",
+    heading: "CIN Number",
+    pdf: "Documets/CIN.pdf",
   },
   {
     id: 15,
     heading: "Quality Policy",
+    pdf: "",
   },
   {
     id: 16,
     heading: "CSR Projects for FY 21-22",
+    pdf: "Documets/CSR_Projects_for_FY_21-22.pdf",
   },
   {
     id: 17,
     heading: "CNR Policy",
+    pdf: "Documets/CSRPolicy.pdf",
   },
 ];
 let DocumentContainer = document.querySelector(".DocumentContainer");
 let collapsDiv = "";
-console.log("hi");
+
 pdf_Heading.forEach((ele) => {
-  collapsDiv += `<div class="collapsBox cursor-pointer mt-5 border border-gray-700">
-                 <div class=" collaps-Box-Heading-container w-full h-14 bg-gray-900 flex items-center justify-between border-b border-gray-800">
-                 <p class=" md:text-xl text-base font-mono text-white transition-all duration-300 hover:text-gray-400 hover:translate-x-4 hover:italic ml-4">
+  collapsDiv += `<div class="collapsBox  cursor-pointer mt-5 ">
+                 <div class=" collaps-Box-Heading-container w-full h-24  flex items-center justify-between border-b border-gray-800">
+
+                 <!-- Heading and pdf icon conatiner  -->
+
+                <div class="flex items-center w-3/4">
+                <p class=" w-2/4 md:text-xl text-base font-mono text-white transition-all duration-300 hover:text-gray-400 hover:translate-x-4 hover:italic ml-4">
                 ${ele.id}).${ele.heading}
                  </p>
+
+                 <div class=" w-2/4 md:ml-4 ml-0 flex items-center">
+                 <img
+                  src="./Images/pdf.png"
+                  class="w-12 h-12"
+                  alt=""/>
+                  <a class="underline text-white text-sm" target="#" href="${ele.pdf}">click to view</a>
+                 </div> 
+
+                </div>
+                <!-- End Of Heading -->
+                
+                <!--  Dropdown toggle Image icon-->
                  <img
                  src="./Images/Dropdown.png"
                  alt=""
                  class=" cursor-pointer md:w-10 w-8 md:h-10 h-7 p-2 mr-4 transition-all duration-300 hover:bg-gray-700 rounded-3xl collapsButton  "
                  />
                  </div>
-                <div class="collaps w-full"></div>
+                <div class="collaps w-full">
+                 <object data=${ele.pdf} type="application/pdf" width="100%" height="100%">
+              <p class="text-white">Unable to display PDF file. <a target="#" href="${ele.pdf}">Download</a> instead.</p>
+                 </object>
+                </div>
                 </div>`;
 });
 DocumentContainer.innerHTML = collapsDiv;
