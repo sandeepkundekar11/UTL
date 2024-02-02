@@ -247,7 +247,7 @@ let collapsDiv = "";
 
 pdf_Heading.forEach((ele) => {
   collapsDiv += `<div class="collapsBox  cursor-pointer mt-5 ">
-                 <div class=" collaps-Box-Heading-container w-full h-24  flex items-center justify-between border-b border-gray-800">
+                 <div class=" collaps-Box-Heading-container w-full h-24  flex items-center justify-between border-b border-gray-700">
 
                  <!-- Heading and pdf icon conatiner  -->
 
@@ -274,10 +274,9 @@ pdf_Heading.forEach((ele) => {
                  class=" cursor-pointer md:w-10 w-8 md:h-10 h-7 p-2 mr-4 transition-all duration-300 hover:bg-gray-700 rounded-3xl collapsButton  "
                  />
                  </div>
-                <div class="collaps w-full">
-                 <object data=${ele.pdf} type="application/pdf" width="100%" height="100%">
-              <p class="text-white">Unable to display PDF file. <a target="#" href="${ele.pdf}">Download</a> instead.</p>
-                 </object>
+                <div class="collaps w-full overflow-hidden">
+                
+                 <iframe src=${ele.pdf} width="100%" height="100%"></iframe>
                 </div>
                 </div>`;
 });
@@ -307,4 +306,18 @@ collapsButtons.forEach((btns, index) => {
       }
     });
   });
+});
+
+// writing the logic to show hide Popup
+
+let PopUpButton = document.querySelector(".PopUpButton");
+let PopupContainer = document.querySelector(".PopupContainer");
+let PopupButtonImg = document.querySelector(".PopupButtonImg");
+PopUpButton.addEventListener("click", () => {
+  PopupContainer.classList.toggle("hidden");
+  if (PopupContainer.classList.contains("hidden")) {
+    PopupButtonImg.setAttribute("src", "Images/Chat.png");
+  } else {
+    PopupButtonImg.setAttribute("src", "Images/Black_cancel_icon.png");
+  }
 });
