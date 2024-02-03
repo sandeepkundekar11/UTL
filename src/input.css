@@ -411,7 +411,13 @@ body {
     width: 95vw;
   }
 }
-
+.hoverDocument {
+  cursor: pointer;
+  visibility: hidden;
+}
+.PopUpButton:hover .hoverDocument {
+  visibility: visible;
+}
 /* styling the Popup Container */
 .PopupContainer {
   height: 40vh;

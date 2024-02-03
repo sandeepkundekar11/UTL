@@ -313,6 +313,8 @@ collapsButtons.forEach((btns, index) => {
 let PopUpButton = document.querySelector(".PopUpButton");
 let PopupContainer = document.querySelector(".PopupContainer");
 let PopupButtonImg = document.querySelector(".PopupButtonImg");
+let hoverDocument = document.querySelector(".hoverDocument");
+
 PopUpButton.addEventListener("click", () => {
   PopupContainer.classList.toggle("hidden");
   if (PopupContainer.classList.contains("hidden")) {
