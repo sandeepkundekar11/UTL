@@ -328,8 +328,8 @@ let UploadFile = document.querySelector(".UploadFile_Input");
 let UploadFileName = document.querySelector(".UploadFileName");
 let FileSubmitButton = document.querySelector(".FileSubmitButton");
 // cursor-not-allowed
-let admin = false;
-// let admin = true;
+// let admin = false;
+let admin = true;
 
 let Login = document.querySelector(".Login");
 if (!admin) {
