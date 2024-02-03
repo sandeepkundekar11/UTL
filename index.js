@@ -144,14 +144,14 @@ const getText = () => {
     home.innerHTML = doc[0].comp;
     let count = 0;
     // home.innerHTML = doc[count].comp;
-    setInterval(() => {
-      count = (count + 1) % doc.length; // Reset count when it reaches the maximum index
-      home.innerHTML = doc[count].comp;
-    }, 5000);
+    // setInterval(() => {
+    //   count = (count + 1) % doc.length; // Reset count when it reaches the maximum index
+    //   home.innerHTML = doc[count].comp;
+    // }, 5000);
   } catch (error) {}
 };
 getText();
-setInterval(getText, 15000);
+// setInterval(getText, 15000);
 
 // writting the logic to create document Collapes
 

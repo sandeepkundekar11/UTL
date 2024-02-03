@@ -1427,6 +1427,11 @@ input[type="range"]::-ms-fill-lower {
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
+.border-gray-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-border-opacity));
+}
+
 .border-slate-400 {
   --tw-border-opacity: 1;
   border-color: rgb(148 163 184 / var(--tw-border-opacity));
@@ -1475,11 +1480,6 @@ input[type="range"]::-ms-fill-lower {
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1690,6 +1690,11 @@ input[type="range"]::-ms-fill-lower {
 .text-blue-700 {
   --tw-text-opacity: 1;
   color: rgb(26 86 219 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-gray-300 {
@@ -2227,6 +2232,11 @@ body {
   width: 50%;
 }
 
+.product-InnerInfo {
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 24, 39, 0.464);
+}
+
 @media (max-width: 1083px) {
   .product-info {
     display: flex;
@@ -2374,11 +2384,6 @@ body {
 .hover\:bg-red-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(200 30 30 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-slate-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .hover\:font-semibold:hover {

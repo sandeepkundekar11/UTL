@@ -6,7 +6,7 @@ let swiper1 = new Swiper(".mySwiper1", {
   spaceBetween: 2,
   loop: true,
   autoplay: {
-    delay: 1500,
+    delay: 2000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -45,7 +45,7 @@ let swiper2 = new Swiper(".solutionSwiper", {
   spaceBetween: 30,
   loop: true,
   autoplay: {
-    delay: 1800,
+    delay: 2000,
     disableOnInteraction: false,
   },
   pagination: {

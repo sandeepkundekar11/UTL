@@ -360,6 +360,10 @@ body {
 .product-info > div {
   width: 50%;
 }
+.product-InnerInfo {
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 24, 39, 0.464);
+}
 @media (max-width: 1083px) {
   .product-info {
     display: flex;
