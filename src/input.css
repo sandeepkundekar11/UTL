@@ -412,8 +412,8 @@ body {
   }
 }
 .hoverDocument {
-  visibility: hidden;
   cursor: pointer;
+  visibility: hidden;
 }
 .PopUpButton:hover .hoverDocument {
   visibility: visible;

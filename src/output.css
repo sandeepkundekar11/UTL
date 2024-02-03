@@ -2287,8 +2287,8 @@ body {
 }
 
 .hoverDocument {
-  visibility: hidden;
   cursor: pointer;
+  visibility: hidden;
 }
 
 .PopUpButton:hover .hoverDocument {
@@ -2479,10 +2479,6 @@ body {
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:block {
-    display: block;
   }
 
   .md\:flex {
