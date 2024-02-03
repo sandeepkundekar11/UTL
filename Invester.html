@@ -346,12 +346,76 @@
         <!-- documant 17 -->
       </div>
       <!-- floating PopUp -->
+
       <div class="uploadFile fixed md:right-3 right-1 bottom-8 shadow-2xl z-30">
         <!-- popup Chat Box -->
         <div
-          class="PopupContainer shadow-2xl transition-none duration-300 hidden absolute md:-left-72 -left-64 bottom-24 md:w-72 w-64 h-96 rounded-lg bg-white"
+          class="PopupContainer shadow-2xl transition-none duration-300 hidden absolute md:-left-80 -left-64 bottom-24 md:w-80 w-64 rounded-lg bg-white"
         >
           <!--  -->
+          <div class="w-full h-full rounded-md">
+            <div
+              class="PopupContainerHead w-full flex border-b-2 items-center px-3 bg-purple-900"
+            >
+              <img class="w-8 h-8" src="./Images/Logo.png" alt="" />
+              <p class="text-2xl ml-4 font-bold">UTL</p>
+            </div>
+            <div class="PopupContainerbody">
+              <!-- text-body -->
+
+              <!-- Upload file Container -->
+              <fieldset
+                class="flex flex-col items-center w-4/5 m-auto pt-4 InsertDocument"
+              >
+                <p class="text-xl font-medium text-blue-700 mb-2">
+                  Upload The Document
+                </p>
+                <input class="w-full border UploadFile_Input" type="file" />
+                <input
+                  class="w-full mt-4 UploadFileName"
+                  type="text"
+                  placeholder="Enter Document Name"
+                />
+                <div class="button w-full mt-4">
+                  <button
+                    class="md:w-32 w-24 h-10 border bg-blue-600 rounded-md text-white font-medium transition-all duration-300 hover:bg-blue-700 hover:scale-105 FileSubmitButton"
+                  >
+                    Upload
+                  </button>
+                  <button
+                    class="md:w-28 w-20 h-10 border bg-red-600 rounded-md text-white font-medium transition-all duration-300 hover:bg-red-700 hover:scale-105"
+                  >
+                    Clear
+                  </button>
+                </div>
+              </fieldset>
+
+              <!-- Login form -->
+              <div class="w-full flex flex-col items-center Login">
+                <h1 class="text-center font-bold text-2xl text-blue-700">
+                  Login
+                </h1>
+                <input
+                  class="w-11/12 outline-none mt-4"
+                  type="text"
+                  placeholder="Enter Email Id"
+                  name=""
+                  id=""
+                />
+                <input
+                  class="w-11/12 outline-none mt-4"
+                  type="password"
+                  placeholder="Enter Password"
+                />
+                <button
+                  class="w-11/12 h-10 mt-4 rounded-lg text-xl font-medium bg-blue-600 hover:text-gray-900 transition-all duration-300 hover:bg-blue-400 text-white"
+                >
+                  Login
+                </button>
+              </div>
+              <!-- Login form Ends -->
+            </div>
+          </div>
         </div>
         <!-- Popup Show Hide button -->
         <div
@@ -359,7 +423,7 @@
         >
           <img
             class="PopupButtonImg transition-all w-7 h-7 duration-300"
-            src="./Images/Chat.png"
+            src="./Images/Upload.png"
             alt=""
             srcset=""
           />

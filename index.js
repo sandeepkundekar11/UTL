@@ -316,8 +316,26 @@ let PopupButtonImg = document.querySelector(".PopupButtonImg");
 PopUpButton.addEventListener("click", () => {
   PopupContainer.classList.toggle("hidden");
   if (PopupContainer.classList.contains("hidden")) {
-    PopupButtonImg.setAttribute("src", "Images/Chat.png");
+    PopupButtonImg.setAttribute("src", "Images/Upload.png");
   } else {
     PopupButtonImg.setAttribute("src", "Images/Black_cancel_icon.png");
   }
 });
+
+// writing the upload file
+let InsertDocument = document.querySelector(".InsertDocument");
+let UploadFile = document.querySelector(".UploadFile_Input");
+let UploadFileName = document.querySelector(".UploadFileName");
+let FileSubmitButton = document.querySelector(".FileSubmitButton");
+// cursor-not-allowed
+// let admin = false;
+let admin = true;
+
+let Login = document.querySelector(".Login");
+if (!admin) {
+  InsertDocument.classList.add("hidden");
+  Login.classList.add("block");
+} else {
+  InsertDocument.classList.add("block");
+  Login.classList.add("hidden");
+}

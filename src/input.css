@@ -395,9 +395,6 @@ body {
 
 /* styling Investor page */
 
-.collaps-Box-Heading-container {
-  /* background-color: #323639; */
-}
 .collapsBox {
   width: 60vw;
 }
@@ -413,4 +410,15 @@ body {
   .collapsBox {
     width: 95vw;
   }
+}
+
+/* styling the Popup Container */
+.PopupContainer {
+  height: 40vh;
+}
+.PopupContainerHead {
+  height: 15%;
+}
+.PopupContainerbody {
+  height: 85%;
 }
