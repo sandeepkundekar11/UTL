@@ -78,64 +78,42 @@ aboutDropdownBtn.addEventListener("click", () => {
 // slider js
 
 // setting home page background text
-let home = document.querySelector(".home");
+let home = document.querySelector(".homeText");
 let doc = [
   {
     id: 1,
-    comp: `<div
-    class="md:w-4/5 w-11/12 md:h-4/5 h-full md:pt-20 md:pl-5 flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom"
-    style="animation: fadeInUp 1s ease-out"
+    comp: ` <h1
+    class="sm:text-5xl text-3xl font-bold italic text-white pt-2"
   >
-    <h1
-      class="homeHaeding text-start lg:text-7xl sm:text-4xl md:ml-0 ml-10 text-4xl md:w-5/6 w-full text-blue-200 text-wrap   font-bold"
-    >
-      Transforming Data Networks with DWDM Excellence
-    </h1>
-    <p
-      class="homeHaeding md:text-3xl text-xl wmd:w-5/6 w-fulltext-start mt-7 md:ml-0 ml-6 text-blue-100 font-semibold transition-opacity duration-500 transform origin-bottom"
-      style="animation: fadeInUp 1s ease-out"
-    >
-      Unleash unparalleled speed, reliability, and scalability in your
-      communication infrastructure.
-    </p>
-  </div>`,
+    Transforming Data Networks with DWDM Excellence
+  </h1>
+  <p class="font-medium text-gray-500 text-xl md:mt-8 mt-0">
+    Unleash unparalleled speed, reliability, and scalability in your
+    communication infrastructure.
+  </p>`,
   },
   {
     id: 2,
-    comp: `  <div
-    class="md:w-4/5 w-11/12 md:h-4/5 h-full md:pt-20 md:pl-5 md:ml-0 ml-6 flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom "
-    style="animation: fadeInUp 1s ease-out"
+    comp: ` <h1
+    class="sm:text-5xl text-3xl font-bold italic text-white pt-2"
   >
-    <h1
-      class="homeHaeding text-start lg:text-7xl sm:text-4xl text-4xl md:ml-0 ml-1 md:w-5/6 w-full text-red-500 text-wrap  font-bold"
-    >
-    Seamless Connectivity, Enhanced Performance
-    </h1>
-    <p
-      class="homeHaeding md:text-3xl text-xl md:w-5/6  w-full text-start mt-7 text-blue-100 font-semibold transition-opacity duration-500 transform origin-bottom"
-      style="animation: fadeInUp 1s ease-out"
-    >
-    Experience the future of data transmission with our advanced DWDM system solutions.
-    </p>
-  </div>`,
+  Seamless Connectivity, Enhanced Performance
+  </h1>
+  <p class="font-medium text-gray-500 text-xl md:mt-8 mt-0">
+  Experience the future of data transmission with our advanced DWDM system solutions.
+  </p>`,
   },
   {
     id: 3,
-    comp: `<div
-    class="md:w-4/5 w-11/12 md:h-4/5 h-full md:pt-20 md:pl-5  flex flex-col justify-center items-center transition-opacity duration-500 transform origin-bottom"
-    style="animation: fadeInUp 1s ease-out"
+    comp: ` <h1
+    class="sm:text-5xl text-3xl font-bold italic text-white pt-2"
   >
-    <h1
-      class="homeHaeding lg:text-7xl sm:text-4xl text-4xl md:ml-0 ml-10 md:w-5/6 w-full text-white  font-bold "
-    >
-    DWDM Solutions for a Connected Tomorrow
-    </h1>
-    <p
-      class="homeHaeding md:text-3xl text-xl md:ml-0 ml-8 md:w-5/6 w-full text-start mt-7 text-blue-100 font-semibold transition-opacity duration-500 transform origin-bottom"
-      style="animation: fadeInUp 1s ease-out"
-    >
-    Building networks that bridge gaps, ensuring a fast and reliable flow of information    </p>
-  </div>`,
+  Maximize Bandwidth, Minimize Complexity
+  </h1>
+  <p class="font-medium text-gray-500 text-xl md:mt-8 mt-0">
+  Our DWDM services simplify network management while optimizing data transfer capabilities.
+
+  </p>`,
   },
 ];
 
@@ -143,15 +121,15 @@ const getText = () => {
   try {
     home.innerHTML = doc[0].comp;
     let count = 0;
-    // home.innerHTML = doc[count].comp;
-    // setInterval(() => {
-    //   count = (count + 1) % doc.length; // Reset count when it reaches the maximum index
-    //   home.innerHTML = doc[count].comp;
-    // }, 5000);
+    home.innerHTML = doc[count].comp;
+    setInterval(() => {
+      count = (count + 1) % doc.length; // Reset count when it reaches the maximum index
+      home.innerHTML = doc[count].comp;
+    }, 5000);
   } catch (error) {}
 };
 getText();
-// setInterval(getText, 15000);
+setInterval(getText, 15000);
 
 // writting the logic to create document Collapes
 
@@ -280,7 +258,9 @@ pdf_Heading.forEach((ele) => {
                 </div>
                 </div>`;
 });
-DocumentContainer.innerHTML = collapsDiv;
+try {
+  DocumentContainer.innerHTML = collapsDiv;
+} catch (error) {}
 // writing the logic to show hide Collaps
 
 let collapsArea = document.querySelectorAll(".collaps"); // area which we want to expand
@@ -315,14 +295,18 @@ let PopupContainer = document.querySelector(".PopupContainer");
 let PopupButtonImg = document.querySelector(".PopupButtonImg");
 let hoverDocument = document.querySelector(".hoverDocument");
 
-PopUpButton.addEventListener("click", () => {
-  PopupContainer.classList.toggle("hidden");
-  if (PopupContainer.classList.contains("hidden")) {
-    PopupButtonImg.setAttribute("src", "Images/Upload.png");
-  } else {
-    PopupButtonImg.setAttribute("src", "Images/Black_cancel_icon.png");
-  }
-});
+try {
+  PopUpButton.addEventListener("click", () => {
+    PopupContainer.classList.toggle("hidden");
+    if (PopupContainer.classList.contains("hidden")) {
+      PopupButtonImg.setAttribute("src", "Images/Upload.png");
+    } else {
+      PopupButtonImg.setAttribute("src", "Images/Black_cancel_icon.png");
+    }
+  });
+} catch (error) {
+  console.log("error in Popup button", error);
+}
 
 // writing the upload file
 let InsertDocument = document.querySelector(".InsertDocument");
@@ -333,11 +317,166 @@ let FileSubmitButton = document.querySelector(".FileSubmitButton");
 // let admin = false;
 let admin = true;
 
-let Login = document.querySelector(".Login");
-if (!admin) {
-  InsertDocument.classList.add("hidden");
-  Login.classList.add("block");
-} else {
-  InsertDocument.classList.add("block");
-  Login.classList.add("hidden");
+try {
+  let Login = document.querySelector(".Login");
+  if (!admin) {
+    InsertDocument.classList.add("hidden");
+    Login.classList.add("block");
+  } else {
+    InsertDocument.classList.add("block");
+    Login.classList.add("hidden");
+  }
+} catch (error) {
+  console.log("error occurred in Login and upload document", error);
 }
+
+// writing the logic for product display page
+
+let product_list = [
+  {
+    id: 1,
+    product_name: "DWDM",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi ",
+    link: "./Product.html",
+  },
+  {
+    id: 2,
+    product_name: "ONT",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugiLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi ",
+    link: "./Product.html",
+  },
+  {
+    id: 3,
+    product_name: "Optical Line System (OLS)",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi ",
+    link: "./Product.html",
+  },
+  {
+    id: 4,
+    product_name: "GPON/NG-PON",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi ",
+    link: "./Product.html",
+  },
+  {
+    id: 5,
+    product_name: "MPLS/CSGR",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi  adipisicing elit. Aspernatur dolore ipsum fugi",
+    link: "./Product.html",
+  },
+  {
+    id: 6,
+    product_name: "Enterprise Switch/Router",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet consectetu Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi r adipisicing elit. Aspernatur dolore ipsum fugi",
+    link: "./Product.html",
+  },
+  {
+    id: 7,
+    product_name: "4G/LTE RAN",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi  consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
+    link: "./Product.html",
+  },
+  {
+    id: 8,
+    product_name: "5G RAN",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi  consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
+    link: "./Product.html",
+  },
+  {
+    id: 9,
+    product_name: "Wireless Backhaul Radios",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi  consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
+    link: "./Product.html",
+  },
+  {
+    id: 10,
+    product_name: "WiFi Access Point",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi  consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
+    link: "./Product.html",
+  },
+  {
+    id: 11,
+    product_name: "4G/5G CPE",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
+    link: "./Product.html",
+  },
+  {
+    id: 12,
+    product_name: "Set Top Box",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
+    link: "./Product.html",
+  },
+  {
+    id: 13,
+    product_name: "Smart Energy Meter",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
+    link: "./Product.html",
+  },
+  {
+    id: 14,
+    product_name: "Network Orchestrator",
+    img: "./Images//Products/OTN.webp",
+    discription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
+    link: "./Product.html",
+  },
+];
+
+let product_swaper = document.querySelector(".product_swaper");
+let pruduct_html = "";
+product_list.forEach((ele, index) => {
+  pruduct_html += `<div class=" swiper-slide  productSlide border border-gray-700 md:w-80 w-72 h-80 rounded-md bg-gray-900 mr-7 mt-4 transition-all duration-300 sm:hover:scale-110 p-3 overflow-hidden">
+  <img
+    class="w-full h-4/5"
+    src="./Images/Products/400G.png"
+    alt=""
+  />
+  <div class="absolute top-0 left-0  transition-all duration-300  w-full h-72 pt-5 bg-slate-300 viewProductView">
+  <div
+  class="product-InnerInfo w-full pl-3  cursor-pointer h-52 overflow-hidden "
+>
+  <h1
+    class="font-bold md:text-2xl italic mb-4 text-xl text-start text-blue-500"
+  >
+    ${ele.product_name}
+  </h1>
+  <p
+    class=" text-gray-400 text-start "
+    style="font-family: Arial, Helvetica, sans-serif"
+  >
+    ${ele.discription}
+  </p>
+</div>
+  <a class="text-xl text-blue-500 font-semibold underline underline-offset-4" href=${ele.link}>View Product</a>
+  </div>
+  <h1 class="text-blue-500 text-xl">${ele.product_name}</h1>
+  <p class="text-xl text-gray-400 underline font-normal" >View Product</p>
+</div>`;
+});
+
+product_swaper.innerHTML = pruduct_html;
