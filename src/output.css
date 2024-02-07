@@ -1086,10 +1086,6 @@ input[type="range"]::-ms-fill-lower {
   height: 3rem;
 }
 
-.h-2\/3 {
-  height: 66.666667%;
-}
-
 .h-20 {
   height: 5rem;
 }
@@ -1156,6 +1152,10 @@ input[type="range"]::-ms-fill-lower {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-1\/2 {
@@ -1493,6 +1493,11 @@ input[type="range"]::-ms-fill-lower {
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -2126,6 +2131,7 @@ body {
 
 .productSlide {
   min-width: 270px !important;
+  /* max-width: 270px !important; */
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity)) !important;
   height: 18rem !important;
@@ -2383,6 +2389,8 @@ body {
 .PopupContainerbody {
   height: 85%;
 }
+
+/* styling the UTLGroups pages */
 
 .hover\:-translate-y-24:hover {
   --tw-translate-y: -6rem;
