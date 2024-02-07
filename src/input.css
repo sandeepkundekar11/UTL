@@ -268,6 +268,7 @@ body {
 }
 .productSlide {
   min-width: 270px !important;
+  /* max-width: 270px !important; */
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity)) !important;
   height: 18rem !important;
@@ -486,3 +487,5 @@ body {
 .PopupContainerbody {
   height: 85%;
 }
+
+/* styling the UTLGroups pages */

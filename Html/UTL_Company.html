@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Investor</title>
-    <link rel="stylesheet" href="./src/output.css" />
-    <link rel="icon" type="images/x-icon" href="./Images/Logo.png" />
+    <title>UTL Groups</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="icon" type="images/x-icon" href="../Images/Logo.png" />
   </head>
   <body class="overflow-x-hidden">
+    <!-- navbar -->
     <nav class="w-screen z-20 allNavbar">
       <marquee class="h-10 w-screen marquee flex items-center text-xl"
         >#18A/19, Doddanekundi Industrial Area,II Phase, Mahadevapura
@@ -20,12 +21,12 @@
       >
         <img
           class="w-10 float-start h-11 menu"
-          src="./Images/menu.png"
+          src="../Images/menu.png"
           alt=""
         />
         <img
           class="md:w-20 h-10 ml-4 w-16 lg:mr-0 mr-12 md:h-14"
-          src="./Images/Logo.png"
+          src="../Images/Logo.png"
           alt=""
         />
 
@@ -37,13 +38,13 @@
               Products
               <img
                 class="w-6 h-5 ml-2 productDropdown lg:hidden block"
-                src="./Images/Dropdown.png"
+                src="../Images/Dropdown.png"
                 alt=""
               />
               <!-- the bellow image will come in to the picture when our screen width is 1024 -->
               <img
                 class="w-4 h-4 lg:ml-2 lg:block hidden"
-                src="./Images/Dropdown.png"
+                src="../Images/Dropdown.png"
                 alt=""
               />
             </div>
@@ -171,13 +172,13 @@
               Solutions
               <img
                 class="w-6 h-5 ml-2 solutionDropdown lg:hidden"
-                src="./Images/Dropdown.png"
+                src="../Images/Dropdown.png"
                 alt=""
               />
               <!-- the bellow image will come in to the picture when our screen width is 1024 -->
               <img
                 class="w-4 h-4 lg:ml-2 lg:block hidden"
-                src="./Images/Dropdown.png"
+                src="../Images/Dropdown.png"
                 alt=""
               />
             </div>
@@ -224,13 +225,13 @@
               UTL Group Companies
               <img
                 class="w-6 h-5 ml-2 groupsDropdown lg:hidden"
-                src="./Images/Dropdown.png"
+                src="../Images/Dropdown.png"
                 alt=""
               />
               <!-- the bellow image will come in to the picture when our screen width is 1024 -->
               <img
                 class="w-4 h-4 lg:ml-2 lg:block hidden"
-                src="./Images/Dropdown.png"
+                src="../Images/Dropdown.png"
                 alt=""
               />
             </div>
@@ -265,13 +266,13 @@
               About Us
               <img
                 class="w-6 h-5 aboutDropdown lg:hidden"
-                src="./Images/Dropdown.png"
+                src="../Images/Dropdown.png"
                 alt=""
               />
               <!-- the bellow image will come in to the picture when our screen width is 1024 -->
               <img
                 class="w-4 h-4 ml-2 lg:block hidden"
-                src="./Images/Dropdown.png"
+                src="../Images/Dropdown.png"
                 alt=""
               />
             </div>
@@ -279,9 +280,7 @@
               <ul
                 class="h-auto space-y-4 text-lg lg:text-white text-slate-500 md:pt-4 pt-0"
               >
-                <li
-                  class="hover:text-red-600 transition-all duration-200 hover:scale-150"
-                >
+                <li class="hover:text-red-600 transition-all duration-200">
                   <a href="">Company Profile</a>
                 </li>
                 <li class="hover:text-red-600">
@@ -313,134 +312,9 @@
       </div>
     </nav>
 
-    <!--Investor Main whole page  -->
-    <div class="w-screen h-full bg-gray-900 pt-40 pb-9 investerContainer">
-      <!-- heading -->
-      <div class="w-full bg-gray-800 py-4">
-        <div
-          class="text-center font-bold italic md:text-6xl text-4xl text-blue-500"
-        >
-          Investors
-        </div>
-        <p
-          class="text-center md:text-2xl text-xl italic font-semibold text-white"
-        >
-          UTL GROUP
-        </p>
-      </div>
-      <!-- document collaps Container -->
-      <div class="DocumentContainer w-screen flex flex-col items-center mt-6">
-        <!-- all document add using javascript -->
-        <!-- documant 1 -->
-        <!-- document 2 -->
-        <!-- documant 3 -->
-        <!-- document 4-->
-        <!-- documant 5 -->
-        <!-- document 6 -->
-        <!-- documant 7 -->
-        <!-- document 8 -->
-        <!-- documant 9 -->
-        <!-- document 10 -->
-        <!-- documant 11 -->
-        <!-- document 12 -->
-        <!-- documant 13 -->
-        <!-- document 14 -->
-        <!-- documant 15 -->
-        <!-- document 16 -->
-        <!-- documant 17 -->
-      </div>
-      <!-- floating PopUp -->
-
-      <div class="uploadFile fixed md:right-3 right-1 bottom-8 shadow-2xl z-30">
-        <!-- popup Chat Box -->
-        <div
-          class="PopupContainer shadow-2xl transition-none duration-300 hidden absolute md:-left-80 -left-64 bottom-24 md:w-80 w-64 rounded-lg bg-white"
-        >
-          <!--  -->
-          <div class="w-full h-full rounded-md">
-            <div
-              class="PopupContainerHead w-full flex border-b-2 items-center px-3 bg-purple-900"
-            >
-              <img class="w-8 h-8" src="./Images/Logo.png" alt="" />
-              <p class="text-2xl ml-4 font-bold">UTL</p>
-            </div>
-            <div class="PopupContainerbody">
-              <!-- text-body -->
-
-              <!-- Upload file Container -->
-              <fieldset
-                class="flex flex-col items-center w-4/5 m-auto pt-4 InsertDocument"
-              >
-                <p class="text-xl font-medium text-blue-700 mb-2">
-                  Upload The Document
-                </p>
-                <input class="w-full border UploadFile_Input" type="file" />
-                <input
-                  class="w-full mt-4 UploadFileName"
-                  type="text"
-                  placeholder="Enter Document Name"
-                />
-                <div class="button w-full mt-4">
-                  <button
-                    class="md:w-32 w-24 h-10 border bg-blue-600 rounded-md text-white font-medium transition-all duration-300 hover:bg-blue-700 hover:scale-105 FileSubmitButton"
-                  >
-                    Upload
-                  </button>
-                  <button
-                    class="md:w-28 w-20 h-10 border bg-red-600 rounded-md text-white font-medium transition-all duration-300 hover:bg-red-700 hover:scale-105"
-                  >
-                    Clear
-                  </button>
-                </div>
-              </fieldset>
-
-              <!-- Login form -->
-              <div class="w-full flex flex-col items-center Login">
-                <h1 class="text-center font-bold text-2xl text-blue-700">
-                  Login
-                </h1>
-                <input
-                  class="w-11/12 outline-none mt-4"
-                  type="text"
-                  placeholder="Enter Email Id"
-                  name=""
-                  id=""
-                />
-                <input
-                  class="w-11/12 outline-none mt-4"
-                  type="password"
-                  placeholder="Enter Password"
-                />
-                <button
-                  class="w-11/12 h-10 mt-4 rounded-lg text-xl font-medium bg-blue-600 hover:text-gray-900 transition-all duration-300 hover:bg-blue-400 text-white"
-                >
-                  Login
-                </button>
-              </div>
-              <!-- Login form Ends -->
-            </div>
-          </div>
-        </div>
-        <!-- Popup Show Hide button -->
-        <div
-          class="PopUpButton flex justify-center items-center transition-all absolute md:right-3 right-1 bottom-8 duration-500 hover:scale-110 md:w-14 md:h-14 w-12 h-12 rounded-full bg-white shadow-2xl"
-        >
-          <img
-            class="PopupButtonImg transition-all w-7 h-7 duration-300"
-            src="./Images/Upload.png"
-            alt=""
-            srcset=""
-          />
-          <div
-            class="-ml-56 h-12 md:flex items-center justify-center rounded-lg hoverDocument absolute hidden bg-white w-40"
-          >
-            Upload Document
-          </div>
-        </div>
-      </div>
-      <!-- end of Document collaps Container -->
-    </div>
-    <!-- footer -->
+    <!-- UTL Groups page -->
+    <div class="w-screen h-screen bg-slate-600 UTLPages"></div>
+    <!------------------------ footer ---------------------------->
     <div class="w-screen footer pb-8">
       <div
         class="w-screen md:pl-0 pl-4 h-72 flex justify-center items-center footer-contact bg-slate-300"
@@ -473,17 +347,17 @@
             class="w-10 h-10 rounded-full hover:transition-transform hover:duration-300 hover:-translate-y-3"
             href=""
           >
-            <img src="./Images/SocialMedia/facebook.png" alt=""
+            <img src="../Images/SocialMedia/facebook.png" alt=""
           /></a>
           <a
             class="w-10 h-10 rounded-full hover:transition-transform hover:duration-300 hover:-translate-y-3"
             href=""
-            ><img src="./Images/SocialMedia/gmail.png" alt=""
+            ><img src="../Images/SocialMedia/gmail.png" alt=""
           /></a>
           <a
             class="w-10 h-10 rounded-full hover:transition-transform transition-all hover:duration-300 hover:-translate-y-3"
             href=""
-            ><img src="./Images/SocialMedia/linkedIn.png" alt=""
+            ><img src="../Images/SocialMedia/linkedIn.png" alt=""
           /></a>
         </div>
       </div>
@@ -509,10 +383,10 @@
           <li>Managed Services</li>
           <a href="" class="font-bold text-lg text-blue-600">View More..</a>
           <!-- <li>Access Network</li>
-              <li>Transmission Network</li>
-              <li>Embedded and IoT</li>
-              <li>IT & ITES</li>
-              <li>Education</li> -->
+            <li>Transmission Network</li>
+            <li>Embedded and IoT</li>
+            <li>IT & ITES</li>
+            <li>Education</li> -->
         </div>
         <div class="cursor-pointer space-y-2 md:mt-0 mt-6">
           <h1 class="text-xl font-semibold mb-6 text-white">About Us</h1>
@@ -538,7 +412,24 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./index.js"></script>
-    <script type="" src="./swaper.js"></script>
+    <script type="module" src="../index.js"></script>
+    <script type="module" src="../UTL_Group_Companies.js"></script>
+    <script type="module" src="../swaper.js"></script>
+    <script>
+      // adding navigation bar js code
+      let menu = document.querySelector(".menu");
+      let navlist = document.querySelector(".navlist");
+      menu.addEventListener("click", () => {
+        if (navlist.className.includes("navlist")) {
+          navlist.classList.remove("navlist");
+          navlist.classList.add("showNavbar");
+          menu.setAttribute("src", "../Images/cancel.png");
+        } else {
+          navlist.classList.add("navlist");
+          navlist.classList.remove("showNavbar");
+          menu.setAttribute("src", "../Images/menu.png");
+        }
+      });
+    </script>
   </body>
 </html>
