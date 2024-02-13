@@ -489,3 +489,101 @@ body {
 }
 
 /* styling the UTLGroups pages */
+.UTL-Groups-Image {
+  width: 100vw;
+  background: url("../Images/UTL_Groups1.jpg") no-repeat center center/cover;
+}
+
+.UTL-Groups-Image > h1 {
+  padding: 1rem;
+  --tw-bg-opacity: 1;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Oswald", sans-serif;
+
+  background-color: rgba(0, 0, 0, 0.608);
+  -webkit-backdrop-filter: blur("10px");
+  backdrop-filter: blur("10px");
+  text-align: center;
+}
+
+.GroupsCompany_Info {
+  width: 88vw;
+}
+@media (max-width: 768px) {
+  .GroupsCompany_Info {
+    width: 95vw;
+  }
+}
+.GroupsCompanyUTL > h2,
+.GroupCompanyTrigyn_tech > h2,
+.GroupsCompanyUSEIPL > h2,
+.GroupsCompanyPriya_Raj_Electronics > h2 {
+  font-family: "Protest Revolution", sans-serif;
+  font-family: "Oswald", sans-serif;
+  background-color: #7c78f3;
+  background-image: linear-gradient(45deg, #fffba8, #e80042);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  /* font-family: "Protest Revolution", sans-serif; */
+}
+/* styling the BoardDirectiveDiv    Board of direactor page */
+
+.BoardDirectiveDivEven {
+  width: 92vw;
+  background: linear-gradient(
+      to right,
+      rgba(255, 185, 169, 0.596),
+      rgb(64, 131, 255) 40%
+    ),
+    url("../Images/AboutUs/Board_of_Director_even.jpg") no-repeat center
+      center/cover;
+  border-top-right-radius: 2rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Protest Revolution", sans-serif;
+}
+.BoardDirectiveDivOdd {
+  width: 92vw;
+  background: linear-gradient(
+      to right,
+      rgb(54, 54, 54) 60%,
+      rgba(255, 255, 255, 0.439)
+    ),
+    url("../Images/AboutUs/Board_of_Director_Odd.jpg") no-repeat center
+      center/cover;
+  border-top-left-radius: 2rem;
+
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Protest Revolution", sans-serif;
+}
+.BoardOfDirectorHeadNavbar > div {
+  width: 92vw;
+}
+@media (max-width: 968px) {
+  .BoardDirectiveDivOdd,
+  .BoardDirectiveDivEven {
+    width: 100vw;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .BoardOfDirectorHeadNavbar > div {
+    width: 100vw;
+  }
+}
+.BoardDirectiveDivEven :first-child,
+.BoardDirectiveDivOdd :first-child {
+  background-color: rgba(8, 82, 255, 0.204);
+  -webkit-backdrop-filter: blur("8px");
+}
+.BoardOfDirectorHead {
+  background: url("../Images/AboutUs/Board_of_Director.jpg") no-repeat center
+    center/cover;
+}
+.BoardOfDirectorHead > h1 {
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Oswald", sans-serif;
+}

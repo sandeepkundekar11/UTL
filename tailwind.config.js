@@ -2,9 +2,12 @@
 module.exports = {
   content: [
     "./*.{html,js}",
-    "./components/*{html,js}",
     "./*.{html,js}",
     "./Html/*{html,js}",
+    "./ReuseComponents/*{html,js}",
+    "./Html/About_pages/*{html,js}",
+    "./Html/UTL_Groups/*{html,js}",
+    "./Html/Products/*{html,js}",
   ],
   theme: {
     extend: {},
