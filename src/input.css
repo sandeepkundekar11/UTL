@@ -453,7 +453,11 @@ body {
 }
 
 /* styling Investor page */
-
+.investorHeading {
+  height: 35vh;
+  background: url("../Images/investor-results.jpg") no-repeat center
+    center/cover;
+}
 .collapsBox {
   width: 60vw;
 }
@@ -517,7 +521,9 @@ body {
 .GroupsCompanyUTL > h2,
 .GroupCompanyTrigyn_tech > h2,
 .GroupsCompanyUSEIPL > h2,
-.GroupsCompanyPriya_Raj_Electronics > h2 {
+.GroupsCompanyPriya_Raj_Electronics > h2,
+.GroupsComapanyUTL_Tech > h2,
+.GroupsCompanyUnitedTelelink > h2 {
   font-family: "Protest Revolution", sans-serif;
   font-family: "Oswald", sans-serif;
   background-color: #7c78f3;
