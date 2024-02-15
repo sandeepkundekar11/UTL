@@ -1287,9 +1287,9 @@ input[type="range"]::-ms-fill-lower {
   width: 100%;
 }
 
-.w-min {
-  width: -moz-min-content;
-  width: min-content;
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .w-screen {
@@ -1466,6 +1466,10 @@ input[type="range"]::-ms-fill-lower {
   border-top-width: 1px;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-gray-600 {
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
@@ -1561,16 +1565,6 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1649,6 +1643,10 @@ input[type="range"]::-ms-fill-lower {
 
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pb-11 {
+  padding-bottom: 2.75rem;
 }
 
 .pb-4 {
@@ -2476,6 +2474,17 @@ body {
 
 /* styling the Product page */
 
+.Product_DetailContainer {
+  background: linear-gradient(
+      to right,
+      rgb(58, 58, 58) 30%,
+      rgba(113, 113, 113, 0.421)
+    ),
+    url("https://content.jdmagicbox.com/comp/medak/p6/9999p8452.8452.181014233712.p1p6/catalogue/sai-cable-and-broadband-network-bollaram-medak-internet-service-providers-vb774y6z8z.jpg")
+      no-repeat center center/cover;
+  /* height-: 80vh; */
+}
+
 .product-page {
   width: 100vw;
   height: 100%;
@@ -2662,8 +2671,8 @@ body {
   width: 92vw;
   background: linear-gradient(
       to right,
-      rgb(54, 54, 54) 60%,
-      rgba(255, 255, 255, 0.439)
+      rgba(54, 54, 54, 0.92) 60%,
+      rgba(255, 255, 255, 0.571)
     ),
     url("../Images/AboutUs/Board_of_Director_Odd.jpg") no-repeat center
       center/cover;
@@ -2678,7 +2687,7 @@ body {
 }
 
 .boardOfDirectorMainDiv {
-  background-color: rgba(148, 148, 148, 0.153);
+  background-color: rgba(148, 148, 148, 0.341);
   -webkit-backdrop-filter: blur("12px");
 }
 

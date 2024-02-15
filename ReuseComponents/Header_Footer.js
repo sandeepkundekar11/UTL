@@ -18,7 +18,7 @@ class Header extends HTMLElement {
         src=${baspath}/Images/menu.png
         alt=""
       />
-     <a href="${htmlpath}index.html">
+     <a href=${htmlpath}index.html>
      <img
      class="md:w-16 h-10 ml-4 w-14 lg:mr-0 mr-12 md:h-14"
      src=${baspath}/Images/Logo.png
