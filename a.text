@@ -20,7 +20,7 @@ class Header extends HTMLElement {
       />
      <a href="${htmlpath}index.html">
      <img
-     class="md:w-16 h-10 ml-4 w-14 lg:mr-0 mr-12 md:h-14"
+     class="md:w-14 h-12 ml-4 w-16 lg:mr-0 mr-12 md:h-12"
      src=${baspath}/Images/Logo.png
      alt="logo"
    />
@@ -33,7 +33,7 @@ class Header extends HTMLElement {
           <div class="flex items-center justify-between text-white text-lg">
             Products
             <img
-              class="w-6 h-5 ml-2 productDropdown lg:hidden block"
+              class="w-5 h-4 ml-2 productDropdown lg:hidden block"
               src=${baspath}/Images/Dropdown.png
               alt=""
             />
@@ -51,11 +51,18 @@ class Header extends HTMLElement {
               class="h-auto md:space-y-4 space-y-0 text-lg lg:text-white text-slate-500 md:pt-3 pt-0"
             >
               <li
-                class="text-lg lg:border-none lg:text-white text-slate-300 flex lg:w-auto w-10/12"
+                class="lg:text-lg text-base lg:border-none lg:text-white items-center text-slate-300 flex lg:w-auto w-full lg:justify-normal justify-between"
               >
-                DWDM
+                <p>DWDM</p>
+                <div class="dropdownwidth lg:hidden block"">
+                 <img
+                  class="w-5 h-4  productDropdown lg:hidden block"
+                  src=${baspath}/Images/Dropdown.png
+                  alt=""
+                 />
+                </div>
               </li>
-              <ul class="space-y-4 lg:ml-0 ">
+              <ul class="space-y-4 ml-0 ">
                 <li class="hover:text-red-600 text-gray-400">
                   <a href=${htmlpath}Html/Products/Product.html >Product 1</a>
                 </li>
@@ -70,10 +77,17 @@ class Header extends HTMLElement {
             <ul
               class="md:space-y-4 space-y-0 lg:text-white text-lg text-slate-500 md:pt-3 pt-0"
             >
-              <li class="text-lg lg:text-white text-slate-300 lg:mt-0 mt-3">
-                OTN
+              <li class="lg:text-lg text-base lg:text-white text-slate-300 lg:mt-0 flex w-full items-center lg:justify-normal justify-between">
+                <p>OTN</p>
+                <div class="dropdownwidth lg:hidden block"">
+                 <img
+                  class="w-5 h-4  productDropdown lg:hidden block"
+                  src=${baspath}/Images/Dropdown.png
+                  alt=""
+                 />
+                </div>
               </li>
-              <ul class="space-y-4 lg:ml-0 ">
+              <ul class="space-y-4 ml-0">
                 <li class="hover:text-red-600 text-gray-400">
                   <a href=${htmlpath}Html/Products/Product.html>Product 1</a>
                 </li>
@@ -88,10 +102,18 @@ class Header extends HTMLElement {
             <ul
               class="md:space-y-4 space-y-0 lg:text-white text-lg text-slate-500 md:pt-3 pt-0"
             >
-              <li class="text-lg lg:text-white text-slate-300 lg:mt-0 mt-3">
-                Optical Line System (OLS)
+              <li class="lg:text-lg text-base lg:text-white text-slate-300 lg:mt-0 flex w-full items-center lg:justify-normal justify-between">
+                
+                <p>Optical Line System (OLS)</p>
+                <div class="dropdownwidth lg:hidden block"">
+                 <img
+                  class="w-5 h-4  productDropdown lg:hidden block"
+                  src=${baspath}/Images/Dropdown.png
+                  alt=""
+                 />
+                </div>
               </li>
-              <ul class="space-y-4 lg:ml-0">
+              <ul class="space-y-4 lg:ml-0 ml-3">
                 <li class="hover:text-red-600 text-gray-400">
                   <a href=${htmlpath}Html/Products/Product.html>Product 1</a>
                 </li>
@@ -106,10 +128,17 @@ class Header extends HTMLElement {
             <ul
               class="md:space-y-4 space-y-0 lg:text-white text-lg text-slate-500 md:pt-3 pt-0"
             >
-              <li class="text-lg lg:text-white text-slate-300 lg:mt-0 mt-3">
-                GPON/NG-PON
+              <li class="lg:text-lg text-base lg:text-white text-slate-300 lg:mt-0  flex w-full items-center lg:justify-normal justify-between">
+                <p class="w-2/4">GPON/NG-PON</p>
+                <div class="dropdownwidth  lg:hidden block"">
+                 <img
+                  class="w-5 h-4  productDropdown lg:hidden block"
+                  src=${baspath}/Images/Dropdown.png
+                  alt=""
+                 />
+                </div>
               </li>
-              <ul class="space-y-4 lg:ml-0 ">
+              <ul class="space-y-4 lg:ml-0 ml-3">
                 <li class="hover:text-red-600 text-gray-400">
                   <a href=${htmlpath}Html/Products/Product.html>Product 1</a>
                 </li>
@@ -122,7 +151,7 @@ class Header extends HTMLElement {
               </ul>
             </ul>
             <ul
-              class="lg:text-white text-slate-300 space-y-3 md:pt-3 pt-0 text-lg lg:mt-0 mt-5"
+              class="lg:text-white text-slate-300 space-y-3 md:pt-3 pt-0 lg:text-lg text-base lg:mt-0 mt-5"
             >
               <li class="hover:text-red-600">
                 <a href=${htmlpath}Html/Products/Product.html>MPLS/CSGR</a>
@@ -141,7 +170,7 @@ class Header extends HTMLElement {
               </li>
             </ul>
             <ul
-              class="text-lg lg:text-white text-slate-300 space-y-3 md:pt-3 pt-0 lg:mt-0 mt-5"
+              class="lg:text-lg text-base lg:text-white text-slate-300 space-y-3 md:pt-3 pt-0 lg:mt-0 mt-5"
             >
               <li class="hover:text-red-600">
                 <a href=${htmlpath}Html/Products/Product.html>WiFi Access Point</a>
@@ -162,12 +191,12 @@ class Header extends HTMLElement {
           </div>
         </li>
         <li
-          class="text-lg font-semibold items-center cursor-pointer mx-4 solutions lg:border-t-0 border-slate-600 border-t lg:pt-2 pt-4"
+          class="lg:text-lg text-base font-semibold items-center cursor-pointer mx-4 solutions lg:border-t-0 border-slate-600 border-t lg:pt-2 pt-4"
         >
-          <div class="flex items-center justify-between text-white text-lg">
+          <div class="flex items-center justify-between text-white lg:text-lg text-base">
             Solutions
             <img
-              class="w-6 h-5 ml-2 solutionDropdown lg:hidden"
+              class="w-5 h-4 ml-2 solutionDropdown lg:hidden"
               src=${baspath}/Images/Dropdown.png
               alt=""
             />
@@ -180,7 +209,7 @@ class Header extends HTMLElement {
           </div>
           <div class="navSolution px-5 flex flex-col bg-gray-700">
             <ul
-              class="h-auto space-y-4 lg:text-white text-slate-500 text-lg md:pt-6 pt-0"
+              class="h-auto space-y-4 lg:text-white text-slate-400 lg:text-lg text-base md:pt-6 pt-0"
             >
               <li class="hover:text-red-600">
                 <a href="">State Wide Area Network (SWAN)</a>
@@ -215,12 +244,12 @@ class Header extends HTMLElement {
           </div>
         </li>
         <li
-          class="text-lg font-semibold items-center cursor-pointer mx-4 CompanyGroup lg:border-t-0 border-t border-slate-600 lg:pt-2 pt-4"
+          class="lg:text-lg text-base font-semibold items-center cursor-pointer mx-4 CompanyGroup lg:border-t-0 border-t border-slate-600 lg:pt-2 pt-4"
         >
-          <div class="flex items-center justify-between text-white text-lg">
+          <div class="flex items-center justify-between text-white lg:text-lg text-base">
             UTL Group Companies
             <img
-              class="w-6 h-5 ml-2 groupsDropdown lg:hidden"
+              class="w-5 h-4 ml-2 groupsDropdown lg:hidden"
               src=${baspath}/Images/Dropdown.png
               alt=""
             />
@@ -233,7 +262,7 @@ class Header extends HTMLElement {
           </div>
           <div class="flex flex-col px-5 navGroups bg-gray-700">
             <ul
-              class="h-auto space-y-4 lg:text-white text-lg text-slate-500 md:pt-4 pt-0"
+              class="h-auto space-y-4 lg:text-white lg:text-lg text-base text-slate-400 md:pt-4 pt-0"
             >
               <li class="hover:text-red-600">
                 <a href=${htmlpath}Html/UTL_Groups/UTL.html
@@ -270,10 +299,10 @@ class Header extends HTMLElement {
         <li
           class="text-lg items-center cursor-pointer mx-4 about font-semibold lg:border-t-0 border-t border-slate-600 lg:pt-2 pt-4"
         >
-          <div class="flex items-center justify-between text-white text-lg">
+          <div class="flex items-center justify-between text-white lg:text-lg text-base">
             About Us
             <img
-              class="w-6 h-5 aboutDropdown lg:hidden"
+              class="w-5 h-4 aboutDropdown lg:hidden"
               src=${baspath}/Images/Dropdown.png
               alt=""
             />
@@ -286,7 +315,7 @@ class Header extends HTMLElement {
           </div>
           <div class="flex flex-col px-5 navAbout bg-gray-700">
             <ul
-              class="h-auto space-y-4 text-lg lg:text-white text-slate-500 md:pt-4 pt-0"
+              class="h-auto space-y-4 lg:text-lg text-base lg:text-white text-slate-400 md:pt-4 pt-0"
             >
               <li class="hover:text-red-600 transition-all duration-200">
                 <a href="">Company Profile</a>

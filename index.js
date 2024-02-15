@@ -10,12 +10,12 @@ try {
   productDropdownBtn.addEventListener("click", () => {
     if (navProduct.className.includes("navProduct")) {
       navProduct.classList.remove("navProduct");
-      navProduct.classList.add("openDropdown");
+      navProduct.classList.add("openProductDropdown");
       productDropdownBtn.classList.toggle("rotate-180");
     } else {
       navProduct.classList.add("navProduct");
       productDropdownBtn.classList.toggle("rotate-180");
-      navProduct.classList.remove("openDropdown");
+      navProduct.classList.remove("openProductDropdown");
     }
   });
 
@@ -25,11 +25,11 @@ try {
   solutionDropdownBtn.addEventListener("click", () => {
     if (navSolution.className.includes("navSolution")) {
       navSolution.classList.remove("navSolution");
-      navSolution.classList.add("openDropdown");
+      navSolution.classList.add("solutionShowDropdown");
       solutionDropdownBtn.classList.toggle("rotate-180");
     } else {
       navSolution.classList.add("navSolution");
-      navSolution.classList.remove("openDropdown");
+      navSolution.classList.remove("solutionShowDropdown");
       solutionDropdownBtn.classList.toggle("rotate-180");
     }
   });
@@ -39,11 +39,11 @@ try {
   groupsDropdownBtn.addEventListener("click", () => {
     if (navGroups.className.includes("navGroups")) {
       navGroups.classList.remove("navGroups");
-      navGroups.classList.add("openDropdown");
+      navGroups.classList.add("groupsShowDropdown");
       groupsDropdownBtn.classList.toggle("rotate-180");
     } else {
       navGroups.classList.add("navGroups");
-      navGroups.classList.remove("openDropdown");
+      navGroups.classList.remove("groupsShowDropdown");
       groupsDropdownBtn.classList.toggle("rotate-180");
     }
   });
@@ -54,11 +54,11 @@ try {
   aboutDropdownBtn.addEventListener("click", () => {
     if (navAbout.className.includes("navAbout")) {
       navAbout.classList.remove("navAbout");
-      navAbout.classList.add("openDropdown");
+      navAbout.classList.add("openAboutDropdown");
       aboutDropdownBtn.classList.toggle("rotate-180");
     } else {
       navAbout.classList.add("navAbout");
-      navAbout.classList.remove("openDropdown");
+      navAbout.classList.remove("openAboutDropdown");
       aboutDropdownBtn.classList.toggle("rotate-180");
     }
   });

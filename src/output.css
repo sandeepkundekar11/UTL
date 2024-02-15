@@ -1203,6 +1203,10 @@ input[type="range"]::-ms-fill-lower {
   width: 3rem;
 }
 
+.w-14 {
+  width: 3.5rem;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -1502,11 +1506,6 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -1560,6 +1559,16 @@ input[type="range"]::-ms-fill-lower {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1718,20 +1727,12 @@ input[type="range"]::-ms-fill-lower {
   padding-top: 1rem;
 }
 
-.pt-40 {
-  padding-top: 10rem;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
 }
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pt-28 {
-  padding-top: 7rem;
 }
 
 .text-center {
@@ -2011,18 +2012,26 @@ body {
   position: absolute;
   top: 7rem;
   left: 6%;
+  opacity: 0;
   height: 0px;
   overflow: hidden;
   font-size: 14px;
-  transition: height 0.2s;
+  transition: all 0.2s;
+}
+
+.dropdownwidth {
+  width: 75vw;
+  display: flex;
+  justify-content: end;
 }
 
 .product:hover .navProduct {
-  height: 250px;
+  height: 230px;
+  opacity: 1;
   /* border-top-width: 5px; */
   /* border-top-color: blue; */
   /* overflow: visible; */
-  transition: height 0.2s;
+  transition: all 0.2s;
 }
 
 .navSolution {
@@ -2040,15 +2049,17 @@ body {
   /* background-color: #2b2b2c; */
   /* margin-left: -20px; */
   height: 0px;
+  opacity: 0;
   overflow: hidden;
   top: 7rem;
   left: auto;
   font-size: 14px;
-  transition: height 0.4s;
+  transition: all 0.4s;
 }
 
 .solutions:hover .navSolution {
   height: 520px;
+  opacity: 1;
   /* border-top-width: 5px;
   border-top-color: blue; */
   /* overflow: visible; */
@@ -2062,8 +2073,9 @@ body {
 .CompanyGroup:hover .navGroups,
 .about:hover .navAbout {
   height: 290px;
+  opacity: 1;
   /* overflow: visible; */
-  transition: height 0.4s;
+  transition: all 0.4s;
 }
 
 .menu {
@@ -2092,7 +2104,7 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 4rem;
+    top: 4.5rem;
     justify-content: baseline;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
     width: 100vw;
@@ -2146,7 +2158,7 @@ body {
     justify-content: start;
     align-items: start;
     /* text-align: start; */
-    transition: height 0.8;
+    transition: all 0.8s ease;
   }
 
   .product:hover .navProduct,
@@ -2157,18 +2169,18 @@ body {
     width: auto;
     border-top-width: 0px;
     border-top-color: initial;
-    transition: none;
+    /* transition: none; */
   }
 
   /* following class we are using toggle the dropdowns of each navlinks like products,about,utl groups,ect */
 
-  .openDropdown {
+  .openDropdown,
+  .openProductDropdown {
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
     color: black;
     width: 90vw;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 20rem;
     margin: 8px 0 8px 0;
     display: flex;
     flex-direction: column;
@@ -2176,7 +2188,52 @@ body {
     align-items: start;
     text-align: start;
     overflow: scroll;
-    transition: height 0.8;
+    transition: all 0.8s ease;
+  }
+
+  .solutionShowDropdown {
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    color: black;
+    width: 90vw;
+    height: 31rem;
+    margin: 8px 0 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    overflow: scroll;
+    transition: all 0.8s ease;
+  }
+
+  .groupsShowDropdown {
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    color: black;
+    width: 90vw;
+    height: 16rem;
+    margin: 8px 0 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    overflow: scroll;
+    transition: all 0.8s ease;
+  }
+
+  .openAboutDropdown {
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    color: black;
+    width: 90vw;
+    height: 13rem;
+    margin: 8px 0 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    overflow: scroll;
+    transition: all 0.8s ease;
   }
 }
 
@@ -2620,6 +2677,11 @@ body {
   width: 92vw;
 }
 
+.boardOfDirectorMainDiv {
+  background-color: rgba(148, 148, 148, 0.153);
+  -webkit-backdrop-filter: blur("12px");
+}
+
 @media (max-width: 968px) {
   .BoardDirectiveDivOdd,
   .BoardDirectiveDivEven {
@@ -2722,12 +2784,6 @@ body {
 
 .hover\:bg-gradient-to-r:hover {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.hover\:from-blue-900:hover {
-  --tw-gradient-from: #233876 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(35 56 118 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .hover\:font-semibold:hover {
@@ -2860,6 +2916,10 @@ body {
     margin-top: 0px;
   }
 
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .md\:mt-6 {
     margin-top: 1.5rem;
   }
@@ -2906,6 +2966,10 @@ body {
 
   .md\:w-14 {
     width: 3.5rem;
+  }
+
+  .md\:w-16 {
+    width: 4rem;
   }
 
   .md\:w-2\/4 {
@@ -2965,13 +3029,13 @@ body {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .md\:-translate-y-2 {
-    --tw-translate-y: -0.5rem;
+  .md\:translate-y-4 {
+    --tw-translate-y: 1rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .md\:translate-y-4 {
-    --tw-translate-y: 1rem;
+  .md\:translate-y-6 {
+    --tw-translate-y: 1.5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -3011,6 +3075,10 @@ body {
 
   .md\:pl-3 {
     padding-left: 0.75rem;
+  }
+
+  .md\:pt-3 {
+    padding-top: 0.75rem;
   }
 
   .md\:pt-4 {
@@ -3063,11 +3131,6 @@ body {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
   }
 }
 
