@@ -8,6 +8,7 @@ module.exports = {
     "./Html/About_pages/*{html,js}",
     "./Html/UTL_Groups/*{html,js}",
     "./Html/Products/*{html,js}",
+    "./Html/Solutions_pages/*{html,js}",
   ],
   theme: {
     extend: {},

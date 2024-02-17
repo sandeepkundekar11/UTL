@@ -1,4 +1,3 @@
-import { Images, FilePaths } from "./webpath.js";
 class Header extends HTMLElement {
   connectedCallback() {
     const baspath = this.getAttribute("basepath");
@@ -186,13 +185,13 @@ class Header extends HTMLElement {
                 <a href="">State Wide Area Network (SWAN)</a>
               </li>
               <li class="hover:text-red-600">
-                <a href="">e-Governance and Citizen Service </a>
+                <a href=${htmlpath}Html/Solutions_pages/e-Governance-and-Citizen-Service.html>e-Governance and Citizen Service </a>
               </li>
               <li class="hover:text-red-600">
                 <a href="">Mobile Fronthaul/Backhaul</a>
               </li>
               <li class="hover:text-red-600">
-                <a href="">Broadband Network</a>
+                <a href=${htmlpath}Html/Solutions_pages/Broadband_Network.html>Broadband Network</a>
               </li>
               <li class="hover:text-red-600">
                 <a href="">Enterprise Network</a>
