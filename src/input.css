@@ -447,7 +447,7 @@ body {
 .Product_DetailContainer {
   background: linear-gradient(
       to right,
-      rgb(58, 58, 58) 30%,
+      rgb(17, 22, 42) 30%,
       rgba(113, 113, 113, 0.421)
     ),
     url("../Images/Products/products_background.avif") no-repeat center
@@ -658,4 +658,91 @@ body {
 .BoardOfDirectorHead > h1 {
   font-family: "Libre Franklin", sans-serif;
   font-family: "Oswald", sans-serif;
+}
+
+/* styling the  solution page */
+.solutionHead {
+  background: linear-gradient(
+      to right,
+      rgba(37, 76, 98, 0.92) 60%,
+      rgba(255, 255, 255, 0.571)
+    ),
+    url("../Images/solutionsPage/solutionHeadImage.jpg") no-repeat center
+      center/cover;
+}
+.solutionSubHead {
+  width: 600px;
+  margin-left: 12rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(62, 119, 152, 0.53) 60%,
+    rgba(135, 135, 135, 0.484)
+  );
+  -webkit-backdrop-filter: blur("8px");
+}
+
+@media (max-width: 908px) {
+  .solutionSubHead {
+    width: 80vw;
+    margin-left: 1rem;
+    /* background-color: rgba(25, 50, 65, 0.646); */
+    background: linear-gradient(
+      to bottom,
+      rgba(62, 119, 152, 0.53) 60%,
+      rgba(135, 135, 135, 0.484)
+    );
+    -webkit-backdrop-filter: blur("8px");
+  }
+}
+
+/* Base styles for the container */
+.solutionswaper {
+  height: 500px !important;
+}
+.RelatedSolutionContainer {
+  background-color: transparent !important;
+}
+.RelatedSolutionBox {
+  background-color: rgba(8, 82, 255, 0.204) !important;
+  -webkit-backdrop-filter: blur("8px");
+  /* width: 280px;
+  height: 490px; */
+  position: relative;
+  background: transparent !important;
+  border: none !important;
+  perspective: 800px;
+}
+.frontSideOfSolutionBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  perspective-origin: right;
+  transition: all 1s linear;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  opacity: 1;
+}
+.BackSideOfSolutionBox {
+  overflow: hidden;
+  position: absolute;
+  transition: all 1s linear;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg); /* Initially flipped */
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.RelatedSolutionBox:hover .frontSideOfSolutionBox {
+  transform: rotateY(-180deg);
+
+  opacity: 0; /* Hide the front side */
+}
+
+.RelatedSolutionBox:hover .BackSideOfSolutionBox {
+  transform: rotateY(0deg); /* Show the back side */
+  opacity: 1; /* Make it visible */
 }
