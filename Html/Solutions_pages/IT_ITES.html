@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT_ITES</title>
+    <link rel="stylesheet" href="../../src/output.css" />
+    <link rel="icon" type="images/x-icon" href="../../Images/Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Libre+Franklin:wght@100&family=Oswald&family=Protest+Revolution&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!------------------------Nav bar ---------------------------->
+    <main-header basepath="../../" htmlbase-path="../../"> </main-header>
+    <div class="w-screen pb-28 bg-gray-900 pt-28">
+      <!-- comman for all Solutions page -->
+      <div class="w-screen md:h-80 h-64 bg-white solutionHead">
+        <div
+          class="solutionSubHead w-96 lg:h-72 h-48 md:translate-y-24 translate-y-2/4 flex flex-col justify-center items-center"
+        >
+          <p class="font-semibold lg:text-2xl text-xl text-gray-300">
+            Solutions & Applications
+          </p>
+          <h1
+            class="font-bold lg:text-3xl text-2xl mt-3 text-center text-white"
+          >
+            e-Governance and Citizen Service
+          </h1>
+        </div>
+      </div>
+      <!--  -->
+      <div class="w-screen h-screen bg-gray-900"></div>
+      <!-- Realated Services -->
+      <div class="mt-5 md:w-4/5 w-full m-auto overflow-x-hidden">
+        <h1 class="md:text-3xl text-xl font-medium md:ml-0 ml-4 text-gray-200">
+          Related Solutions
+        </h1>
+        <solution-box-container></solution-box-container>
+      </div>
+    </div>
+    <!------------------------ footer ---------------------------->
+    <main-footer basepath="../../" htmlbase-path="../../"></main-footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../../ReuseComponents/Header_Footer.js"></script>
+    <script
+      type="module"
+      src="../../ReuseComponents/SolutionComponent.js"
+    ></script>
+    <script type="module" src="../../index.js"></script>
+    <script type="module" src="../../swaper.js"></script>
+    <script type="module">
+      // adding navigation bar js code
+      let menu = document.querySelector(".menu");
+      let navlist = document.querySelector(".navlist");
+      menu.addEventListener("click", () => {
+        if (navlist.className.includes("navlist")) {
+          navlist.classList.remove("navlist");
+          navlist.classList.add("showNavbar");
+          menu.setAttribute("src", "../../Images/cancel.png");
+        } else {
+          navlist.classList.add("navlist");
+          navlist.classList.remove("showNavbar");
+          menu.setAttribute("src", "../../Images/menu.png");
+        }
+      });
+    </script>
+  </body>
+</html>

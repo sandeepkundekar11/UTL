@@ -208,7 +208,7 @@ class Header extends HTMLElement {
               <li class="hover:text-red-600">
                 <a href="">Embedded and IoT</a>
               </li>
-              <li class="hover:text-red-600"><a href="">IT & ITES</a></li>
+              <li class="hover:text-red-600"><a href=${htmlpath}/Html/Solutions_pages/IT_ITES.html>IT & ITES</a></li>
               <li class="hover:text-red-600"><a href="">Education</a></li>
             </ul>
           </div>
