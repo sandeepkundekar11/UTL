@@ -197,7 +197,7 @@ class Header extends HTMLElement {
                 <a href="">Enterprise Network</a>
               </li>
               <li class="hover:text-red-600">
-                <a href="">Managed Services</a>
+                <a href=${htmlpath}Html/Solutions_pages/Manage_services.html>Managed Services</a>
               </li>
               <li class="hover:text-red-600">
                 <a href="">Access Network</a>
@@ -208,8 +208,8 @@ class Header extends HTMLElement {
               <li class="hover:text-red-600">
                 <a href="">Embedded and IoT</a>
               </li>
-              <li class="hover:text-red-600"><a href="">IT & ITES</a></li>
-              <li class="hover:text-red-600"><a href="">Education</a></li>
+              <li class="hover:text-red-600"><a href=${htmlpath}Html/Solutions_pages/IT_ITES.html>IT & ITES</a></li>
+              <li class="hover:text-red-600"><a href=${htmlpath}Html/Solutions_pages/Eduction_services.html>Education</a></li>
             </ul>
           </div>
         </li>
