@@ -78,13 +78,17 @@ class SolutionCard extends HTMLElement {
     arr.forEach((ele) => {
       ContentHtml += `
         <div class="h-96 w-80 border transition-all duration-300 swiper-slide RelatedSolutionBox">
-        <div class="frontSideOfSolutionBox  absolute h-full w-full text-3xl font-bold flex items-center justify-center text-white"  
-        style="background: url(${ele.background}) no-repeat center center/cover;">
+        <div class="frontSideOfSolutionBox  absolute h-full w-full text-3xl text-wrap font-bold flex items-center justify-center text-white"  
+        style="background: linear-gradient(
+          to right,
+          rgba(28, 28, 28, 0.483) 50%,
+          rgba(25, 25, 25, 0.508)
+        ),url(${ele.background}) no-repeat center center/cover;">
          ${ele.title}
         </div>
        <div class="BackSideOfSolutionBox p-4 bg-gray-700 "> 
        <h1 class=" text-white  text-2xl font-semibold">${ele.title}</h1>
-          <p class="text-white text-lg mt-4">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+          <p class="text-white  text-lg mt-4 h-64 overflow-x-hidden">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
           aut consectetur optio labore reiciendis repudiandae, repellendus
           voluptatibus, minima dicta, omnis aliquam est ratione at
           excepturi. Laudantium dolorum quidem molestiae voluptates.
