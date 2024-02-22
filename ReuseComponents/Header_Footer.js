@@ -3,7 +3,7 @@ class Header extends HTMLElement {
     const baspath = this.getAttribute("basepath");
     const htmlpath = this.getAttribute("htmlbase-path");
     this.innerHTML = `  <nav class="w-screen z-20 allNavbar">
-    <marquee class="h-10 w-screen marquee flex items-center text-xl"
+    <marquee class="h-10 w-screen marquee flex items-center text-sm"
       >#18A/19, Doddanekundi Industrial Area,II Phase, Mahadevapura
       Post,Bangalore - 560 048,Karnataka, India. || #18A/19, Doddanekundi
       Industrial Area,II Phase, Mahadevapura Post,Bangalore - 560

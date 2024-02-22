@@ -128,7 +128,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi ",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 2,
@@ -136,7 +136,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugiLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi ",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 3,
@@ -144,7 +144,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi ",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 4,
@@ -152,7 +152,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi ",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 5,
@@ -160,7 +160,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi  adipisicing elit. Aspernatur dolore ipsum fugi",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 6,
@@ -168,7 +168,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet consectetu Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi r adipisicing elit. Aspernatur dolore ipsum fugi",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 7,
@@ -176,7 +176,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi  consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 8,
@@ -184,7 +184,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi  consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 9,
@@ -192,7 +192,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi  consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 10,
@@ -200,7 +200,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi  consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 11,
@@ -208,7 +208,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 12,
@@ -216,7 +216,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 13,
@@ -224,7 +224,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
     {
       id: 14,
@@ -232,7 +232,7 @@ try {
       img: "./Images//Products/OTN.webp",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolore ipsum fugi",
-      link: "./Html/Product.html",
+      link: "/Html/Products/Product.html",
     },
   ];
 
