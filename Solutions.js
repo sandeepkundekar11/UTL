@@ -120,7 +120,7 @@ let State_Projects_arr = [
     state: "Jharkhand",
     Html: `  <div class="w-full">
     <h1 class="text-3xl font-bold mt-4 pl-4 text-blue-400">JHARKHAND</h1>
-    <div class="w-full mt-5 flex sm:justify-around justify-start pl-4 sm:space-y-0 space-y-4 flex-wrap">
+    <div class="w-full mt-5 flex justify-start pl-4 sm:space-y-0 space-y-4 flex-wrap">
     <img class="w-80 h-72 bg-white" scr="" alt="img"/>
     </div>
     <p class="text-gray-200 text-2xl mt-3 ml-3">
