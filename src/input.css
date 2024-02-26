@@ -6,6 +6,10 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: "Barlow Semi Condensed", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
 }
 .allNavbar {
   position: absolute;
@@ -662,6 +666,15 @@ body {
 }
 
 /* styling the  solution page */
+.solutionHead_StateAreaNetwork {
+  background: linear-gradient(
+      to right,
+      rgba(37, 76, 98, 0.547) 60%,
+      rgba(255, 255, 255, 0.571)
+    ),
+    url("https://www.sangfor.com/sites/default/files/2023-05/what_is_a_wide_area_network_wan.jpg")
+      no-repeat center center/cover;
+}
 .solutionHead_Eduction_Services {
   background: linear-gradient(
       to right,
@@ -718,6 +731,7 @@ body {
   -webkit-backdrop-filter: blur("8px");
 }
 
+/* map Css Ends */
 @media (max-width: 908px) {
   .solutionSubHead {
     width: 80vw;
@@ -774,7 +788,6 @@ body {
 }
 .RelatedSolutionBox:hover .frontSideOfSolutionBox {
   transform: rotateY(-180deg);
-
   opacity: 0; /* Hide the front side */
 }
 

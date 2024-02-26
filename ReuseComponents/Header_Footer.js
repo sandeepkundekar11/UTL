@@ -124,7 +124,7 @@ class Header extends HTMLElement {
               class="lg:text-white text-slate-300 space-y-3 md:pt-3 pt-0 text-lg lg:mt-0 mt-5"
             >
               <li class="hover:text-red-600">
-                <a href=${htmlpath}Html/Products/Product.html>MPLS/CSGR</a>
+                <a href=${htmlpath}Html/Products/MPLS.html>MPLS/CSGR</a>
               </li>
               <li class="hover:text-red-600">
                 <a href=${htmlpath}Html/Products/Product.html>Enterprise Switch/Router</a>
@@ -182,7 +182,7 @@ class Header extends HTMLElement {
               class="h-auto space-y-4 lg:text-white text-slate-500 text-lg md:pt-6 pt-0"
             >
               <li class="hover:text-red-600">
-                <a href="">State Wide Area Network (SWAN)</a>
+                <a href=${htmlpath}Html/Solutions_pages/State_Wide_Area_Network.html>State Wide Area Network (SWAN)</a>
               </li>
               <li class="hover:text-red-600">
                 <a href=${htmlpath}Html/Solutions_pages/e-Governance-and-Citizen-Service.html>e-Governance and Citizen Service </a>

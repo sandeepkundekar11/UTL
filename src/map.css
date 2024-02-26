@@ -1,0 +1,158 @@
+/* map Css */
+.selectedClass {
+  overflow: scroll;
+}
+.map {
+  width: 700px;
+  /* background: #000; */
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.StateContainer::-webkit-scrollbar {
+  display: none;
+}
+.map > img {
+  width: 700px;
+  height: 750px;
+  cursor: pointer;
+}
+.stateHover {
+  display: none;
+}
+.map > button:focus .stateHover,
+.map > button:hover .stateHover {
+  display: block;
+  text-align: center;
+}
+
+#goa {
+  position: absolute;
+  top: 530px;
+  left: 150px;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid white 2px;
+}
+#Andra {
+  position: absolute;
+  top: 490px;
+  left: 290px;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid white 2px;
+}
+#Gujarat {
+  position: absolute;
+  top: 370px;
+  left: 120px;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid white 2px;
+}
+#Jharkhand {
+  position: absolute;
+  top: 390px;
+  left: 350px;
+
+  border: solid white 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+#Kerala {
+  position: absolute;
+  top: 620px;
+  left: 180px;
+
+  border: solid white 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+#Karnataka {
+  position: absolute;
+  top: 570px;
+  left: 190px;
+
+  border: solid white 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.mapInfo {
+  width: 700px;
+  height: 100%;
+}
+/* media Query */
+@media (max-width: 700px) {
+  .map {
+    width: 320px;
+    height: 100%;
+    position: relative;
+  }
+  .map > img {
+    width: 320px;
+    height: 350px;
+    cursor: pointer;
+  }
+  #goa {
+    position: absolute;
+    top: 245px;
+    left: 65px;
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  #Andra {
+    position: absolute;
+    top: 230px;
+    left: 130px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+  #Gujarat {
+    position: absolute;
+    top: 170px;
+    left: 45px;
+
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+  #Jharkhand {
+    position: absolute;
+    top: 183px;
+    left: 157px;
+
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+  #Kerala {
+    position: absolute;
+    top: 290px;
+    left: 90px;
+
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+  #Karnataka {
+    position: absolute;
+    top: 260px;
+    left: 90px;
+
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+}
