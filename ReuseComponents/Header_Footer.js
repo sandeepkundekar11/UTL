@@ -152,7 +152,7 @@ class Header extends HTMLElement {
                 <a href=${htmlpath}Html/Products/Product.html>Set Top Box</a>
               </li>
               <li class="hover:text-red-600">
-                <a href=${htmlpath}Html/Products/Product.html>Smart Energy Meter</a>
+                <a href=${htmlpath}Html/Products/EnergyMeter.html>Smart Energy Meter</a>
               </li>
               <li class="hover:text-red-600">
                 <a href=${htmlpath}Html/Products/Product.html>Network Orchestrator </a>

@@ -46,7 +46,7 @@ let State_Projects_arr = [
     state: "Gujarat",
     Html: `  <div class="w-full" id="GUJARAT">
     <h1 class="text-3xl font-bold mt-4 pl-4 text-blue-400">GUJARAT</h1>
-    <div class="w-full mt-5 flex justify-around flex-wrap">
+    <div class="w-full mt-5 flex sm:justify-around justify-start pl-4 sm:space-y-0 space-y-4 flex-wrap">
     <img class="w-80 h-72 bg-white" scr="" alt="img"/>
     <img class="w-80 h-72 bg-white" scr="" alt="img"/>
     </div>
@@ -84,7 +84,7 @@ let State_Projects_arr = [
     state: "Goa",
     Html: `  <div class="w-full">
     <h1 class="text-3xl font-bold mt-4 pl-4 text-blue-400">GOA</h1>
-    <div class="w-full mt-5 flex justify-around flex-wrap">
+    <div class="w-full mt-5 flex sm:justify-around justify-start pl-4 sm:space-y-0 space-y-4 flex-wrap">
     <img class="w-80 h-72 bg-white" scr="" alt="img"/>
     <img class="w-80 h-72 bg-white" scr="" alt="img"/>
     </div>
@@ -120,7 +120,7 @@ let State_Projects_arr = [
     state: "Jharkhand",
     Html: `  <div class="w-full">
     <h1 class="text-3xl font-bold mt-4 pl-4 text-blue-400">JHARKHAND</h1>
-    <div class="w-full mt-5 flex justify-around flex-wrap">
+    <div class="w-full mt-5 flex sm:justify-around justify-start pl-4 sm:space-y-0 space-y-4 flex-wrap">
     <img class="w-80 h-72 bg-white" scr="" alt="img"/>
     </div>
     <p class="text-gray-200 text-2xl mt-3 ml-3">
@@ -154,7 +154,7 @@ let State_Projects_arr = [
     state: "Kerala",
     Html: `  <div class="w-full h-full">
     <h1 class="text-3xl font-bold mt-4 pl-4 text-blue-400">KERALA</h1>
-    <div class="w-full mt-5 flex justify-around flex-wrap">
+    <div class="w-full mt-5 flex sm:justify-around justify-start pl-4 sm:space-y-0 space-y-4 flex-wrap">
     <img class="w-80 h-72 bg-white" scr="" alt="img"/>
     <img class="w-80 h-72 bg-white" scr="" alt="img"/>
     </div>
@@ -186,7 +186,7 @@ let State_Projects_arr = [
     state: "Karnataka",
     Html: `  <div class="w-full">
     <h1 class="text-3xl font-bold mt-4 pl-4 text-blue-400">KARNATAKA</h1>
-    <div class="w-full mt-5 flex justify-around flex-wrap">
+    <div class="w-full mt-5 flex sm:justify-around justify-start pl-4 sm:space-y-0 space-y-4 flex-wrap">
     <img class="w-80 h-72 bg-white" scr="" alt="img"/>
     <img class="w-80 h-72 bg-white" scr="" alt="img"/>
     </div>
