@@ -107,17 +107,3 @@ class SolutionCard extends HTMLElement {
 }
 
 customElements.define("solution-box-container", SolutionCard);
-//   <div
-//       class="h-96 w-80 border transition-all duration-300 RelatedSolutionBox"
-//       style:""
-//     >
-//       <div
-//         class="frontSideOfSolutionBox bg-slate-400 absolute h-full w-full"
-//       >
-//         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-//         aut consectetur optio labore reiciendis repudiandae, repellendus
-//         voluptatibus, minima dicta, omnis aliquam est ratione at
-//         excepturi. Laudantium dolorum quidem molestiae voluptates.
-//       </div>
-//       <div class="BackSideOfSolutionBox">Sandeep n Kundekar</div>
-//     </div>
