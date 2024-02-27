@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="icon" type="images/x-icon" href="../Images/Logo.png" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Main header is reusable Navigation bar component -->
+    <main-header basepath="../" htmlbase-path="../"> </main-header>
+
+    <!--Contact us Main whole page  -->
+    <div class="w-screen pt-28 bg-gray-900">
+      <div class="w-screen Contactheading flex flex-col justify-center">
+        <h1
+          class="text-start w-4/5 m-auto sm:text-7xl text-2xl italic font-semibold text-white"
+        >
+          Contact Us
+        </h1>
+      </div>
+
+      <div
+        class="lg:w-4/5 w-full lg:p-0 p-4 m-auto formContainer flex flex-wrap"
+      >
+        <div class="w-full m-auto pt-3 pb-16">
+          <h1 class="font-semibold text-4xl text-white">Let’s keep in touch</h1>
+          <p class="text-xl mt-3 text-gray-500">
+            If you have any comments, inquiries or questions concerning our
+            products & services,please complete the following form and we will
+            get in touch with you soon.
+          </p>
+        </div>
+        <!-- main form -->
+        <div class="w-full flex flex-wrap md:flex-row flex-col pb-24">
+          <div class="md:w-3/5 w-full">
+            <!-- row 1 -->
+            <div class="w-full flex">
+              <div class="w-2/4 md:text-xl text-sm FirstName">
+                <input
+                  type="text"
+                  class="w-4/5 md:text-xl text-sm text-gray-500"
+                  placeholder="First name"
+                />
+                <p></p>
+              </div>
+              <div class="w-2/4 text-xl lastName">
+                <input
+                  type="text"
+                  class="w-4/5 md:text-xl text-sm text-gray-500"
+                  placeholder="Last name"
+                />
+                <p></p>
+              </div>
+            </div>
+            <!-- row2 -->
+            <div class="w-full flex mt-8">
+              <div class="w-2/4 text-xl Email">
+                <input
+                  type="email"
+                  class="w-4/5 md:text-xl text-sm text-gray-500"
+                  placeholder="Email"
+                />
+                <p></p>
+              </div>
+              <div class="w-2/4 text-xl phoneNumber">
+                <input
+                  type="text"
+                  class="w-4/5 md:text-xl text-sm text-gray-500"
+                  placeholder="Phone number"
+                />
+                <p></p>
+              </div>
+            </div>
+
+            <div class="w-full mt-8">
+              <textarea
+                vale=""
+                class="w-11/12 bg-transparent message-text-area md:text-xl text-sm text-gray-500"
+                placeholder="Your message..."
+                rows="10"
+                cols="30"
+              ></textarea>
+            </div>
+            <button
+              class="w-11/12 mt-3 text-white transition-all duration-200m ease-linear hover:bg-blue-800 h-10 bg-blue-900 rounded-sm"
+            >
+              Send message
+            </button>
+          </div>
+          <div class="md:w-2/5 w-11/12 lg:pl-0 md:pl-2 pl-0 md:h-auto h-80">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3887.785733401801!2d77.70941!3d12.985552!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16773e7dc413%3A0x9ffa76392c7709ad!2sUnited%20Telecoms%20Limited!5e0!3m2!1sen!2sin!4v1709036953233!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <main-footer basepath="../" htmlbase-path="../"></main-footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../ReuseComponents/Header_Footer.js"></script>
+    <script type="module" src="../index.js"></script>
+    <script type="" src="../swaper.js"></script>
+    <script type="module" src="../Investor.js"></script>
+    <script type="module">
+      // adding navigation bar js code
+      let menu = document.querySelector(".menu");
+      let navlist = document.querySelector(".navlist");
+      menu.addEventListener("click", () => {
+        if (navlist.className.includes("navlist")) {
+          navlist.classList.remove("navlist");
+          navlist.classList.add("showNavbar");
+          menu.setAttribute("src", "../Images/cancel.png");
+        } else {
+          navlist.classList.add("navlist");
+          navlist.classList.remove("showNavbar");
+          menu.setAttribute("src", "../Images/menu.png");
+        }
+      });
+    </script>
+  </body>
+</html>

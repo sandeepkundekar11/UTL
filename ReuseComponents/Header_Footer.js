@@ -313,7 +313,7 @@ class Header extends HTMLElement {
         <li
           class="text-lg flex items-center cursor-pointer font-semibold mx-4 text-white lg:border-t-0 border-slate-600 border-t lg:pt-2 pt-4"
         >
-          Contact Us
+        <a href=${htmlpath}Html/Contact.html>Contact Us</a>
         </li>
       </ul>
     </div>

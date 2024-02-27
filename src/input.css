@@ -795,3 +795,42 @@ body {
   transform: rotateY(0deg); /* Show the back side */
   opacity: 1; /* Make it visible */
 }
+
+/* styling Contact page */
+.Contactheading {
+  height: 35vh;
+  background: linear-gradient(
+      to left,
+      rgba(73, 73, 73, 0.678) 60%,
+      rgba(37, 37, 73, 0.769)
+    ),
+    url("https://www.cosmofirst.com/public/uploads/1656045416.contact--banner-cosmo.jpg")
+      no-repeat center center/cover;
+  position: relative;
+  overflow: auto;
+}
+.Utlmap {
+  height: 60vh;
+
+  /* z-index: 100; */
+}
+.ContactForm {
+  position: absolute;
+  top: 530px;
+  left: 150px;
+  width: 85vw;
+  height: 500px;
+  background: #000;
+}
+.FirstName > input,
+.lastName > input,
+.phoneNumber > input,
+.Email > input {
+  outline: none !important;
+  border: none;
+  border: solid rgb(90, 90, 90) 1px !important;
+  background-color: transparent;
+}
+.message-text-area {
+  border: solid rgb(90, 90, 90) 1px !important;
+}
