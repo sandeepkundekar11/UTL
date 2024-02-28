@@ -1875,6 +1875,10 @@ input[type="range"]::-ms-fill-lower {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-start {
   text-align: start;
 }
@@ -3060,6 +3064,13 @@ body {
 
 .message-text-area {
   border: solid rgb(90, 90, 90) 1px !important;
+}
+
+.lable {
+}
+
+.firstNameInput:hover .lable {
+  background-color: #7c78f3;
 }
 
 .hover\:-translate-y-24:hover {
