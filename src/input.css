@@ -834,3 +834,8 @@ body {
 .message-text-area {
   border: solid rgb(90, 90, 90) 1px !important;
 }
+.lable {
+}
+.firstNameInput:hover .lable {
+  background-color: #7c78f3;
+}
