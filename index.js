@@ -63,6 +63,22 @@ try {
     }
   });
 
+  // openResourcesDropdown
+
+  let ResourcesDropdownBtn = document.querySelector(".ResourcesDropdown");
+  let navResources = document.querySelector(".navResources");
+
+  ResourcesDropdownBtn.addEventListener("click", () => {
+    if (navResources.className.includes("navResources")) {
+      navResources.classList.remove("navResources");
+      navResources.classList.add("openResourcesDropdown");
+      aboutDropdownBtn.classList.toggle("rotate-180");
+    } else {
+      navResources.classList.add("navResources");
+      navResources.classList.remove("openResourcesDropdown");
+      aboutDropdownBtn.classList.toggle("rotate-180");
+    }
+  });
   // slider js
 
   // setting home page background text

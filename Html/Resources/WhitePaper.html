@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board of Directors</title>
+    <link rel="stylesheet" href="../../src/output.css" />
+    <link rel="icon" type="images/x-icon" href="../../Images/Logo.png" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- navigation bar -->
+    <main-header basepath="../../" htmlbase-path="../../"> </main-header>
+    <!-- board of director home page -->
+    <div class="w-screen h-full bg-gray-900 pt-32">
+      <div
+        class="w-screen h-80 flex items-center justify-center ResourcesWhitePaper"
+      >
+        <h1
+          class="text-start text-white drop-shadow-2xl text-5xl font-bold italic md:w-3/4"
+        >
+          Resources
+        </h1>
+      </div>
+
+      <div class="lg:w-4/5 md:w-11/12 md:flex m-auto h-full mt-5 pb-6">
+        <div class="ResourcesListContaier h-96 p-4">
+          <h1 class="text-2xl text-end text-white font-semibold mb-4">
+            Catagories
+          </h1>
+          <ul class="w-full flex flex-col items-end space-y-4">
+            <li class="text-xl font-medium text-gray-300">Articles</li>
+            <li class="text-xl font-medium text-gray-300">Case Studies</li>
+            <li class="text-xl font-medium text-gray-300">White Papers</li>
+            <li class="text-xl font-medium text-gray-300">Videos</li>
+            <li class="text-xl font-medium text-gray-300">Webinars</li>
+            <li class="text-xl text-end font-medium text-gray-300">
+              Product Documentations
+            </li>
+          </ul>
+        </div>
+        <div class="whitePaperInofContainer w-full md:pl-4 bg-slate-100">
+          <p class="text-3xl w-11/12 text-white md:mt-0 mt-5 m-auto">
+            White Paper
+          </p>
+          <div
+            class="WhitePaperImageBoxs w-full md:ml-4 mt-4 flex flex-wrap md:justify-start"
+          >
+            <!-- here will comes all white papers box which is added by javacript -->
+          </div>
+          <br />
+          <div class="whitePaperTracker w-full flex justify-center -mt-9 mb-4">
+            <button class="ResourcesButtonsPre text-white"><</button>
+            <div class="WhitePaperSubcontainer"></div>
+            <button class="ResourcesButtonsNext text-white">></button>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------- -->
+
+      <!-- ----------------------------- -->
+    </div>
+    <!-- footer -->
+    <main-footer basepath="../../" htmlbase-path="../../"></main-footer>
+    <script type="module" src="../../ReuseComponents/Header_Footer.js"></script>
+    <script type="module" src="../../index.js"></script>
+    <script type="module" src="../../Resources.js"></script>
+    <script type="module">
+      try {
+        let menu = document.querySelector(".menu");
+        let navlist = document.querySelector(".navlist");
+        menu.addEventListener("click", () => {
+          if (navlist.className.includes("navlist")) {
+            navlist.classList.remove("navlist");
+            navlist.classList.add("showNavbar");
+            menu.setAttribute("src", "../../Images/cancel.png");
+          } else {
+            navlist.classList.add("navlist");
+            navlist.classList.remove("showNavbar");
+            menu.setAttribute("src", "../../Images/menu.png");
+          }
+        });
+      } catch (error) {}
+    </script>
+  </body>
+</html>

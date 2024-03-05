@@ -267,6 +267,50 @@ class Header extends HTMLElement {
         </li>
 
         <li
+          class="text-lg items-center cursor-pointer mx-4 Resources  font-semibold lg:border-t-0 border-t border-slate-600 lg:pt-2 pt-4"
+        >
+          <div class="flex items-center justify-between text-white text-lg">
+            Resources
+            <img
+              class="w-6 h-5 ResourcesDropdown lg:hidden"
+              src=${baspath}/Images/Dropdown.png
+              alt=""
+            />
+            <!-- the bellow image will come in to the picture when our screen width is 1024 -->
+            <img
+              class="w-4 h-4 ml-2 lg:block hidden"
+              src=${baspath}/Images/Dropdown.png
+              alt=""
+            />
+          </div>
+          
+          <div class="flex flex-col px-5 navResources bg-gray-700">
+            <ul
+              class="h-auto space-y-4 text-lg lg:text-white text-slate-500 md:pt-4 pt-0"
+            >
+              <li class="hover:text-red-600 transition-all duration-200">
+                <a href="">Articles</a>
+              </li>
+              <li class="hover:text-red-600">
+                <a href="">Case Studies</a>
+              </li>
+              <li class="hover:text-red-600">
+                <a href=${htmlpath}Html/Resources/WhitePaper.html>White Paper</a>
+              </li>
+              <li class="hover:text-red-600">
+                <a href="">Videos</a>
+              </li>
+              <li class="hover:text-red-600">
+                <a href="">Webinars</a>
+              </li>
+              <li class="hover:text-red-600">
+                <a href="">Product Documentation</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li
           class="text-lg items-center cursor-pointer mx-4 about font-semibold lg:border-t-0 border-t border-slate-600 lg:pt-2 pt-4"
         >
           <div class="flex items-center justify-between text-white text-lg">
