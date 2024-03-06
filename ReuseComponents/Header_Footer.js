@@ -292,7 +292,7 @@ class Header extends HTMLElement {
                 <a href=${htmlpath}Html/Resources/Articles.html>Articles</a>
               </li>
               <li class="hover:text-red-600">
-                <a href="">Case Studies</a>
+                <a href=${htmlpath}Html/Resources/CaseStudy.html>Case Studies</a>
               </li>
               <li class="hover:text-red-600">
                 <a href=${htmlpath}Html/Resources/WhitePaper.html>White Paper</a>

@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
   font-family: "Barlow Semi Condensed", sans-serif !important;
   font-optical-sizing: auto !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   font-style: normal !important;
 }
 .allNavbar {
@@ -586,16 +586,13 @@ body {
   background: url("../Images/UTL_Groups1.jpg") no-repeat center center/cover;
 }
 
-.UTL-Groups-Image > h1 {
+.UTL-Groups-Image > div {
   padding: 1rem;
   --tw-bg-opacity: 1;
   font-family: "Libre Franklin", sans-serif;
   font-family: "Oswald", sans-serif;
 
-  background-color: rgba(0, 0, 0, 0.608);
-  -webkit-backdrop-filter: blur("10px");
-  backdrop-filter: blur("10px");
-  text-align: center;
+  text-align: start;
 }
 
 .GroupsCompany_Info {
@@ -820,7 +817,7 @@ body {
 
 /* styling Contact page */
 .Contactheading {
-  height: 35vh;
+  height: 32vh;
   background: linear-gradient(
       to left,
       rgba(73, 73, 73, 0.678) 60%,
