@@ -289,7 +289,7 @@ class Header extends HTMLElement {
               class="h-auto space-y-4 text-lg lg:text-white text-slate-500 md:pt-4 pt-0"
             >
               <li class="hover:text-red-600 transition-all duration-200">
-                <a href="">Articles</a>
+                <a href=${htmlpath}Html/Resources/Articles.html>Articles</a>
               </li>
               <li class="hover:text-red-600">
                 <a href="">Case Studies</a>
