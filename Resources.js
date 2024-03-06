@@ -1,4 +1,5 @@
 // Writeing the logic for the white paper page start
+const ReuseResouceFun = (resource) => {};
 try {
   let WhitePaperContainer = document.querySelector(".WhitePaperImageBoxs");
   let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -8,7 +9,8 @@ try {
     let whitePaperHtml = "";
     arr.forEach((ele, index) => {
       if (index >= whitePapaerStartIndex && index <= WhitePaperEndIndex) {
-        whitePaperHtml += `<div class="md:w-96 w-11/12 h-64 bg-slate-950 md:m-4 p-2 m-auto md:mt-0 mt-4">
+        whitePaperHtml += `<div class="md:w-96 w-11/12 h-64 border-b border-gray-500 md:m-4 p-2 m-auto md:mt-0 mt-4 
+        transition-all duration-300 hover:border-b-4 hover:border-blue-950 hover:-translate-y-4 hover:shadow hover:shadow-gray-600 ">
           <div class="w-full h-4/5 bg-slate-300">
             <img src="/Images/Resouces/ReosucesDummyImg1.jpg" class="w-full h-full" alt="images" />
           </div>
@@ -84,13 +86,13 @@ try {
     },
   ];
   const ArticalBoxContainer = document.querySelector(".ArticalBoxContainer");
-  console.log(ArticalBoxContainer);
-  const ShowArticles = () => {
+  const ShowArticles = (arr = [], Text) => {
     let ArticalHtml = "";
-    Articals_Arr.forEach((ele) => {
-      ArticalHtml += `<div
-    class="border-b border-gray-500 h-auto px-1 pb-4 m-3 ArticalBox"
-  >
+    if (arr.length > 0) {
+      arr.forEach((ele) => {
+        ArticalHtml += `<div
+    class="border-b border-gray-500 h-auto px-1 pb-4 m-3 ArticalBox transition-all duration-300 hover:border-b-4
+     hover:border-blue-900 hover:-translate-y-4 hover:shadow hover:shadow-gray-600 ">
     <h1 class="font-normal text-blue-600 font-serif text-2xl text-wrap mb-4"> ${ele.title}</h1>
     <div class="flex flex-wrap items-center w-full pb-4">
       <img class="h-44 w-full bg-white border-none" src="" alt="" />
@@ -104,9 +106,33 @@ try {
       </div>
     </div>
   </div>`;
-    });
+      });
+    } else {
+      ArticalHtml = `<h1 class="text-center text-3xl text-gray-600">Articles  not found :${Text} </h1>`;
+    }
     ArticalBoxContainer.innerHTML = ArticalHtml;
   };
-  ShowArticles();
+  ShowArticles(Articals_Arr);
+  let searchIcon = document.querySelector(".searchIcon");
+  let Loader = document.querySelector(".Loader");
   // Writing the logic for the Search Box
+  let ArticalSearchInput = document.querySelector(".ArticalSearchInput");
+  ArticalSearchInput.addEventListener("input", (e) => {
+    if (e) {
+      searchIcon.classList.add("hidden");
+      Loader.classList.remove("hidden");
+    }
+    setTimeout(() => {
+      searchIcon.classList.remove("hidden");
+      Loader.classList.add("hidden");
+    }, 1000);
+    let Inputvalue = e.target.value;
+    let uppdatedArr = Articals_Arr.reduce((acc, pre) => {
+      if (pre.title.toLowerCase().includes(Inputvalue.toLowerCase())) {
+        acc.push(pre);
+      }
+      return acc;
+    }, []);
+    ShowArticles(uppdatedArr, Inputvalue);
+  });
 } catch (error) {}
