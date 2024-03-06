@@ -1,25 +1,112 @@
 // Writeing the logic for the white paper page start
-let WhitePaperContainer = document.querySelector(".WhitePaperImageBoxs");
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let whitePapaerStartIndex = 0;
-let WhitePaperEndIndex = 3;
-const AppendData = () => {
-  let whitePaperHtml = "";
-  arr.forEach((ele, index) => {
-    if (index >= whitePapaerStartIndex && index <= WhitePaperEndIndex) {
-      whitePaperHtml += `<div class="md:w-96 w-11/12 h-64 border md:m-4 m-auto md:mt-0 mt-4">
+try {
+  let WhitePaperContainer = document.querySelector(".WhitePaperImageBoxs");
+  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  let whitePapaerStartIndex = 0;
+  let WhitePaperEndIndex = 3;
+  const AppendData = () => {
+    let whitePaperHtml = "";
+    arr.forEach((ele, index) => {
+      if (index >= whitePapaerStartIndex && index <= WhitePaperEndIndex) {
+        whitePaperHtml += `<div class="md:w-96 w-11/12 h-64 bg-slate-950 md:m-4 p-2 m-auto md:mt-0 mt-4">
           <div class="w-full h-4/5 bg-slate-300">
-            <img src="" class="w-full h-full" alt="images" />
+            <img src="/Images/Resouces/ReosucesDummyImg1.jpg" class="w-full h-full" alt="images" />
           </div>
-          <div class="w-full h-1/5 flex items-center justify-normal">
+          <div class="w-full h-1/5 flex items-center justify-normal py-2">
             <p class="text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
             </p>
-            <div class="w-14 h-12 border rounded-full text-white">${ele}</div>
+            <div class="w-14 h-10 hover:bg-gray-800 flex items-center justify-center rounded-full text-white"><img class="w-6 h-6" src="/Images/Download_file.png"/></div>
           </div>
         </div>`;
-    }
-  });
-  WhitePaperContainer.innerHTML = whitePaperHtml;
-};
-AppendData();
+      }
+    });
+    WhitePaperContainer.innerHTML = whitePaperHtml;
+  };
+  AppendData();
+
+  // Creatin the Buttons for next and previous Functionality
+
+  let WhitePaperSubcontainer = document.querySelector(
+    ".WhitePaperSubcontainer"
+  );
+  let TotalButtons = Math.ceil(arr.length / 4);
+  for (let i = 1; i <= TotalButtons; i++) {
+    let Buttons = document.createElement("button");
+    Buttons.classList.add("ResourcesButtons");
+    Buttons.innerHTML = `${i}`;
+    WhitePaperSubcontainer.appendChild(Buttons);
+  }
+
+  let AllButtons = document.querySelectorAll(".ResourcesButtons");
+} catch (error) {}
+
+// Writing the Logic for Articles pages
+
+try {
+  let Articals_Arr = [
+    {
+      title: "The Future of Telecommunications: Embracing 5G Technology",
+      image: "https://example.com/telecom_image_1.jpg",
+      information:
+        "Explore the advancements and potential of 5G technology in shaping the future of telecommunications. This article delves into the key features and applications, paving the way for a connected world.",
+      link: "https://example.com/article1",
+    },
+    {
+      title: "Navigating the Digital Landscape: Telecom Trends in 2024",
+      image: "https://example.com/telecom_image_2.jpg",
+      information:
+        "Stay ahead in the fast-paced world of telecommunications. Uncover the latest trends shaping the industry in 2024 and understand how digital transformation is influencing communication networks.",
+      link: "https://example.com/article2",
+    },
+    {
+      title:
+        "Revolutionizing Connectivity: Exploring the Impact of IoT on Telecommunications",
+      image: "https://example.com/telecom_image_3.jpg",
+      information:
+        "Dive into the intersection of telecommunications and the Internet of Things (IoT). Discover how IoT is reshaping connectivity, from smart homes to industrial applications, and the challenges it presents.",
+      link: "https://example.com/article3",
+    },
+    {
+      title:
+        "5G Unleashed: A Deep Dive into the Next Generation of Wireless Communication",
+      image: "https://example.com/telecom_image_4.jpg",
+      information:
+        "Unlock the potential of 5G with an in-depth exploration of its capabilities. From faster speeds to low-latency communication, this article provides a comprehensive look at the latest in wireless technology.",
+      link: "https://example.com/article4",
+    },
+    {
+      title: "Telecom Resilience: How the Industry Adapts to Global Challenges",
+      image: "https://example.com/telecom_image_5.jpg",
+      information:
+        "Examine the resilience of the telecom industry in the face of global challenges. Learn about strategies and innovations that help the sector adapt and thrive in a rapidly changing environment.",
+      link: "https://example.com/article5",
+    },
+  ];
+  const ArticalBoxContainer = document.querySelector(".ArticalBoxContainer");
+  console.log(ArticalBoxContainer);
+  const ShowArticles = () => {
+    let ArticalHtml = "";
+    Articals_Arr.forEach((ele) => {
+      ArticalHtml += `<div
+    class="border-b border-gray-500 h-auto px-1 pb-4 m-3 ArticalBox"
+  >
+    <h1 class="font-normal text-blue-600 font-serif text-2xl text-wrap mb-4"> ${ele.title}</h1>
+    <div class="flex flex-wrap items-center w-full pb-4">
+      <img class="h-44 w-full bg-white border-none" src="" alt="" />
+      <div class="h-44 w-full pl-2 flex flex-col justify-between">
+        <p class="text-base text-white text-start">
+        ${ele.information}
+        </p>
+        <button class="w-28 mt-2 h-10 border text-white">
+          Read more
+        </button>
+      </div>
+    </div>
+  </div>`;
+    });
+    ArticalBoxContainer.innerHTML = ArticalHtml;
+  };
+  ShowArticles();
+  // Writing the logic for the Search Box
+} catch (error) {}
