@@ -2,7 +2,7 @@
 const ReuseResouceFun = (resource) => {};
 try {
   let WhitePaperContainer = document.querySelector(".WhitePaperImageBoxs");
-  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
   let whitePapaerStartIndex = 0;
   let WhitePaperEndIndex = 3;
   const AppendData = () => {
@@ -16,7 +16,7 @@ try {
           </div>
           <div class="w-full h-1/5 flex items-center justify-normal py-2">
             <p class="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ${ele}
             </p>
             <div class="w-14 h-10 hover:bg-gray-800 flex items-center justify-center rounded-full text-white"><img class="w-6 h-6" src="/Images/Download_file.png"/></div>
           </div>
@@ -32,15 +32,92 @@ try {
   let WhitePaperSubcontainer = document.querySelector(
     ".WhitePaperSubcontainer"
   );
+  // bellow we are calculating the Tpotal number Button should come
   let TotalButtons = Math.ceil(arr.length / 4);
+  // bellow we are Creating the Buttons
   for (let i = 1; i <= TotalButtons; i++) {
     let Buttons = document.createElement("button");
     Buttons.classList.add("ResourcesButtons");
     Buttons.innerHTML = `${i}`;
     WhitePaperSubcontainer.appendChild(Buttons);
   }
-
+  // bellow we are setting initial value of the page
+  let pageCount = 1;
+  // bellow we are getting all the buttons using queryParameters
+  let PreBtn = document.querySelector(".ResourcesButtonsPre");
+  let Nextbtn = document.querySelector(".ResourcesButtonsNext");
   let AllButtons = document.querySelectorAll(".ResourcesButtons");
+
+  // bellow we are setting the initial color of the Button
+  AllButtons[pageCount - 1].classList.add("activeBtn");
+
+  // bellow function we are using to toggle the color of the buttons
+  const ToggleColor = () => {
+    AllButtons.forEach((ele, index) => {
+      if (index + 1 !== pageCount) {
+        ele.classList.remove("activeBtn");
+      } else {
+        ele.classList.add("activeBtn");
+      }
+    });
+  };
+
+  // bellow we are toggling the pre next and next button
+  const ToggleSlideBtns = () => {
+    if (pageCount === 1) {
+      PreBtn.style.display = "none";
+    } else {
+      PreBtn.style.display = "block";
+    }
+    if (pageCount === 3) {
+      Nextbtn.style.display = "none";
+    } else {
+      Nextbtn.style.display = "block";
+    }
+  };
+  ToggleSlideBtns();
+  let newArr = [];
+  // bellow we are created a array for the setting the start and End index
+  for (let i = 0; i < arr.length; i += 4) {
+    let start = i;
+    newArr.push({
+      startIndex: i,
+      endIndex: start + 3,
+    });
+  }
+
+  // bellow we are setting the start and end index onClick function
+  newArr.forEach((ele, index) => {
+    AllButtons[index].addEventListener("click", () => {
+      pageCount = parseInt(AllButtons[index].innerHTML);
+      whitePapaerStartIndex = ele.startIndex;
+      WhitePaperEndIndex = ele.endIndex;
+      AppendData();
+      ToggleSlideBtns();
+      ToggleColor();
+    });
+  });
+  console.log(newArr);
+
+  // bellow function we are using to go to previous function
+  PreBtn.addEventListener("click", () => {
+    pageCount--;
+    whitePapaerStartIndex = whitePapaerStartIndex - 4;
+    WhitePaperEndIndex = WhitePaperEndIndex - 4;
+    AppendData();
+    ToggleSlideBtns();
+    ToggleColor();
+  });
+
+  //bellow function we are using to go next page
+  Nextbtn.addEventListener("click", () => {
+    pageCount++;
+    whitePapaerStartIndex = whitePapaerStartIndex + 4;
+    WhitePaperEndIndex = WhitePaperEndIndex + 4;
+    AppendData();
+    ToggleSlideBtns();
+    ToggleColor();
+  });
 } catch (error) {}
 
 // Writing the Logic for Articles pages
