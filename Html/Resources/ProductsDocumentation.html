@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Documentation- UTL</title>
+    <link rel="stylesheet" href="../../src/output.css" />
+    <link rel="icon" type="images/x-icon" href="../../Images/Logo.png" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- navigation bar -->
+    <main-header basepath="../../" htmlbase-path="../../"> </main-header>
+    <!-- board of director home page -->
+    <div class="w-screen h-full bg-gray-900 pt-32">
+      <div
+        class="w-screen h-80 flex items-center justify-center ResourcesWhitePaper"
+      >
+        <h1
+          class="text-start text-white drop-shadow-2xl md:text-7xl text-5xl font-bold italic md:w-3/4"
+        >
+          Products Documentation
+        </h1>
+      </div>
+
+      <div class=" md:w-11/12 md:flex m-auto h-full mt-5 pb-6">
+           
+        <div class="whitePaperInofContainer w-full md:pl-4">
+          <p
+            class="md:text-5xl text-3xl text-cyan-600 font-bold w-full md:pl-7 md:mt-0 mt-5 m-auto"
+          >
+            Products Docs
+          </p>
+          <!-- searchBox Start -->
+         <div class="w-full md:pl-7">
+            <div
+            class="ProductDocInputSearch flex md:w-96 w-80 border-b border-gray-600 py-2"
+          >
+            <input
+              class="w-full h-10 text-white bg-transparent text-xl outline-none border-none focus:bg-slate-800 ProductsDocSearchInput focus:ring-0"
+              type="text"
+              placeholder="Search Products Document"
+              name=""
+              id=""
+            />
+            <img
+              class="w-10 h-10 ProductsDocSearchIcon"
+              src="../../Images/SearchBox.png"
+              alt=""
+            />
+            <div
+              class="w-10 h-10 rounded-full border-b-2 duration-200 hidden animate-spin ProductsLoader"
+            ></div>
+          </div>
+         </div>
+                 <!-- searchBox ends -->
+          <div
+            class="ProductsDocsImageBoxs w-full  mt-4 flex flex-wrap md:justify-start"
+          >
+            <!-- here will comes all white papers box which is added by javacript -->
+            
+        </div>
+      </div>
+      <!-- ----------------------------- -->
+
+      <!-- ----------------------------- -->
+    </div>
+    <!-- footer -->
+    <main-footer basepath="../../" htmlbase-path="../../"></main-footer>
+    <script type="module" src="../../ReuseComponents/Header_Footer.js"></script>
+    <script type="module" src="../../index.js"></script>
+    <script type="module" src="../../Resources.js"></script>
+    <script type="module">
+      try {
+        let menu = document.querySelector(".menu");
+        let navlist = document.querySelector(".navlist");
+        menu.addEventListener("click", () => {
+          if (navlist.className.includes("navlist")) {
+            navlist.classList.remove("navlist");
+            navlist.classList.add("showNavbar");
+            menu.setAttribute("src", "../../Images/cancel.png");
+          } else {
+            navlist.classList.add("navlist");
+            navlist.classList.remove("showNavbar");
+            menu.setAttribute("src", "../../Images/menu.png");
+          }
+        });
+      } catch (error) {}
+    </script>
+  </body>
+</html>

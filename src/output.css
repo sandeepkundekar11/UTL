@@ -1710,6 +1710,11 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 82 82 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1917,6 +1922,14 @@ input[type="range"]::-ms-fill-lower {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pl-11 {
+  padding-left: 2.75rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .text-center {
@@ -3633,6 +3646,10 @@ body {
     width: 24rem;
   }
 
+  .md\:w-64 {
+    width: 16rem;
+  }
+
   .md\:-translate-x-3 {
     --tw-translate-x: -0.75rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3659,10 +3676,6 @@ body {
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
-  }
-
-  .md\:items-start {
-    align-items: flex-start;
   }
 
   .md\:justify-start {
@@ -3717,6 +3730,10 @@ body {
 
   .md\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .md\:pl-7 {
+    padding-left: 1.75rem;
   }
 
   .md\:text-2xl {

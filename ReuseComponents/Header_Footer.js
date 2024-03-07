@@ -298,13 +298,13 @@ class Header extends HTMLElement {
                 <a href=${htmlpath}Html/Resources/WhitePaper.html>White Paper</a>
               </li>
               <li class="hover:text-red-600">
-                <a href="">Videos</a>
+                <a href=${htmlpath}Html/Resources/Videos.html>Videos</a>
               </li>
               <li class="hover:text-red-600">
-                <a href="">Webinars</a>
+                <a href=${htmlpath}Html/Resources/Webinar.html>Webinars</a>
               </li>
               <li class="hover:text-red-600">
-                <a href="">Product Documentation</a>
+                <a href=${htmlpath}Html/Resources/ProductsDocumentation.html>Product Documentation</a>
               </li>
             </ul>
           </div>
