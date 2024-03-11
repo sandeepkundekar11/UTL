@@ -149,7 +149,7 @@ try {
   let VidoesHtml = ``;
   let VidoesArr = [1, 2, 3, 4, 5, 6];
   VidoesArr.forEach((ele) => {
-    VidoesHtml += `<div class="md:w-80 w-11/12 h-64 border-b border-gray-500 md:m-4 p-2 m-auto md:mt-0 mt-4 transition-all duration-300 hover:border-b-4 hover:border-blue-950 hover:-translate-y-4 hover:shadow hover:shadow-gray-600 ">
+    VidoesHtml += `<div class="md:w-80  w-96 h-64 border-b border-gray-500 md:m-4 p-2 m-auto md:mt-0 mt-4 transition-all duration-300 hover:border-b-4 hover:border-blue-950 hover:-translate-y-4 hover:shadow hover:shadow-gray-600 ">
     <div class="w-full h-4/5 bg-slate-300">
       <video src="" class="w-full h-full" controls >
 

@@ -2190,6 +2190,7 @@ input[type="range"]::-ms-fill-lower {
   font-optical-sizing: auto !important;
   font-weight: 500 !important;
   font-style: normal !important;
+  /* overflow-x: hidden; */
 }
 
 .allNavbar {
@@ -2310,9 +2311,14 @@ body {
     position: fixed;
   }
 
+  .navbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .allNavbar {
     position: fixed;
     top: 0%;
+    left: 0%;
   }
 
   .showNavbar {
@@ -2324,11 +2330,21 @@ body {
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
     width: 100vw;
     height: 26rem;
-    overflow: scroll;
+    overflow-y: scroll;
     text-align: center;
     transition: 0.2s height linear;
     border-top-width: 1px;
     border-top: solid rgb(83, 83, 83) 1px;
+  }
+
+  .showNavbar::-webkit-scrollbar,
+  .navSolution::-webkit-scrollbar,
+  .navGroups::-webkit-scrollbar,
+  .navAbout::-webkit-scrollbar,
+  .product::-webkit-scrollbar,
+  .navResources::-webkit-scrollbar,
+  .navlist::-webkit-scrollbar {
+    display: none;
   }
 
   .navlist {
@@ -2391,6 +2407,10 @@ body {
   }
 
   /* following class we are using toggle the dropdowns of each navlinks like products,about,utl groups,ect */
+
+  .openProductDropdown::-webkit-scrollbar {
+    display: none;
+  }
 
   .openDropdown,
   .openProductDropdown {
@@ -3511,6 +3531,10 @@ body {
 
   .md\:ml-4 {
     margin-left: 1rem;
+  }
+
+  .md\:ml-6 {
+    margin-left: 1.5rem;
   }
 
   .md\:mt-0 {
