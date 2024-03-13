@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>OLT 8 Port (UTL8008GL OLT)</title>
     <link rel="stylesheet" href="../../src/output.css" />
     <link rel="icon" type="images/x-icon" href="../../Images/Logo.png" />
   </head>
@@ -13,7 +13,7 @@
     <!-- products display page -->
     <div class="product-page">
       <product-item></product-item>
-      <!-- <img src="../../Images/Products/OLT_8_Port_1.png" alt=""> -->
+
       <!-- related products list slide -->
     </div>
     <div class="w-screen bg-gray-900 py-11">
@@ -166,13 +166,73 @@
       });
 
       // adding the Product Inforamtion
-      let Productarr = [
-        "../../Images/Products/OLT_8_Port_1.png",
-        "../../Images/Products/OLT_8_Port_1.png",
-      ];
+
+      let Product = {
+        name: "OLT8 Port (UTL8008GL OLT)",
+        ProductImgArr: [
+          "../../Images/Products/OLT_8_Port_1.png",
+          "../../Images/Products/OLT_8_Port_2.png",
+        ],
+        Overview: `UTL8008GL OLT is self-developed Compact 1U GPON OLT equipment, meeting the requirements of ITU-T G.984/G.988, possessing super GPON access capacity, carrier-class reliability and the complete security function. It can satisfy long-distance optical fiber access requirement on account of its excellent management, maintenance and monitoring capability, abundant service features and flexible network mode
+        <br>
+        <br>
+             It provides 8*Downstream GPON ports, 4*Uplink GE ETH ports, 2*Uplink GE SFP ports and 2*Uplink 10G SFP+ ports. Up to 1:128 Split ratio for up to 1024 GPON users. It is suitable for Broadcast 3 in 1, video surveillance network, enterprise LAN, IoT, etc.`,
+        Specification: [
+          [
+            "Network interface::",
+            "8 x GPON (2.5/1.25 Gbps), 2 x 10GE SFP+4 x RJ-45 + 2 x SFP",
+          ],
+          ["GPON interface:", "ITU-TG.984.x standard"],
+          [
+            "Local Management interface:",
+            "RJ-45 EIA/TIA-232 Console management port 1000BASE-T out-band management port",
+          ],
+          ["Performance:", "68Gbps Switching Capacity 1:128 Split ratio"],
+          ["Maximum ONU quantity:", "4096 GEM port-ids, 1024 T-CONT, 128 ONT "],
+          [
+            "Power Supply and Consumption:",
+            "Pluggable double power supply, double AC, double DC and AC+DC",
+          ],
+        ],
+        Features: [
+          "Supports 4K VLAN entries, Port-based QinQ and Selective QinQ (StackVLAN) and Port-based/MAC-based/IP subnet-based VLA",
+          "Supports IEEE 802.1x STP/RSTP/MSTP Spanning tree protocol with ONU remote loop detection",
+          "64K MAC address",
+          "Bi-direction bandwidth control",
+          "Port mirroring and traffic mirroring",
+          "Supports BGP, OSPF, MPLS and RIP Routing Protocols",
+          "Supports Multicast, QoS",
+          "Supports User security, Device security and Network security",
+          "Field replaceable Dual Power Supply",
+          "1 RU form factor",
+        ],
+      };
+
       let Products_Item = document.querySelector("product-item");
-      Products_Item.setAttribute("product-name", "sandeep"); // setting the Product name
-      Products_Item.setAttribute("product-img-arr", JSON.stringify(Productarr));
+
+      //setting the Product name
+      Products_Item.setAttribute("product-name", Product.name);
+
+      //setting the products images
+      Products_Item.setAttribute(
+        "product-img-arr",
+        JSON.stringify(Product.ProductImgArr)
+      );
+
+      // Setting the Products Imformation
+      Products_Item.setAttribute("product-info", Product.Overview);
+
+      //setting the Products specicfication
+      Products_Item.setAttribute(
+        "product-specification-arr",
+        JSON.stringify(Product.Specification)
+      );
+
+      //setting the Products features
+      Products_Item.setAttribute(
+        "product-feature-arr",
+        JSON.stringify(Product.Features)
+      );
       // appending the File
       let ProductContainer = document
         .querySelector(".product-page")
