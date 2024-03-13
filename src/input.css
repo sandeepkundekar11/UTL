@@ -508,6 +508,7 @@ body {
 }
 .product-info {
   width: 90vw;
+  min-height: 40vh;
   display: flex;
   justify-content: start;
 }
@@ -531,11 +532,13 @@ body {
     /* justify-content: start; */
   }
 }
-.product-feature {
+.product-feature,
+.ProductSpecification {
   width: 90vw;
 }
 @media (max-width: 640px) {
-  .product-feature {
+  .product-feature,
+  .ProductSpecification {
     width: 100vw;
   }
 }

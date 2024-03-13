@@ -25,7 +25,7 @@ class CommonCategory extends HTMLElement {
           <li
             class="text-xl font-medium text-gray-300 w-full text-end hover:bg-cyan-800"
           >
-          <a href=${basepath}Html/Resources/Videos.html>Videos<a/>
+          <a href=${basepath}Html/Resources/Videos.html>Videos</a>
           </li>
           <li
             class="text-xl font-medium text-gray-300 w-full text-end hover:bg-cyan-800"

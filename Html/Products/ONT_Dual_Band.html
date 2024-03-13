@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
+    <title>Dual Band GPON ONT</title>
     <link rel="stylesheet" href="../../src/output.css" />
     <link rel="icon" type="images/x-icon" href="../../Images/Logo.png" />
   </head>
@@ -13,7 +13,7 @@
     <!-- products display page -->
     <div class="product-page">
       <product-item></product-item>
-      <!-- <img src="../../Images/Products/OLT_8_Port_1.png" alt=""> -->
+
       <!-- related products list slide -->
     </div>
     <div class="w-screen bg-gray-900 py-11">
@@ -166,13 +166,78 @@
       });
 
       // adding the Product Inforamtion
-      let Productarr = [
-        "../../Images/Products/OLT_8_Port_1.png",
-        "../../Images/Products/OLT_8_Port_1.png",
-      ];
+
+      let Product = {
+        name: `ONT Dual Band <br> (Dual Band GPON ONT)`,
+        ProductImgArr: ["../../Images/Products/ONT_Dual_Band.png"],
+        Overview: `UTL dual band ONT devices are designed for fulfilling FTTH and triple play service demand of fixed network operators or cable operators. The box is based on the mature Gigabit GPON technology, which have high ratio of performance to price, and the technology of 802.11 ac/n WiFi
+        , Layer 2/3 and high quality VoIP as well. They are highly reliable and easy to maintain, with guaranteed QoS for different service. And It is fully compliant with technical regulations such as ITU-T G.984.x.`,
+        Specification: [
+          [
+            "PON interface standard:",
+            "ITU-T G.984.2/ITU-T G.984.3/ITU-TG.988 Class B+",
+          ],
+          ["PON quantity:", "1"],
+          ["Wavelength:", "TX：1310 +/-20nm RX：1490 +/-10nm"],
+          [
+            "PON interface rate:",
+            "2.488Gpbs receiving rate 1.244Gpbs transmitting rate",
+          ],
+          ["Output optical power: ", "Min: 0.5dBm Max: +5dBm "],
+          ["Optical receiver sensitivity:", "Precede -29dBm"],
+          ["Optical link length:", "Max 20km"],
+          ["WiFi Standard:", "IEEE 802.11 ac/b/g/n"],
+          [
+            "WiFi Frequency:",
+            "2.4~2.4835GHz 5GHz：Low frequency ,5.15GHz～5.25GHz、Middle frequency 5.25GHz～5.35GHz、High frequency 5.725GHz～5.825GHz",
+          ],
+          ["WiFi Channel number:", "2.4GHz ：13  5GHz：4"],
+          [
+            "WiFi Transmission distance:",
+            "Indoor Maximum 120 meters; Outdoor Maximum 360 meters (The distance depends on the environment)",
+          ],
+          ["RF power:", "20dBm EIRP"],
+        ],
+        Features: [
+          "Support SIP & H.248 voice protocol",
+          "Support G.711 A-Law/u-Law, G729A/B,G.723.1-5.3/6.3,G.726.etc.voice coding/compressed technology",
+          "Support TR069, NAT, DMZ, DNS features",
+          "Support Multiple ssid",
+          "Support Multiple VLAN",
+          "Support IPV6, PPPoE, DHCP and Static IP configuration for WAN Interface",
+          "Support IP, MAC filtering, Firewall Functionality in routed mode",
+          "Support for XPON, adaptive EPON or GPON OLT on the network",
+          "Support MU-MIMO",
+          "Support Easy-Mesh",
+          "Support PC, wall mount or put inside of information box",
+        ],
+      };
+
       let Products_Item = document.querySelector("product-item");
-      Products_Item.setAttribute("product-name", "sandeep"); // setting the Product name
-      Products_Item.setAttribute("product-img-arr", JSON.stringify(Productarr));
+
+      //setting the Product name
+      Products_Item.setAttribute("product-name", Product.name);
+
+      //setting the products images
+      Products_Item.setAttribute(
+        "product-img-arr",
+        JSON.stringify(Product.ProductImgArr)
+      );
+
+      // Setting the Products Imformation
+      Products_Item.setAttribute("product-info", Product.Overview);
+
+      //setting the Products specicfication
+      Products_Item.setAttribute(
+        "product-specification-arr",
+        JSON.stringify(Product.Specification)
+      );
+
+      //setting the Products features
+      Products_Item.setAttribute(
+        "product-feature-arr",
+        JSON.stringify(Product.Features)
+      );
       // appending the File
       let ProductContainer = document
         .querySelector(".product-page")

@@ -64,6 +64,9 @@ class Header extends HTMLElement {
                 <li class="hover:text-red-600 text-gray-400">
                   <a href=${htmlpath}Html/Products/Product.html>Product 3</a>
                 </li>
+                <li class="hover:text-red-600 text-gray-400">
+                <a href=${htmlpath}Html/Products/Product.html >Product 1</a>
+              </li>
               </ul>
             </ul>
             <ul
@@ -82,6 +85,9 @@ class Header extends HTMLElement {
                 <li class="hover:text-red-600 text-gray-400">
                   <a href=${htmlpath}Html/Products/Product.html>Product 3</a>
                 </li>
+                <li class="hover:text-red-600 text-gray-400">
+                <a href=${htmlpath}Html/Products/Product.html >Product 1</a>
+              </li>
               </ul>
             </ul>
             <ul
@@ -92,14 +98,17 @@ class Header extends HTMLElement {
               </li>
               <ul class="space-y-4 lg:ml-0">
                 <li class="hover:text-red-600 text-gray-400">
-                  <a href=${htmlpath}Html/Products/Product.html>Product 1</a>
+                  <a href=${htmlpath}Html/Products/ROADM_Whitebox.html>ROADM Whitebox</a>
                 </li>
                 <li class="hover:text-red-600 text-gray-400">
-                  <a href=${htmlpath}Html/Products/Product.html>Product 2</a>
+                  <a href=${htmlpath}Html/Products/CDC_Add-Drop_Whitebox.html>CDC Add-Drop Whitebox</a>
                 </li>
                 <li class="hover:text-red-600 text-gray-400">
-                  <a href=${htmlpath}Html/Products/Product.html>Product 3</a>
+                  <a href=${htmlpath}Html/Products/Line_Amplifier.html>Terminal/Line Amplifier</a>
                 </li>
+                <li class="hover:text-red-600 text-gray-400">
+                <a href=${htmlpath}Html/Products/Product.html >Mux-Demux Whitebox</a>
+              </li>
               </ul>
             </ul>
             <ul
@@ -110,14 +119,17 @@ class Header extends HTMLElement {
               </li>
               <ul class="space-y-4 lg:ml-0 ">
                 <li class="hover:text-red-600 text-gray-400">
-                  <a href=${htmlpath}Html/Products/Product.html>Product 1</a>
+                  <a href=${htmlpath}Html/Products/OLT_8_Port.html>OLT8 Port</a>
                 </li>
                 <li class="hover:text-red-600 text-gray-400">
-                  <a href=${htmlpath}Html/Products/Product.html>Product 2</a>
+                  <a href=${htmlpath}Html/Products/OLT_4_Port.html>OLT4 Port</a>
                 </li>
                 <li class="hover:text-red-600 text-gray-400">
-                  <a href=${htmlpath}Html/Products/Product.html>Product 3</a>
+                  <a href=${htmlpath}Html/Products/ONT_Dual_Band.html>ONT Dual Band</a>
                 </li>
+                <li class="hover:text-red-600 text-gray-400">
+                <a href=${htmlpath}Html/Products/ONT_single_Band.html >ONT Sigle Band</a>
+              </li>
               </ul>
             </ul>
             <ul
