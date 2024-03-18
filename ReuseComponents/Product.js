@@ -48,12 +48,12 @@ class ProductPage extends HTMLElement {
     
     <table class="md:w-9/12 w-full mt-5 ">
     <!-- <thead></thead> -->
-    <tbody class="md:w-9/12 w-full">`;
+    <tbody class="md:w-9/12 w-full p-2">`;
 
     Product_Specification.forEach((ele) => {
       ProductHtml += `<tr>
         <td
-          class="h-auto md:p-4 p2 text-gray-400 font-normal md:text-xl text-base border border-gray-600 p-1"
+          class="h-auto md:p-4 p2 text-gray-100 bg-gray-700 font-semibold md:text-xl text-base border border-gray-600 p-1"
         >
          ${ele[0]}
         </td>
