@@ -107,7 +107,7 @@ class Header extends HTMLElement {
                   <a href=${htmlpath}Html/Products/Line_Amplifier.html>Terminal/Line Amplifier</a>
                 </li>
                 <li class="hover:text-red-600 text-gray-400">
-                <a href=${htmlpath}Html/Products/Product.html >Mux-Demux Whitebox</a>
+                <a href=${htmlpath}Html/Products/Mux-Demux.html >Mux-Demux Whitebox</a>
               </li>
               </ul>
             </ul>
