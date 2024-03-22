@@ -55,8 +55,10 @@ body {
   opacity: 1;
   /* border-top-width: 5px; */
   /* border-top-color: blue; */
-  /* overflow: visible; */
+
+  overflow: visible;
   transition: all 0.2s;
+  /* overflow: visible; */
 }
 .navSolution {
   margin-left: -5rem;

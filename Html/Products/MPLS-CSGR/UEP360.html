@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mux-Demux whitebox</title>
+    <link rel="stylesheet" href="../../../src/output.css" />
+    <link rel="icon" type="images/x-icon" href="../../../Images/Logo.png" />
+  </head>
+  <body class="overflow-x-hidden">
+    <main-header basepath="../../../" htmlbase-path="../../../"> </main-header>
+
+    <!-- products display page -->
+    <div class="product-page">
+      <product-item class="product2"></product-item>
+
+      <!-- related products list slide -->
+    </div>
+    <div class="w-screen bg-gray-900 py-11">
+      <div class="RelatedProducts">
+        <p class="text-start text-3xl text-blue-600 font-semibold md:ml-0 ml-4">
+          Related Products
+        </p>
+        <!-- related products container -->
+        <div
+          class="Related-Product-List flex flex-wrap justify-start md:ml-0 ml-4"
+        >
+          <!-- products List -->
+          <div
+            class="border border-gray-800 md:w-80 w-72 h-80 rounded-md bg-gray-900 mr-7 mt-4 transition-all duration-300 hover:scale-105 p-3 overflow-hidden"
+          >
+            <img
+              class="w-full h-3/5"
+              src="../../../Images/Products/400G.png"
+              alt=""
+            />
+            <div
+              class="product-InnerInfo w-full h-auto cursor-pointer transition-all duration-300 hover:-translate-y-24"
+            >
+              <h1
+                class="font-bold md:text-2xl text-xl text-start text-gray-200"
+              >
+                Product Name
+              </h1>
+              <p
+                class="bg-gray-900 text-gray-400"
+                style="font-family: Arial, Helvetica, sans-serif"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                libero cum dignissimos suscipit, esse consequatur est eos quos,
+                nostrum sit nemo provident illum optio. Et ad reprehenderit
+                maxime atque assumenda!
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="border border-gray-800 md:w-80 w-72 h-80 rounded-md bg-gray-900 mr-7 mt-4 transition-all duration-300 hover:scale-105 p-3 overflow-hidden"
+          >
+            <img
+              class="w-full h-3/5"
+              src="../../../Images/Products/400G.png"
+              alt=""
+            />
+            <div
+              class="product-InnerInfo w-full h-auto cursor-pointer transition-all duration-300 hover:-translate-y-24"
+            >
+              <h1
+                class="font-bold md:text-2xl text-xl text-start text-gray-200"
+              >
+                Product Name
+              </h1>
+              <p
+                class="bg-gray-900 text-gray-400"
+                style="font-family: Arial, Helvetica, sans-serif"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                libero cum dignissimos suscipit, esse consequatur est eos quos,
+                nostrum sit nemo provident illum optio. Et ad reprehenderit
+                maxime atque assumenda!
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="border border-gray-800 md:w-80 w-72 h-80 rounded-md bg-gray-900 mr-7 mt-4 transition-all duration-300 hover:scale-105 p-3 overflow-hidden"
+          >
+            <img
+              class="w-full h-3/5"
+              src="../../../Images/Products/400G.png"
+              alt=""
+            />
+            <div
+              class="product-InnerInfo w-full h-auto cursor-pointer transition-all duration-300 hover:-translate-y-24"
+            >
+              <h1
+                class="font-bold md:text-2xl text-xl text-start text-gray-200"
+              >
+                Product Name
+              </h1>
+              <p
+                class="bg-gray-900 text-gray-400"
+                style="font-family: Arial, Helvetica, sans-serif"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                libero cum dignissimos suscipit, esse consequatur est eos quos,
+                nostrum sit nemo provident illum optio. Et ad reprehenderit
+                maxime atque assumenda!
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="border border-gray-800 md:w-80 w-72 h-80 rounded-md bg-gray-900 mr-7 mt-4 transition-all duration-300 hover:scale-105 p-3 overflow-hidden"
+          >
+            <img
+              class="w-full h-3/5"
+              src="../../../Images/Products/400G.png"
+              alt=""
+            />
+            <div
+              class="product-InnerInfo w-full h-auto cursor-pointer transition-all duration-300 hover:-translate-y-24"
+            >
+              <h1
+                class="font-bold md:text-2xl text-xl text-start text-gray-200"
+              >
+                Product Name
+              </h1>
+              <p
+                class="bg-gray-900 text-gray-400"
+                style="font-family: Arial, Helvetica, sans-serif"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                libero cum dignissimos suscipit, esse consequatur est eos quos,
+                nostrum sit nemo provident illum optio. Et ad reprehenderit
+                maxime atque assumenda!
+              </p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+
+    <!------------------------ footer ---------------------------->
+
+    <main-footer basepath="../../../" htmlbase-path="../../../"></main-footer>
+    <!-- javascipt -->
+    <script
+      type="module"
+      src="../../../ReuseComponents/Header_Footer.js"
+    ></script>
+    <script type="module" src="../../../index.js"></script>
+    <script type="module" src="../../../ReuseComponents/Product.js"></script>
+    <script type="module">
+      // adding navigation bar js code
+      let menu = document.querySelector(".menu");
+      let navlist = document.querySelector(".navlist");
+      menu.addEventListener("click", () => {
+        if (navlist.className.includes("navlist")) {
+          navlist.classList.remove("navlist");
+          navlist.classList.add("showNavbar");
+          menu.setAttribute("src", "../../../Images/cancel.png");
+        } else {
+          navlist.classList.add("navlist");
+          navlist.classList.remove("showNavbar");
+          menu.setAttribute("src", "../../../Images/menu.png");
+        }
+      });
+
+      // adding the Product Inforamtion
+      // adding the Product1
+
+      // adding Product2------------------------------------------------------------------------------------------------------------
+      let Product2 = {
+        name: "2. MPLS/CSGR (UEP360)",
+        ProductImgArr: ["../../../Images/Products/UEP360.png"],
+        Overview: `UTL provides a flexible ROADM solution in 1RU size which will suit client requirements in terms of features & budget. UTL has Fixed & Flex grid ROADM with & without built-in OCM with 9-Degrees and expandable to 20-Degrees for add-drop fan out with "Automatic Channel Equalization'' Features, UTL ROADM box compliance to ‘OPEN ROADM’ and supports ‘Openconfig’ interface with its 
+        unique and user friendly GUI with multiple user-defined "channel profiles" for instant configuration and roll-back features. <br> <br>  It is also equipped with High Power variable gain pre-amplifier and booster EDFAs.
+        It supports In-service OTDR option and third-party OSC termination.
+ `,
+        Specification: [
+          ["Management Port:", "ETH CRAFT, USB"],
+          ["Debug Port:", "DB-9 (Serial)"],
+          [
+            "LED Indicators:",
+            "System Alarms, Status, FAN Module Alarm, PSU Alarm",
+          ],
+          ["Optical Connector:", "LC/UPC"],
+          [
+            "Optical Ports:",
+            "upto 20 (can be used in combination, 9 for direction and remaining for ADD-DROP FAN-OUT) ",
+          ],
+          ["Monitoring Ports:", "Line In & Out"],
+        ],
+        Features: [
+          "Supports Automatic Channel Equalization",
+          "User defined Channel Profiles for quick configuration",
+          "High Power variable gain pre & booster amplifiers",
+          "Inbuilt OCM for channel monitoring",
+          "1 RU form factor",
+          "Field replaceable Dual Power Supply",
+          "Field replaceable Dual FAN Module",
+          "In-service OTDR option",
+          "Third party OSC termination option",
+        ],
+      };
+
+      let Products_Item2 = document.querySelector(".product2");
+
+      //setting the Product name
+      Products_Item2.setAttribute("product-name", Product2.name);
+
+      //setting the products images
+      Products_Item2.setAttribute(
+        "product-img-arr",
+        JSON.stringify(Product2.ProductImgArr)
+      );
+
+      // Setting the Products Imformation
+      Products_Item2.setAttribute("product-info", Product2.Overview);
+
+      //setting the Products specicfication
+      Products_Item2.setAttribute(
+        "product-specification-arr",
+        JSON.stringify(Product2.Specification)
+      );
+
+      //setting the Products features
+      Products_Item2.setAttribute(
+        "product-feature-arr",
+        JSON.stringify(Product2.Features)
+      );
+      // appending the File
+      let ProductContainer2 = document
+        .querySelector(".product-page")
+        .appendChild(Products_Item2);
+    </script>
+  </body>
+</html>
