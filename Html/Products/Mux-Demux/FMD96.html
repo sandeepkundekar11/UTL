@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mux-Demux whitebox</title>
+    <link rel="stylesheet" href="../../../src/output.css" />
+    <link rel="icon" type="images/x-icon" href="../../../Images/Logo.png" />
+  </head>
+  <body class="overflow-x-hidden">
+    <main-header basepath="../../../" htmlbase-path="../../../"> </main-header>
+
+    <!-- products display page -->
+    <div class="product-page">
+      <product-item class="product1"></product-item>
+
+      <!-- related products list slide -->
+    </div>
+    <div class="w-screen bg-gray-900 py-11">
+      <div class="RelatedProducts">
+        <p class="text-start text-3xl text-blue-600 font-semibold md:ml-0 ml-4">
+          Related Products
+        </p>
+        <!-- related products container -->
+        <div
+          class="Related-Product-List flex flex-wrap justify-start md:ml-0 ml-4"
+        >
+          <!-- products List -->
+          <div
+            class="border border-gray-800 md:w-80 w-72 h-80 rounded-md bg-gray-900 mr-7 mt-4 transition-all duration-300 hover:scale-105 p-3 overflow-hidden"
+          >
+            <img
+              class="w-full h-3/5"
+              src="../../../Images/Products/400G.png"
+              alt=""
+            />
+            <div
+              class="product-InnerInfo w-full h-auto cursor-pointer transition-all duration-300 hover:-translate-y-24"
+            >
+              <h1
+                class="font-bold md:text-2xl text-xl text-start text-gray-200"
+              >
+                Product Name
+              </h1>
+              <p
+                class="bg-gray-900 text-gray-400"
+                style="font-family: Arial, Helvetica, sans-serif"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                libero cum dignissimos suscipit, esse consequatur est eos quos,
+                nostrum sit nemo provident illum optio. Et ad reprehenderit
+                maxime atque assumenda!
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="border border-gray-800 md:w-80 w-72 h-80 rounded-md bg-gray-900 mr-7 mt-4 transition-all duration-300 hover:scale-105 p-3 overflow-hidden"
+          >
+            <img
+              class="w-full h-3/5"
+              src="../../../Images/Products/400G.png"
+              alt=""
+            />
+            <div
+              class="product-InnerInfo w-full h-auto cursor-pointer transition-all duration-300 hover:-translate-y-24"
+            >
+              <h1
+                class="font-bold md:text-2xl text-xl text-start text-gray-200"
+              >
+                Product Name
+              </h1>
+              <p
+                class="bg-gray-900 text-gray-400"
+                style="font-family: Arial, Helvetica, sans-serif"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                libero cum dignissimos suscipit, esse consequatur est eos quos,
+                nostrum sit nemo provident illum optio. Et ad reprehenderit
+                maxime atque assumenda!
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="border border-gray-800 md:w-80 w-72 h-80 rounded-md bg-gray-900 mr-7 mt-4 transition-all duration-300 hover:scale-105 p-3 overflow-hidden"
+          >
+            <img
+              class="w-full h-3/5"
+              src="../../../Images/Products/400G.png"
+              alt=""
+            />
+            <div
+              class="product-InnerInfo w-full h-auto cursor-pointer transition-all duration-300 hover:-translate-y-24"
+            >
+              <h1
+                class="font-bold md:text-2xl text-xl text-start text-gray-200"
+              >
+                Product Name
+              </h1>
+              <p
+                class="bg-gray-900 text-gray-400"
+                style="font-family: Arial, Helvetica, sans-serif"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                libero cum dignissimos suscipit, esse consequatur est eos quos,
+                nostrum sit nemo provident illum optio. Et ad reprehenderit
+                maxime atque assumenda!
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div
+            class="border border-gray-800 md:w-80 w-72 h-80 rounded-md bg-gray-900 mr-7 mt-4 transition-all duration-300 hover:scale-105 p-3 overflow-hidden"
+          >
+            <img
+              class="w-full h-3/5"
+              src="../../../Images/Products/400G.png"
+              alt=""
+            />
+            <div
+              class="product-InnerInfo w-full h-auto cursor-pointer transition-all duration-300 hover:-translate-y-24"
+            >
+              <h1
+                class="font-bold md:text-2xl text-xl text-start text-gray-200"
+              >
+                Product Name
+              </h1>
+              <p
+                class="bg-gray-900 text-gray-400"
+                style="font-family: Arial, Helvetica, sans-serif"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                libero cum dignissimos suscipit, esse consequatur est eos quos,
+                nostrum sit nemo provident illum optio. Et ad reprehenderit
+                maxime atque assumenda!
+              </p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+
+    <!------------------------ footer ---------------------------->
+
+    <main-footer basepath="../../../" htmlbase-path="../../../"></main-footer>
+    <!-- javascipt -->
+    <script
+      type="module"
+      src="../../../ReuseComponents/Header_Footer.js"
+    ></script>
+    <script type="module" src="../../../index.js"></script>
+    <script type="module" src="../../../ReuseComponents/Product.js"></script>
+    <script type="module">
+      // adding navigation bar js code
+      let menu = document.querySelector(".menu");
+      let navlist = document.querySelector(".navlist");
+      menu.addEventListener("click", () => {
+        if (navlist.className.includes("navlist")) {
+          navlist.classList.remove("navlist");
+          navlist.classList.add("showNavbar");
+          menu.setAttribute("src", "../../../Images/cancel.png");
+        } else {
+          navlist.classList.add("navlist");
+          navlist.classList.remove("showNavbar");
+          menu.setAttribute("src", "../../../Images/menu.png");
+        }
+      });
+
+      // adding the Product Inforamtion
+      // adding the Product1
+      let Product = {
+        name: "1. FMD96 ",
+        ProductImgArr: ["../../../Images/Products/FMD96.jpg"],
+        Overview: `UTL Fixed Mux Demux supports 96 channels at 50GHz spacing in 2RU size with monitoring ports for the common Input and Output. This is a passive product and does not require any power to operate and doesn’t need any software configuration so no communication is required with any module or controller in the system.`,
+        Specification: [
+          ["Optical Connector:", "LC/UPC"],
+          [
+            "Optical Ports:",
+            "96 Dual Ports (96 Add ports, 96 Drop Ports) Dual Port for Common in & out Dual Port for in & out monitoring",
+          ],
+          ["Monitoring ports:", "Common In & Out"],
+        ],
+        Features: [
+          "Total 96 channels C-band",
+          "50GHz channel spacing",
+          "Power Monitoring Ports",
+          "2 RU form factor",
+        ],
+      };
+
+      let Products_Item = document.querySelector(".product1");
+
+      //setting the Product name
+      Products_Item.setAttribute("product-name", Product.name);
+
+      //setting the products images
+      Products_Item.setAttribute(
+        "product-img-arr",
+        JSON.stringify(Product.ProductImgArr)
+      );
+
+      // Setting the Products Imformation
+      Products_Item.setAttribute("product-info", Product.Overview);
+
+      //setting the Products specicfication
+      Products_Item.setAttribute(
+        "product-specification-arr",
+        JSON.stringify(Product.Specification)
+      );
+
+      //setting the Products features
+      Products_Item.setAttribute(
+        "product-feature-arr",
+        JSON.stringify(Product.Features)
+      );
+      // appending the File
+      let ProductContainer1 = document
+        .querySelector(".product-page")
+        .appendChild(Products_Item);
+
+      // adding Product2------------------------------------------------------------------------------------------------------------
+    </script>
+  </body>
+</html>

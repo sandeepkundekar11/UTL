@@ -10,6 +10,7 @@ module.exports = {
     "./Html/Products/*{html,js}",
     "./Html/Solutions_pages/*{html,js}",
     "./Html/Resources/*{html,js}",
+    "./Html/**/*{html}",
   ],
   theme: {
     extend: {},

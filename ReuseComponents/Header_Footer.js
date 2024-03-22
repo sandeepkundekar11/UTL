@@ -106,8 +106,20 @@ class Header extends HTMLElement {
                 <li class="hover:text-red-600 text-gray-400">
                   <a href=${htmlpath}Html/Products/Line_Amplifier.html>Terminal/Line Amplifier</a>
                 </li>
-                <li class="hover:text-red-600 text-gray-400">
-                <a href=${htmlpath}Html/Products/Mux-Demux.html >Mux-Demux Whitebox</a>
+                <!-- mux dropdown -->
+                <li class=" text-white relative group overflow-visible ">
+                <div class="flex items-center">
+                <a  >Mux-Demux Whitebox</a>
+                <img
+                class="w-4 h-4 ml-2 "
+                src=${baspath}/Images/Dropdown.png
+                alt=""
+              />
+              </div>
+                <ul class="absolute lg:left-1 left-28  w-44  text-gray-400 bg-gray-600 hidden group-hover:flex flex-col space-y-2 px-2 shadow-2xl drop-shadow-2xl rounded-sm">
+                <a  href=${htmlpath}Html/Products/Mux-Demux/FMD96.html class=" hover:text-red-600">FMD96</a>
+                <a href=${htmlpath}Html/Products/Mux-Demux/FMD64.html class=" hover:text-red-600">FMD64</a>
+                </ul>
               </li>
               </ul>
             </ul>
@@ -135,8 +147,19 @@ class Header extends HTMLElement {
             <ul
               class="lg:text-white text-slate-300 space-y-3 md:pt-3 pt-0 text-lg lg:mt-0 mt-5"
             >
-              <li class="hover:text-red-600">
-                <a href=${htmlpath}Html/Products/MPLS.html>MPLS/CSGR</a>
+              <li class=" relative group">
+               <div class="flex items-center">
+               <a >MPLS/CSGR</a>
+               <img
+               class="w-4 h-4 ml-3 "
+               src=${baspath}/Images/Dropdown.png
+               alt=""
+             />
+               </div>
+                <ul class="absolute lg:left-1 left-28  w-44  text-gray-400 bg-gray-600 hidden group-hover:flex flex-col space-y-2 px-2 shadow-2xl drop-shadow-2xl rounded-sm">
+                <a href=${htmlpath}Html/Products/MPLS-CSGR/UEP60.html class=" hover:text-red-600">UEP60</a>
+                <a href=${htmlpath}Html/Products/MPLS-CSGR/UEP360.html class=" hover:text-red-600">UEP360</a>
+                </ul>
               </li>
               <li class="hover:text-red-600">
                 <a href=${htmlpath}Html/Products/Product.html>Enterprise Switch/Router</a>
