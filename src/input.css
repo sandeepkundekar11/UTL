@@ -197,6 +197,7 @@ body {
   .Resources:hover .navResources {
     height: 0px;
     width: auto;
+    overflow: hidden;
     border-top-width: 0px;
     border-top-color: initial;
     /* transition: none; */
@@ -644,7 +645,7 @@ body {
 /* styling the BoardDirectiveDiv    Board of direactor page */
 
 .BoardDirectiveDivEven {
-  width: 92vw;
+  width: 90vw;
   background: linear-gradient(
       to right,
       rgba(255, 185, 169, 0.596),
@@ -658,7 +659,7 @@ body {
   font-family: "Protest Revolution", sans-serif;
 }
 .BoardDirectiveDivOdd {
-  width: 92vw;
+  width: 90vw;
   background: linear-gradient(
       to right,
       rgba(54, 54, 54, 0.92) 60%,
@@ -704,11 +705,21 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+.Directorname:nth-child(2) {
+  background-color: rgba(52, 52, 52, 0.886);
+}
+.DirectorNamediv {
+  background: linear-gradient(
+    to right,
+    rgba(95, 11, 173, 0.53) 60%,
+    rgba(135, 135, 135, 0.484)
+  ) !important;
+}
 /* styling the  solution page */
 .solutionHead_StateAreaNetwork {
   background: linear-gradient(
       to right,
-      rgba(37, 76, 98, 0.547) 60%,
+      rgba(37, 76, 98, 0.547) 80%,
       rgba(255, 255, 255, 0.571)
     ),
     url("https://www.sangfor.com/sites/default/files/2023-05/what_is_a_wide_area_network_wan.jpg")
