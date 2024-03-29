@@ -1451,6 +1451,10 @@ input[type="range"]::-ms-fill-lower {
   flex-wrap: wrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-end {
   align-items: flex-end;
 }
@@ -1895,6 +1899,10 @@ input[type="range"]::-ms-fill-lower {
   padding-right: 0.75rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .pt-0 {
   padding-top: 0px;
 }
@@ -1949,6 +1957,10 @@ input[type="range"]::-ms-fill-lower {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
 }
 
 .text-center {
@@ -2439,6 +2451,7 @@ body {
   .Resources:hover .navResources {
     height: 0px;
     width: auto;
+    overflow: hidden;
     border-top-width: 0px;
     border-top-color: initial;
     /* transition: none; */
@@ -2946,7 +2959,7 @@ body {
 /* styling the BoardDirectiveDiv    Board of direactor page */
 
 .BoardDirectiveDivEven {
-  width: 92vw;
+  width: 90vw;
   background: linear-gradient(
       to right,
       rgba(255, 185, 169, 0.596),
@@ -2961,7 +2974,7 @@ body {
 }
 
 .BoardDirectiveDivOdd {
-  width: 92vw;
+  width: 90vw;
   background: linear-gradient(
       to right,
       rgba(54, 54, 54, 0.92) 60%,
@@ -3013,12 +3026,24 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+.Directorname:nth-child(2) {
+  background-color: rgba(52, 52, 52, 0.886);
+}
+
+.DirectorNamediv {
+  background: linear-gradient(
+    to right,
+    rgba(95, 11, 173, 0.53) 60%,
+    rgba(135, 135, 135, 0.484)
+  ) !important;
+}
+
 /* styling the  solution page */
 
 .solutionHead_StateAreaNetwork {
   background: linear-gradient(
       to right,
-      rgba(37, 76, 98, 0.547) 60%,
+      rgba(37, 76, 98, 0.547) 80%,
       rgba(255, 255, 255, 0.571)
     ),
     url("https://www.sangfor.com/sites/default/files/2023-05/what_is_a_wide_area_network_wan.jpg")
@@ -3610,6 +3635,10 @@ body {
     height: 16rem;
   }
 
+  .md\:h-72 {
+    height: 18rem;
+  }
+
   .md\:h-80 {
     height: 20rem;
   }
@@ -3703,6 +3732,11 @@ body {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .md\:translate-y-12 {
+    --tw-translate-y: 3rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:translate-y-24 {
     --tw-translate-y: 6rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3710,11 +3744,6 @@ body {
 
   .md\:translate-y-4 {
     --tw-translate-y: 1rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:translate-y-6 {
-    --tw-translate-y: 1.5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
