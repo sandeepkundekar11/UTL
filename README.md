@@ -13,12 +13,12 @@ Follow these steps to install and set up the project:
 
 1. Clone the project:
    ```bash
-   git clone https://github.com/yourusername/utl-website.git
+   git clone https://github.com/sandeepkundekar11/UTL.git
    ```
 
 2. Navigate to the project folder:
    ```bash
-   cd utl-website
+   cd UTL_Web
    ```
 
 3. Install all dependencies:
